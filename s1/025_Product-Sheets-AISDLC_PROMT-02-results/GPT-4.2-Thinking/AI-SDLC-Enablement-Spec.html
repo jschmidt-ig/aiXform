@@ -1,0 +1,400 @@
+<!-- ChatGPT Folder > AI SDLC Course Productization > AI-SDLC-Enablement-Spec.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI SDLC Enablement: Product Spec + Curriculum Architecture (10 weeks)</title>
+  <style>
+    :root {
+      --fg: #111;
+      --muted: #555;
+      --bg: #fff;
+      --card: #fafafa;
+      --border: #e6e6e6;
+      --code: #0b0b0b;
+    }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.45;
+    }
+    header {
+      padding: 28px 20px 10px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #fff 0%, #fbfbfb 100%);
+    }
+    header .meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 10px;
+      word-break: break-word;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 80ch;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 28px;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+    }
+    h3 {
+      margin-top: 18px;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 14px 10px;
+      margin: 12px 0;
+    }
+    ul {
+      margin: 8px 0 8px 22px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 18px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: #f3f3f3;
+      font-weight: 600;
+    }
+    tr:last-child td {
+      border-bottom: 0;
+    }
+    .kbd {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      padding: 1px 6px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: #fff;
+    }
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer {
+      margin-top: 26px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="meta">ChatGPT Folder > AI SDLC Course Productization &gt; AI-SDLC-Enablement-Spec.html</div>
+    <h1>AI SDLC Enablement: Product Spec + Curriculum Architecture (10 weeks)</h1>
+    <p>Enterprise-safe, code-centric training + enablement designed for “no external SaaS / no code upload” constraints while producing measurable delivery outcomes.</p>
+  </header>
+
+  <main>
+    <h2>1) Decisions (one screen)</h2>
+    <div class="card">
+      <h3>Tier model (3 tiers) + gating prerequisites</h3>
+      <ul>
+        <li><strong>Tier 1: Foundations (Courseware)</strong> → prerequisite for all</li>
+        <li><strong>Tier 2: Practitioner (Guided Cohort Enablement)</strong> → requires Foundations completion (or test-out)</li>
+        <li><strong>Tier 3: Enterprise Accelerator (Transformation Sprint)</strong> → requires Practitioner completion</li>
+      </ul>
+      <p class="note">Rationale: matches proven “basic → hybrid → premium coaching” packaging with shrinking cohorts + explicit gating.</p>
+    </div>
+
+    <div class="card">
+      <h3>Pricing model</h3>
+      <ul>
+        <li><strong>Units:</strong> Foundations = per seat; Practitioner = per cohort seat; Accelerator = team pack (or per participant)</li>
+        <li><strong>List pricing (signals):</strong>
+          <ul>
+            <li>Foundations: $300–$500/seat (10 weeks)</li>
+            <li>Practitioner: $2,000–$3,000/participant (10 weeks, cohort 20–25)</li>
+            <li>Accelerator: $30k–$50k team pack (4–6) or $8k–$15k/participant</li>
+          </ul>
+        </li>
+        <li><strong>Minimums:</strong> Foundations min 50 seats; Practitioner min 15 (cap 25); Accelerator min 4-person pack (cap 6)</li>
+        <li><strong>Enterprise option:</strong> “Enablement Pack” = 100 Foundations + 25 Practitioner + 6 Accelerator</li>
+        <li><strong>Access duration:</strong> Foundations 6 months; Practitioner 12 months; Accelerator 12 months</li>
+        <li><strong>Support window:</strong> Foundations +2 weeks; Practitioner +4 weeks; Accelerator +8 weeks</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Naming scheme</h3>
+      <ul>
+        <li>Tiers: <strong>Foundations / Practitioner / Enterprise Accelerator</strong></li>
+        <li>Framing: <strong>Courseware</strong> (scales) vs <strong>Enablement</strong> (guided support / transformation)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Gross margin target + operational rationale</h3>
+      <ul>
+        <li>Target <strong>60% blended</strong>, with <strong>≥50% floor</strong> on Accelerator via strict coaching caps + reusable assets.</li>
+        <li>Assumed constraints are real: <strong>no external SaaS</strong>, <strong>no code upload</strong>, approved models only, PHI/PII sensitivities, coaches operate off-network.</li>
+      </ul>
+    </div>
+
+    <h2>2) Product spec (tables)</h2>
+
+    <h3>2.1 One-page product brief</h3>
+    <table>
+      <thead><tr><th>Field</th><th>Spec</th></tr></thead>
+      <tbody>
+        <tr><td>Product</td><td><strong>AI SDLC Enablement</strong>: enterprise-safe, code-centric training + enablement to measurably improve delivery speed and quality</td></tr>
+        <tr><td>Primary ICP</td><td>Software engineers (brownfield acceleration); secondary: infra/data engineers (workflow + scripting + DevOps)</td></tr>
+        <tr><td>Outcomes</td><td>Improve cycle time, PR throughput, test coverage, docs completeness, adoption, dev satisfaction</td></tr>
+        <tr><td>Delivery</td><td>10-week program; hybrid live + hands-on labs; evolves into self-paced assets captured from live runs</td></tr>
+        <tr><td>Differentiators</td><td>Enterprise-grade constraints + “safe sandbox → brownfield” progression + off-network coaching model</td></tr>
+        <tr><td>Core promise</td><td>Teams ship safer PRs faster with measurable improvements without violating security controls</td></tr>
+        <tr><td>Tooling stance</td><td>Default: Claude Code CLI; Week-1 fallback if approvals lag</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.2 Tier comparison (pricing/packaging)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tier</th><th>Included</th><th>Excluded</th><th>Seat model</th><th>Coaching model</th><th>Support channels</th><th>Access duration</th><th>Prereqs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Foundations (Courseware)</strong></td>
+          <td>Recorded lessons, worksheets, labs, starter repo, knowledge checks, prompt-pattern library template, safety drills</td>
+          <td>Live coaching, brownfield code reviews, exec readouts</td>
+          <td>Per seat; volume packs</td>
+          <td>None (optional quarterly webinar add-on)</td>
+          <td>Knowledge base + async Q&amp;A (ticket/forum)</td>
+          <td>6 months</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td><strong>Practitioner (Guided Cohort Enablement)</strong></td>
+          <td>Foundations + weekly live demo/Q&amp;A + 2hr/wk office hours + milestone reviews + graded labs + cohort forum</td>
+          <td>Private 1:1 coaching, bespoke implementation on production systems</td>
+          <td>Per cohort seat (15–25)</td>
+          <td>Group coaching; “review not do”</td>
+          <td>Cohort forum + office hours + limited async</td>
+          <td>12 months</td>
+          <td>Foundations or test-out</td>
+        </tr>
+        <tr>
+          <td><strong>Enterprise Accelerator (Transformation Sprint)</strong></td>
+          <td>Practitioner + 4hr/wk private sessions + implementation reviews + exec KPI readouts + tailored brownfield plan + capstone</td>
+          <td>Staff augmentation coding on client network; broad platform rebuild</td>
+          <td>Team pack (4–6) or per participant</td>
+          <td>Small-cohort coaching + governance cadence</td>
+          <td>Private sessions + exec reviews + async</td>
+          <td>12 months</td>
+          <td>Practitioner required</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>2.3 Operational load model</h3>
+    <p class="note">Assumptions: target cohort sizes of 100–200 (Foundations) / 20–25 (Practitioner) / 3–5 (Accelerator).</p>
+    <table>
+      <thead>
+        <tr><th>Activity</th><th>Scales?</th><th>Foundations</th><th>Practitioner</th><th>Accelerator</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Core content delivery</td><td>Yes</td><td>0 live hrs (recorded)</td><td>0 live hrs (reuse)</td><td>0 live hrs (reuse)</td></tr>
+        <tr><td>Weekly live demo/Q&amp;A</td><td>Partly</td><td>1 hr/wk (optional)</td><td>1 hr/wk</td><td>1 hr/wk (focused)</td></tr>
+        <tr><td>Office hours</td><td>No</td><td>0</td><td>2 hr/wk</td><td>Included in private sessions</td></tr>
+        <tr><td>Private coaching / implementation review</td><td>No</td><td>0</td><td>0</td><td>4 hr/wk</td></tr>
+        <tr><td>Grading / rubric feedback</td><td>Partly</td><td>Auto-checks + 0.5 hr/wk sampling</td><td>2 hr/wk</td><td>2 hr/wk</td></tr>
+        <tr><td>Async support</td><td>Partly</td><td>1 hr/wk</td><td>1 hr/wk</td><td>1 hr/wk</td></tr>
+        <tr><td>Executive readouts / KPI review</td><td>No</td><td>0</td><td>Optional final summary</td><td>1 hr/wk + final deck</td></tr>
+        <tr><td><strong>Total coach live time</strong></td><td></td><td><strong>~10–20 hrs/10 wks</strong></td><td><strong>~60–70 hrs/10 wks</strong></td><td><strong>~80–100 hrs/10 wks</strong></td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.4 Client responsibilities</h3>
+    <table>
+      <thead><tr><th>Area</th><th>Client responsibility</th><th>Why it matters</th></tr></thead>
+      <tbody>
+        <tr><td>Repos &amp; environments</td><td>Provide a sanitized training repo + target brownfield repo (read-only is fine); provision safe sandbox if production access is restricted</td><td>Enables “safe sandbox → brownfield” progression</td></tr>
+        <tr><td>Tool approvals</td><td>Approve model(s), IDE/CLI tooling, and gateways by end of Week 1; define escalation path</td><td>Prevents early stall</td></tr>
+        <tr><td>Security constraints</td><td>Confirm boundaries (“no external SaaS/no code upload”); provide redaction guidance and approved prompt policy</td><td>Avoids PHI/PII violations</td></tr>
+        <tr><td>Champions</td><td>Assign engineering champion + security liaison + exec sponsor</td><td>Keeps adoption + approvals moving</td></tr>
+        <tr><td>Time allocation</td><td>Protect participant time: 5–7 hrs/wk (Practitioner), 8–10 hrs/wk (Accelerator)</td><td>Without time, outcomes don’t move</td></tr>
+        <tr><td>Metrics</td><td>Provide baselines and agree KPI targets</td><td>Makes ROI defensible</td></tr>
+      </tbody>
+    </table>
+
+    <h2>3) 10-week curriculum architecture</h2>
+    <h3>3.1 Core curriculum map</h3>
+    <table>
+      <thead>
+        <tr><th>Week</th><th>Theme</th><th>Learning objectives</th><th>Live demo(s)</th><th>Hands-on lab</th><th>Artifact produced</th><th>Assessment</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Enterprise-safe AI workflow kickoff</td><td>Safety boundaries, prompt hygiene, repo-less workflow; baseline metrics</td><td>“AI SDLC loop” demo; prompt patterns</td><td>Offline/safe repo lab: spec slicing + prompt drills</td><td>Prompt library v0 + workflow checklist</td><td>Knowledge check + prompt rubric</td></tr>
+        <tr><td>2</td><td>CLI-driven delivery flow</td><td>Task planning, diffs, PR narration</td><td>“ticket → plan → diff”</td><td>Implement small feature in sandbox repo</td><td>Safe PR template + PR description generator</td><td>PR rubric score</td></tr>
+        <tr><td>3</td><td>Testing acceleration</td><td>Generate unit tests; coverage strategy</td><td>Test generation + edge-case thinking</td><td>Add tests; measure coverage delta</td><td>Test plan + coverage delta report</td><td>Test rubric + coverage gate</td></tr>
+        <tr><td>4</td><td>Documentation + architecture extraction</td><td>ADRs, diagrams, docs without leaking sensitive data</td><td>“docs from code” workflow</td><td>Generate ADR + C4-style docs</td><td>ADR + architecture README</td><td>Doc rubric</td></tr>
+        <tr><td>5</td><td>Brownfield analysis mechanics</td><td>Dependency mapping, change risk, boundary identification</td><td>Large codebase map</td><td>Brownfield worksheet on target repo (read-only)</td><td>Analysis worksheet + risk-ranked backlog</td><td>Worksheet rubric</td></tr>
+        <tr><td>6</td><td>“Safe PR” strategy for brownfield</td><td>Scaffolding, non-invasive improvements</td><td>“scaffold-only PR”</td><td>Build observability/test harness sidecar</td><td>PR + rollout plan</td><td>PR rubric + peer review</td></tr>
+        <tr><td>7</td><td>CI/CD + quality gates</td><td>Automation without rewriting pipelines</td><td>“quality gates”</td><td>Add lint/test/coverage gates</td><td>Pipeline-as-code template</td><td>Gate pass/fail</td></tr>
+        <tr><td>8</td><td>Observability module build</td><td>Logging/tracing/metrics patterns</td><td>Instrumentation demo</td><td>Observability module + dashboard stub</td><td>Observability module + runbook</td><td>Runbook rubric</td></tr>
+        <tr><td>9</td><td>Security &amp; compliance drills</td><td>Redaction, data handling, model justification</td><td>“prompt redaction review”</td><td>Red-team prompt drill + remediation</td><td>Prompt policy + redaction checklist</td><td>Policy rubric</td></tr>
+        <tr><td>10</td><td>Capstone ship + ROI readout</td><td>Ship measurable improvement; present before/after</td><td>Capstone walkthrough</td><td>Finalize capstone + exec deck</td><td>Capstone PR(s) + KPI delta report</td><td>Capstone rubric + KPI delta</td></tr>
+      </tbody>
+    </table>
+
+    <h3>3.2 Two on-ramps</h3>
+    <div class="card">
+      <h3>Greenfield track</h3>
+      <ul>
+        <li>Weeks 2–4: build a small module end-to-end (API + tests + docs)</li>
+        <li>Weeks 6–8: production-like CI gates and observability</li>
+        <li>Capstone: complete feature with tests + docs + pipeline gates</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Brownfield track</h3>
+      <ul>
+        <li>Weeks 4–5: read-only architecture extraction + risk-ranked backlog</li>
+        <li>Week 6: “safe PR” = scaffolding-only + non-invasive improvements</li>
+        <li>Capstone: 1–3 safe PRs + KPI delta + documented next backlog</li>
+      </ul>
+    </div>
+
+    <h3>3.3 Week 1 “tooling not ready” plan</h3>
+    <div class="card">
+      <ol>
+        <li>Use a safe sandbox starter repo (no sensitive code).</li>
+        <li>Run prompt-pattern drills + spec slicing + PR narration exercises offline.</li>
+        <li>Establish baseline KPI capture methodology + manual measurement template.</li>
+        <li>If CLI is unavailable: do diff review + test-plan generation exercises without repo write access.</li>
+        <li>Resequence: shift Week 2 CLI mechanics to Week 3; keep Week 2 on tests/docs.</li>
+      </ol>
+    </div>
+
+    <h2>4) Exercise bank + starter repo plan</h2>
+    <div class="card">
+      <h3>Exercise bank (high-level)</h3>
+      <ul>
+        <li><strong>Foundations:</strong> prompt patterns, ticket decomposition, PR narration, workflow drills.</li>
+        <li><strong>Brownfield:</strong> dependency mapping, docs-from-code, coverage uplift, safe refactor sequencing.</li>
+        <li><strong>Greenfield:</strong> observability module, test harness, CI quality gates.</li>
+        <li><strong>Safety:</strong> redaction drills, model-choice justification, prompt review, incident drills.</li>
+      </ul>
+      <p class="note">Starter repo: consistent structure across .NET/Java/Python with /docs, /src, /tests, /infra, /observability, /scripts, /tickets.</p>
+    </div>
+
+    <h2>5) Content capture + productization pipeline</h2>
+    <div class="card">
+      <ul>
+        <li>Record every demo, Q&amp;A, capstone review.</li>
+        <li>Capture: labs, solutions, PR exemplars, good/bad prompts, rubric scoring.</li>
+        <li>Normalize: “lesson + lab + rubric” modules; remove proprietary content; tag by week.</li>
+        <li>Version: v0.1 MVP → v0.2 after 2 cohorts; weekly ship room; monthly consolidation.</li>
+      </ul>
+    </div>
+
+    <h2>6) GTM basics</h2>
+    <div class="card">
+      <h3>Buyer roles</h3>
+      <p>VP/Director Engineering, Platform/DevEx lead, Security/Compliance partner, L&amp;D leader.</p>
+      <h3>Triggers</h3>
+      <ul>
+        <li>GenAI adoption stalled by approvals</li>
+        <li>Cycle time plateau; quality issues</li>
+        <li>Exec mandate without safe operating model</li>
+      </ul>
+    </div>
+
+    <h2>7) SOW addendum draft</h2>
+    <div class="card">
+      <h3>Inclusions/exclusions (summary)</h3>
+      <ul>
+        <li><strong>Foundations:</strong> courseware + labs; no live coaching.</li>
+        <li><strong>Practitioner:</strong> weekly live + office hours + grading; no private 1:1 or on-network bespoke work.</li>
+        <li><strong>Accelerator:</strong> private sessions + tailored plan + exec readouts; no staff augmentation.</li>
+      </ul>
+    </div>
+
+    <h2>8) Two variants</h2>
+    <div class="card">
+      <h3>MVP (10 weeks)</h3>
+      <ul>
+        <li>One 10-week cohort recorded end-to-end.</li>
+        <li>Starter repo v0 + labs + rubrics.</li>
+        <li>Brownfield worksheet + safe PR playbook.</li>
+        <li>KPI baseline + end report template.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>v2 (6 months)</h3>
+      <ul>
+        <li>Edited self-paced Foundations + auto-graded checks.</li>
+        <li>Practitioner cohorts run by trained coaches.</li>
+        <li>Optional certification (capstone + rubric threshold).</li>
+        <li>Train-the-trainer kit + grading calibration.</li>
+      </ul>
+    </div>
+
+    <h2>9) Assumptions + open questions + decision points</h2>
+    <div class="card">
+      <h3>10 highest-leverage questions</h3>
+      <ol>
+        <li>Which models are approved today and for which data classes?</li>
+        <li>Can participants run CLI tools locally or only in locked VMs?</li>
+        <li>Fastest path to a safe sandbox repo in each client environment?</li>
+        <li>Which KPIs can be measured automatically vs manually?</li>
+        <li>Allowed coaching surface: Zoom only or internal chat?</li>
+        <li>Who owns tool approval decisions?</li>
+        <li>Minimum acceptable capstone impact?</li>
+        <li>Internal certification badge vs external credential later?</li>
+        <li>Budget owner: L&amp;D vs engineering vs transformation?</li>
+        <li>What IP reuse language will clients accept?</li>
+      </ol>
+    </div>
+
+    <footer>
+      <h3>Source notes</h3>
+      <p>All references below point to your attached <span class="kbd">Research_Packet.md</span> (line numbers from that file).</p>
+      <ul>
+        <li><strong>Security and enterprise constraints:</strong> lines 15–18 and 117–123.</li>
+        <li><strong>Tier names + pricing signals:</strong> lines 22–28.</li>
+        <li><strong>Tiered packaging patterns + prerequisite gating:</strong> lines 64–72.</li>
+        <li><strong>Outcome metrics framing:</strong> line 20 and lines 90–101.</li>
+        <li><strong>Content capture pipeline:</strong> lines 115–116.</li>
+        <li><strong>Coach capacity risk:</strong> lines 125–126.</li>
+        <li><strong>IP reuse / anonymization + SOW outline:</strong> lines 127–136.</li>
+      </ul>
+    </footer>
+  </main>
+</body>
+</html>
