@@ -1,0 +1,866 @@
+<!--
+ChatGPT Folder > Business Strategy Plan — Integral Dragon 2026 > integral_dragon_2026_strategy.html
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Integral Dragon — 2026 Strategy (Move Right)</title>
+  <meta name="description" content="Integral Dragon 2026 strategy plan: move right from hourly consulting toward repeatable offerings, training-as-product, and eventual software productization." />
+  <style>
+    :root{
+      --bg: #0b1220;
+      --panel: rgba(255,255,255,0.06);
+      --panel2: rgba(255,255,255,0.08);
+      --card: rgba(255,255,255,0.07);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.70);
+      --faint: rgba(255,255,255,0.55);
+      --accent: #6ee7ff;
+      --accent2:#a78bfa;
+      --good:#7CFFB2;
+      --warn:#FFCA7A;
+      --bad:#FF7A90;
+      --line: rgba(255,255,255,0.14);
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+      --radius: 16px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    *{ box-sizing:border-box; }
+    html, body{ height:100%; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(1200px 700px at 10% 0%, rgba(167,139,250,0.25), transparent 55%),
+        radial-gradient(1000px 800px at 90% 10%, rgba(110,231,255,0.18), transparent 55%),
+        radial-gradient(800px 600px at 50% 110%, rgba(124,255,178,0.10), transparent 55%),
+        linear-gradient(180deg, #070c16, #0b1220 35%, #0b1220);
+    }
+
+    a{ color: var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .wrap{ max-width: 1120px; margin:0 auto; padding: 28px 18px 80px; }
+
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      padding: 12px 14px; border:1px solid var(--line); border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(10px);
+    }
+    .brand{ display:flex; align-items:center; gap:10px; }
+    .logo{
+      width:32px; height:32px; border-radius:10px;
+      background: linear-gradient(135deg, rgba(110,231,255,0.9), rgba(167,139,250,0.85));
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      position:relative;
+    }
+    .logo:after{
+      content:""; position:absolute; inset:6px;
+      border-radius:8px; border:1px solid rgba(255,255,255,0.45);
+      transform: rotate(6deg);
+      opacity:0.8;
+    }
+    .brand h1{ font-size: 14px; letter-spacing:0.7px; margin:0; text-transform: uppercase; color: rgba(255,255,255,0.88); }
+    .badge{
+      font-size:12px; padding:8px 10px; border-radius:999px;
+      border:1px solid var(--line); background: rgba(255,255,255,0.04);
+      color: var(--muted);
+      white-space:nowrap;
+    }
+
+    header.hero{
+      margin-top: 22px;
+      padding: 26px 22px;
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 8px);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    header.hero:before{
+      content:""; position:absolute; inset:-2px;
+      background:
+        radial-gradient(700px 240px at 15% 0%, rgba(110,231,255,0.18), transparent 60%),
+        radial-gradient(700px 240px at 85% 0%, rgba(167,139,250,0.20), transparent 60%);
+      pointer-events:none;
+    }
+    .hero-grid{
+      position:relative;
+      display:grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 18px;
+      align-items:start;
+    }
+    .kicker{
+      font-family: var(--mono);
+      color: rgba(255,255,255,0.75);
+      font-size: 12px;
+      letter-spacing:0.4px;
+      margin:0 0 8px;
+    }
+    .hero h2{
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.08;
+      letter-spacing: -0.7px;
+    }
+    .hero p{
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 15px;
+      max-width: 70ch;
+    }
+    .hero .pillrow{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .pill{
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.80);
+      font-size: 12px;
+      display:flex; align-items:center; gap:8px;
+      white-space:nowrap;
+    }
+    .dot{ width:9px; height:9px; border-radius:50%; background: var(--accent); box-shadow: 0 0 0 3px rgba(110,231,255,0.12); }
+    .dot.purple{ background: var(--accent2); box-shadow: 0 0 0 3px rgba(167,139,250,0.12); }
+    .dot.green{ background: var(--good); box-shadow: 0 0 0 3px rgba(124,255,178,0.10); }
+
+    .hero-card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.04);
+      padding: 14px;
+    }
+    .hero-card h3{
+      margin:0 0 8px;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.80);
+    }
+    .hero-card ol{ margin: 0; padding-left: 18px; color: rgba(255,255,255,0.86); }
+    .hero-card li{ margin: 6px 0; }
+    .callout{
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(110,231,255,0.35);
+      background: rgba(110,231,255,0.08);
+      color: rgba(255,255,255,0.86);
+      font-size: 13px;
+      line-height:1.35;
+    }
+
+    section{ margin-top: 22px; }
+
+    .section-title{
+      display:flex; align-items:flex-end; justify-content:space-between; gap: 12px;
+      margin: 8px 2px 12px;
+    }
+    .section-title h3{
+      margin:0;
+      font-size: 18px;
+      letter-spacing:-0.2px;
+    }
+    .section-title .sub{
+      color: var(--muted);
+      font-size: 13px;
+      line-height:1.2;
+      text-align:right;
+      max-width: 60ch;
+    }
+
+    .grid{
+      display:grid;
+      gap: 14px;
+    }
+    .grid.cols-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .grid.cols-2{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .grid.cols-4{ grid-template-columns: repeat(4, minmax(0,1fr)); }
+
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      padding: 14px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+      position:relative;
+      overflow:hidden;
+    }
+    .card .tag{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 6px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(0,0,0,0.12);
+      color: rgba(255,255,255,0.82);
+      font-size: 12px;
+      margin-bottom: 10px;
+      font-family: var(--mono);
+    }
+    .icon{
+      width: 18px; height: 18px; display:inline-block;
+      vertical-align: -3px;
+    }
+    .card h4{
+      margin: 0 0 8px;
+      font-size: 15px;
+      letter-spacing: -0.2px;
+    }
+    .card p{
+      margin: 0 0 8px;
+      color: var(--muted);
+      line-height:1.45;
+      font-size: 13.5px;
+    }
+    .card ul{ margin: 10px 0 0; padding-left: 18px; color: rgba(255,255,255,0.86); }
+    .card li{ margin: 6px 0; color: rgba(255,255,255,0.82); font-size: 13px; }
+    .card hr{ border:none; height:1px; background: var(--line); margin: 12px 0; }
+
+    .emph{
+      border: 1px solid rgba(124,255,178,0.25);
+      background: rgba(124,255,178,0.06);
+    }
+    .warn{
+      border: 1px solid rgba(255,202,122,0.28);
+      background: rgba(255,202,122,0.06);
+    }
+    .danger{
+      border: 1px solid rgba(255,122,144,0.28);
+      background: rgba(255,122,144,0.06);
+    }
+
+    .recommend{
+      display:flex; gap: 10px; align-items:flex-start;
+      padding: 12px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(110,231,255,0.30);
+      background: linear-gradient(180deg, rgba(110,231,255,0.10), rgba(255,255,255,0.04));
+      box-shadow: var(--shadow);
+    }
+    .recommend .num{
+      width: 34px; height: 34px; border-radius: 12px;
+      background: rgba(110,231,255,0.18);
+      border: 1px solid rgba(110,231,255,0.30);
+      display:flex; align-items:center; justify-content:center;
+      font-family: var(--mono);
+      color: rgba(255,255,255,0.88);
+      flex: 0 0 auto;
+    }
+    .recommend h4{ margin: 0 0 4px; font-size: 15px; }
+    .recommend p{ margin: 0; color: var(--muted); font-size: 13.5px; line-height:1.4; }
+    .recommend .mini{ margin-top: 8px; color: rgba(255,255,255,0.82); font-size: 13px; }
+    .recommend .mini b{ color: rgba(255,255,255,0.92); }
+
+    /* Move-right timeline */
+    .timeline{
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 4px);
+      background: rgba(255,255,255,0.04);
+      padding: 14px;
+      overflow:auto;
+    }
+    .steps{
+      display:grid;
+      grid-template-columns: repeat(5, minmax(220px, 1fr));
+      gap: 12px;
+      align-items:stretch;
+    }
+    .step{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.05);
+      padding: 12px;
+      position:relative;
+    }
+    .step:before{
+      content:""; position:absolute; top: 50%; left: -12px; width: 12px; height:2px; background: rgba(255,255,255,0.20);
+      display:none;
+    }
+    .steps .step:not(:first-child):before{ display:block; }
+    .step .label{
+      font-family: var(--mono);
+      font-size: 12px;
+      color: rgba(255,255,255,0.70);
+      margin-bottom: 6px;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .step h5{ margin: 0 0 6px; font-size: 14px; }
+    .step p{ margin: 0; color: var(--muted); font-size: 13px; line-height:1.4; }
+    .ribbon{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(0,0,0,0.14);
+      font-size: 12px;
+      color: rgba(255,255,255,0.82);
+      margin-top: 10px;
+      font-family: var(--mono);
+    }
+
+    /* Tables */
+    table{
+      width:100%;
+      border-collapse: collapse;
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      overflow:hidden;
+      background: rgba(255,255,255,0.04);
+    }
+    th, td{
+      padding: 10px 10px;
+      border-bottom:1px solid var(--line);
+      vertical-align: top;
+      font-size: 13px;
+    }
+    th{
+      text-align:left;
+      color: rgba(255,255,255,0.78);
+      font-family: var(--mono);
+      letter-spacing:0.2px;
+      background: rgba(0,0,0,0.18);
+    }
+    tr:last-child td{ border-bottom:none; }
+
+    details{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.04);
+      padding: 12px;
+    }
+    details + details{ margin-top: 10px; }
+    summary{
+      cursor:pointer;
+      font-weight: 600;
+      color: rgba(255,255,255,0.88);
+      outline:none;
+    }
+    details p{ color: var(--muted); font-size: 13.5px; line-height:1.5; }
+    details ul{ margin: 8px 0 0; }
+    details li{ color: rgba(255,255,255,0.82); font-size: 13px; margin: 6px 0; }
+
+    .footer{
+      margin-top: 26px;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      color: var(--faint);
+      font-size: 12px;
+      display:flex;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .grid.cols-3{ grid-template-columns: 1fr; }
+      .grid.cols-4{ grid-template-columns: 1fr; }
+      .grid.cols-2{ grid-template-columns: 1fr; }
+      .section-title{ align-items:flex-start; }
+      .section-title .sub{ text-align:left; }
+      .steps{ grid-template-columns: 1fr; }
+      .step:before{ display:none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Integral Dragon</h1>
+      </div>
+      <div class="badge">2026 Strategy Plan • “Move Right” • v1</div>
+    </div>
+
+    <header class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Frame: Rumelt Strategy Kernel (Diagnosis → Guiding Policy → Coherent Actions)</p>
+          <h2>2026 Strategy: stabilize revenue, fix delivery, productize training — then build software.</h2>
+          <p>
+            The 2026 plan is not “become a product company overnight.” It is a controlled shift from hourly services to
+            predictable delivery and repeatable offerings, with <b>AI SDLC Training as the first product</b>.
+            This creates runway resilience and compounding IP without breaking current consulting revenue.
+          </p>
+          <div class="pillrow">
+            <span class="pill"><span class="dot"></span>Recommendation-first</span>
+            <span class="pill"><span class="dot purple"></span>Training-as-product wedge</span>
+            <span class="pill"><span class="dot green"></span>Stability before scale</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Top recommendations</h3>
+          <ol>
+            <li><b>Fix the delivery operating model</b> (capacity, backlog, engagement shapes).</li>
+            <li><b>Launch AI SDLC Training as a product</b> (repeatable, outcomes-focused).</li>
+            <li><b>Move hourly → retainers</b> to reduce concentration risk + stabilize utilization.</li>
+          </ol>
+          <div class="callout">
+            <b>Non-negotiable principle:</b> productization fails if delivery is chaotic. Fix the factory first.
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Strategy Kernel -->
+    <section>
+      <div class="section-title">
+        <h3>Core strategy (Rumelt kernel)</h3>
+        <div class="sub">This is the “one page” strategy logic: what’s true, the rules we’ll follow, and what we’ll do.</div>
+      </div>
+
+      <div class="grid cols-3">
+        <div class="card danger">
+          <div class="tag">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 9v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 17h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M10.3 4.4 2.6 18a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 4.4a2 2 0 0 0-3.4 0Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            DIAGNOSIS
+          </div>
+          <h4>What’s true right now</h4>
+          <p>The current constraints are not abstract. They are operational, and they block productization.</p>
+          <ul>
+            <li><b>Revenue concentration risk:</b> losing one contract is existential.</li>
+            <li><b>Delivery doesn’t scale:</b> reactive utilization and high context switching.</li>
+            <li><b>No protected capacity:</b> product/training loses to billable work every time.</li>
+            <li><b>Demand signal exists:</b> AI SDLC training is sellable now.</li>
+          </ul>
+        </div>
+
+        <div class="card warn">
+          <div class="tag">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 1 3 5v6c0 5 4 10 9 12 5-2 9-7 9-12V5l-9-4Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            GUIDING POLICY
+          </div>
+          <h4>Decision rules we enforce</h4>
+          <p>These are the rules that force the “move right” without pretending we’re already a product company.</p>
+          <ul>
+            <li><b>Stability before scale:</b> optimize for 3–6 month survivability.</li>
+            <li><b>Delivery system first:</b> fix flow before adding ambition.</li>
+            <li><b>Training is first product:</b> not software (yet).</li>
+            <li><b>Explicit capacity allocation:</b> protected time, not leftovers.</li>
+            <li><b>Every engagement compounds:</b> reusable assets every sprint.</li>
+          </ul>
+        </div>
+
+        <div class="card emph">
+          <div class="tag">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            COHERENT ACTIONS
+          </div>
+          <h4>What we will do (concrete)</h4>
+          <p>Actions that directly solve the diagnosis while building leverage.</p>
+          <ul>
+            <li><b>Move hourly → capacity-based retainers</b> for predictability.</li>
+            <li><b>Standardize engagement shapes</b> (Diagnostic → Pilot → Scale/Enable).</li>
+            <li><b>Package AI SDLC training</b> with tiers + outcomes.</li>
+            <li><b>Implement a minimal delivery operating model</b> (capacity, backlog, cadence).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Move Right -->
+    <section>
+      <div class="section-title">
+        <h3>Move right path (sequence that matches reality)</h3>
+        <div class="sub">Key point: do not jump to “software-first.” Build leverage in the right order.</div>
+      </div>
+
+      <div class="timeline">
+        <div class="steps">
+          <div class="step">
+            <div class="label"><span>Stage 1</span><span class="ribbon">Now</span></div>
+            <h5>Hourly Consulting</h5>
+            <p>High flexibility, low predictability. Growth capped by senior bandwidth and context switching.</p>
+          </div>
+          <div class="step">
+            <div class="label"><span>Stage 2</span><span class="ribbon">Next</span></div>
+            <h5>Capacity-Based Retainers</h5>
+            <p>Monthly capacity packages stabilize utilization and improve planning. Less chaos, better margins.</p>
+          </div>
+          <div class="step">
+            <div class="label"><span>Stage 3</span><span class="ribbon">Standardize</span></div>
+            <h5>Standard Engagement Shapes</h5>
+            <p>Repeatable plays: Diagnostic → Pilot → Scale/Enable. Reduces bespoke delivery and risk.</p>
+          </div>
+          <div class="step">
+            <div class="label"><span>Stage 4</span><span class="ribbon">Wedge</span></div>
+            <h5>AI SDLC Training Product</h5>
+            <p>Low marginal cost, reusable IP, authority building. Feeds pipeline and reinforces delivery patterns.</p>
+          </div>
+          <div class="step">
+            <div class="label"><span>Stage 5</span><span class="ribbon">Later</span></div>
+            <h5>Platform / Tooling</h5>
+            <p>Build software after the delivery + training flywheel proves repeatability and economics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section>
+      <div class="section-title">
+        <h3>Recommendations (what to do first)</h3>
+        <div class="sub">These are ordered. If you do #2 or #3 without #1, execution degrades.</div>
+      </div>
+
+      <div class="grid cols-3">
+        <div class="recommend">
+          <div class="num">1</div>
+          <div>
+            <h4>Fix the delivery operating model</h4>
+            <p>Delivery and utilization are the current bottleneck. Product work will not stick without predictable flow.</p>
+            <div class="mini"><b>Do:</b> one backlog, explicit capacity, standard engagement shapes, weekly cadence.</div>
+          </div>
+        </div>
+        <div class="recommend">
+          <div class="num">2</div>
+          <div>
+            <h4>Launch AI SDLC training as a product</h4>
+            <p>Training is the fastest path to leverage: reusable IP, easier sales motion, and it feeds consulting.</p>
+            <div class="mini"><b>Do:</b> package outcomes, define tiers, ship curriculum v1, pilot with one client.</div>
+          </div>
+        </div>
+        <div class="recommend">
+          <div class="num">3</div>
+          <div>
+            <h4>Move hourly → retainers for stability</h4>
+            <p>Stability goal is survivability (3–6 months), not maximal growth. Retainers reduce churn and volatility.</p>
+            <div class="mini"><b>Do:</b> capacity packages, 3+ month terms, explicit scopes, renewal cadence.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Operating Model -->
+    <section>
+      <div class="section-title">
+        <h3>Minimum viable delivery operating model</h3>
+        <div class="sub">This is the smallest set of process changes that unlock predictable utilization and protected product time.</div>
+      </div>
+
+      <div class="grid cols-2">
+        <div class="card">
+          <div class="tag"><span>NON-NEGOTIABLES</span></div>
+          <h4>What changes</h4>
+          <ul>
+            <li><b>Explicit work types:</b> Client Delivery • Product/Training • Sales/Ops.</li>
+            <li><b>Intentional capacity split:</b> example 70% Delivery • 20% Product/Training • 10% Ops/Sales.</li>
+            <li><b>Standard engagement shapes:</b> Diagnostic → Pilot → Scale/Enable.</li>
+            <li><b>Single prioritized backlog:</b> one queue, explicit trade-offs, no hidden work.</li>
+            <li><b>Cadence:</b> weekly plan/review, biweekly artifact release, monthly exec outcomes.</li>
+          </ul>
+          <hr />
+          <p><b>Rule:</b> if something violates the capacity split or bypasses the backlog, it doesn’t happen (or it’s a deliberate exception approved by leadership).</p>
+        </div>
+
+        <div class="card emph">
+          <div class="tag"><span>OUTCOMES</span></div>
+          <h4>What it enables</h4>
+          <ul>
+            <li><b>Schedulable delivery:</b> fewer surprises and missed deadlines.</li>
+            <li><b>Protected product time:</b> training and IP actually ship.</li>
+            <li><b>Lower context switching:</b> better quality and faster cycle time.</li>
+            <li><b>Predictable revenue:</b> easier to grow without operational burnout.</li>
+          </ul>
+          <hr />
+          <p><b>Reality check:</b> this is not bureaucracy. This is the minimum structure required to scale beyond heroics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training as Product -->
+    <section>
+      <div class="section-title">
+        <h3>AI SDLC training as the first product</h3>
+        <div class="sub">Position training as outcomes + repeatable delivery, with optional coaching. This is your wedge.</div>
+      </div>
+
+      <div class="grid cols-3">
+        <div class="card">
+          <div class="tag">TIER 1 • CORE COURSE</div>
+          <h4>Baseline capability</h4>
+          <p>Standard curriculum with repeatable labs and clear outcomes. Designed to be delivered frequently.</p>
+          <ul>
+            <li><b>Audience:</b> dev teams, tech leads, architects</li>
+            <li><b>Outcomes:</b> baseline workflows, guardrails, patterns</li>
+            <li><b>Includes:</b> curriculum, labs, templates, scorecards</li>
+          </ul>
+        </div>
+
+        <div class="card warn">
+          <div class="tag">TIER 2 • ENTERPRISE VARIANT</div>
+          <h4>Contextualized for the org</h4>
+          <p>Same core, customized to tooling, governance, and real internal reference problems.</p>
+          <ul>
+            <li><b>Audience:</b> platform teams, security, leadership</li>
+            <li><b>Outcomes:</b> org-specific patterns + governance alignment</li>
+            <li><b>Includes:</b> tailored labs, policy mapping, adoption plan</li>
+          </ul>
+        </div>
+
+        <div class="card emph">
+          <div class="tag">TIER 3 • ENABLEMENT + COACHING</div>
+          <h4>Adoption and sustained change</h4>
+          <p>Coaching turns training into behavior change: office hours, reviews, and reinforcement.</p>
+          <ul>
+            <li><b>Audience:</b> teams shipping production work</li>
+            <li><b>Outcomes:</b> durable adoption, improved throughput</li>
+            <li><b>Includes:</b> office hours, workflow reviews, Q&A</li>
+          </ul>
+        </div>
+      </div>
+
+      <details style="margin-top:12px;">
+        <summary>What “productize training” means (not fluff)</summary>
+        <p>
+          Productizing training means it behaves like a product operationally: defined scope, repeatable delivery,
+          measurable outcomes, consistent materials, and predictable pricing tiers.
+        </p>
+        <ul>
+          <li><b>Sell outcomes:</b> time saved, fewer defects, faster delivery cycles, safer AI usage.</li>
+          <li><b>Ship curriculum versions:</b> v1 → v1.1 → v2, with changelogs and reusable labs.</li>
+          <li><b>Build a delivery kit:</b> slide decks, lab repos, rubrics, checklists, facilitator notes.</li>
+          <li><b>Make it easy to buy:</b> clear packages and add-ons, not custom proposals every time.</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- Revenue Stability -->
+    <section>
+      <div class="section-title">
+        <h3>Revenue stability goal: 3–6 months survivability</h3>
+        <div class="sub">The 2026 priority is resilience: don’t be one contract away from a crisis.</div>
+      </div>
+
+      <div class="grid cols-2">
+        <div class="card danger">
+          <div class="tag">CURRENT RISK</div>
+          <h4>Concentration risk</h4>
+          <p>If one major contract drops, the organization is destabilized immediately.</p>
+          <ul>
+            <li>Hiring and product work get paused</li>
+            <li>Utilization swings wildly</li>
+            <li>Delivery and quality degrade under stress</li>
+          </ul>
+        </div>
+
+        <div class="card emph">
+          <div class="tag">TARGET STATE</div>
+          <h4>Portfolio resiliency</h4>
+          <p>Maintain a portfolio that can survive the loss of any single client relationship.</p>
+          <ul>
+            <li><b>2–4 core contracts</b> with 3+ month terms</li>
+            <li><b>Mix revenue streams:</b> consulting retainers + training deliveries + advisory</li>
+            <li><b>Renewal cadence:</b> quarterly renewals with outcome reviews</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;">
+        <table>
+          <thead>
+            <tr>
+              <th>Mechanism</th>
+              <th>What changes vs hourly</th>
+              <th>Why it helps</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Capacity-based retainer</b></td>
+              <td>Sell a monthly allocation of senior capacity with agreed focus areas.</td>
+              <td>Predictable utilization, easier planning, fewer sales spikes.</td>
+            </tr>
+            <tr>
+              <td><b>Standard engagement shapes</b></td>
+              <td>Repeatable delivery paths with known deliverables and timelines.</td>
+              <td>Lower delivery risk; easier staffing and estimation.</td>
+            </tr>
+            <tr>
+              <td><b>Training product</b></td>
+              <td>Fixed curriculum + tiers + outcomes, delivered repeatedly.</td>
+              <td>Reusable IP compounds; diversifies revenue; builds authority.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 90-day plan -->
+    <section>
+      <div class="section-title">
+        <h3>Next-quarter plan (90-day execution)</h3>
+        <div class="sub">This is the practical plan that makes the strategy real without derailing current contracts.</div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Timebox</th>
+            <th>Primary objective</th>
+            <th>Deliverables</th>
+            <th>Success signals</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Weeks 1–2</b></td>
+            <td>Stand up delivery operating model v1</td>
+            <td>
+              Capacity split documented • Single backlog • Engagement shapes defined • Weekly cadence starts
+            </td>
+            <td>
+              Fewer “surprise” tasks • Clear WIP limits • Team can state top priorities in 30 seconds
+            </td>
+          </tr>
+          <tr>
+            <td><b>Weeks 3–6</b></td>
+            <td>Ship training product v1 (sellable)</td>
+            <td>
+              Curriculum outline • Labs v1 • Facilitator kit • Tier packaging doc • Pilot plan
+            </td>
+            <td>
+              Pilot scheduled • Materials reusable without rework • Clear outcomes & buyer language
+            </td>
+          </tr>
+          <tr>
+            <td><b>Weeks 7–10</b></td>
+            <td>Retainer packaging + renewals motion</td>
+            <td>
+              Retainer offers (2–3 packages) • SOW templates • Renewal QBR deck • Pricing guidance
+            </td>
+            <td>
+              At least one retainer conversion or renewal on new terms • Forecast becomes steadier
+            </td>
+          </tr>
+          <tr>
+            <td><b>Weeks 11–12</b></td>
+            <td>Flywheel: delivery → assets → training</td>
+            <td>
+              Asset repository • Pattern library • Curriculum v1.1 improvements based on pilot feedback
+            </td>
+            <td>
+              Measurable asset reuse • Reduced delivery effort on similar work • Better training outcomes
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- KPIs -->
+    <section>
+      <div class="section-title">
+        <h3>KPIs and leading indicators</h3>
+        <div class="sub">Measure what matters: delivery predictability + runway resilience + compounding assets.</div>
+      </div>
+
+      <div class="grid cols-4">
+        <div class="card">
+          <div class="tag">DELIVERY</div>
+          <h4>Flow metrics</h4>
+          <ul>
+            <li>Cycle time (lead → done)</li>
+            <li>WIP per person</li>
+            <li>Blocked time per week</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="tag">UTILIZATION</div>
+          <h4>Capacity health</h4>
+          <ul>
+            <li>% allocated vs actual</li>
+            <li>Context switches/week</li>
+            <li>On-call / interrupts load</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="tag">PRODUCTIZATION</div>
+          <h4>Compounding IP</h4>
+          <ul>
+            <li># reusable assets shipped</li>
+            <li>% engagements using a “play”</li>
+            <li>Training content version velocity</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="tag">REVENUE</div>
+          <h4>Resilience</h4>
+          <ul>
+            <li>Contracts ≥ 3 months</li>
+            <li>Revenue concentration index</li>
+            <li>Runway months at current burn</li>
+          </ul>
+        </div>
+      </div>
+
+      <details style="margin-top:12px;">
+        <summary>Risk register (high-probability failure modes)</summary>
+        <ul>
+          <li><b>Product time gets eaten:</b> protect capacity with hard allocation and WIP limits.</li>
+          <li><b>Bespoke work creeps back:</b> enforce engagement shapes + exceptions policy.</li>
+          <li><b>Training becomes theory:</b> require real delivery artifacts to feed curriculum every sprint.</li>
+          <li><b>Retainers under-specified:</b> package capacity with clear focus areas and renewal outcomes.</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- What we need to decide -->
+    <section>
+      <div class="section-title">
+        <h3>Next decisions to finalize</h3>
+        <div class="sub">If you want the plan to execute, these need owners and dates.</div>
+      </div>
+
+      <div class="grid cols-2">
+        <div class="card">
+          <div class="tag">DECISIONS</div>
+          <h4>What we must choose</h4>
+          <ul>
+            <li><b>Initial capacity split</b> (starting point for 90 days).</li>
+            <li><b>Training audience</b> (devs only vs dev+platform+security).</li>
+            <li><b>First 2–3 retainer packages</b> (how we describe and sell capacity).</li>
+            <li><b>Artifact system</b> (where reusable IP lives, how it’s versioned).</li>
+          </ul>
+        </div>
+
+        <div class="card emph">
+          <div class="tag">OUTPUTS</div>
+          <h4>What success looks like by end of next quarter</h4>
+          <ul>
+            <li>Delivery flow is predictable: fewer surprises, clear WIP limits.</li>
+            <li>AI SDLC training v1 is delivered/piloted and sellable.</li>
+            <li>At least one contract moved onto retainer terms (or renewed that way).</li>
+            <li>Reusable asset library exists and is being used (not shelfware).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>Internal document — intended for coworkers / planning.</div>
+      <div style="font-family:var(--mono);">Principle: “Move right by compounding assets every sprint.”</div>
+    </div>
+  </div>
+</body>
+</html>
