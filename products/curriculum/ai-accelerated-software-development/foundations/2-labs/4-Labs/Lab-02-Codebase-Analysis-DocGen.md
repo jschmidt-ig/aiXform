@@ -1,14 +1,13 @@
-ChatGPT Folder > AI SDLC Course Productization > Lab-02-Brownfield-Inspection-DocGen.md
-# Lab 02 — Brownfield Inspection + Documentation Generation
+# Lab 02 — Codebase Analysis + Documentation Generation
 
 ## Why this lab exists
-Enterprise teams live in brownfield. This lab teaches:
+Enterprise teams work with production codebases. This lab teaches:
 - how to inspect a larger repo safely (read-only when needed)
 - how to generate usable documentation (not fluff)
 - how to create a risk-ranked backlog of safe improvements
 
 ## Scenario
-You are dropped into a “typical enterprise service” repo (sanitized sample or internal approved repo).
+You are dropped into a "typical enterprise service" repo (sanitized sample or internal approved repo).
 Your job is to produce **clarity**:
 - architecture overview
 - key boundaries and dependencies
@@ -31,7 +30,7 @@ Your job is to produce **clarity**:
 2) **ADR v1** (one major decision with trade-offs)
 3) **Dependency & boundary map notes**
 4) **Risk-ranked backlog** (top 10 safe PR candidates)
-5) **“Safe PR” pick**: choose 1 and outline plan + acceptance criteria
+5) **"Safe PR" pick**: choose 1 and outline plan + acceptance criteria
 
 ## Timebox
 - 4 hours total
@@ -43,7 +42,7 @@ Your job is to produce **clarity**:
 
 ### Step 2 — Dependency & boundary mapping (45–60 min)
 - Map dependencies between modules.
-- Identify data boundaries and “sensitive zones”.
+- Identify data boundaries and "sensitive zones".
 - Identify hot spots: high churn + low tests + complex code.
 
 ### Step 3 — Generate the docs pack (60–90 min)
@@ -65,7 +64,7 @@ Examples:
 ### Step 5 — Pick one safe PR and plan it (20–30 min)
 - define acceptance criteria
 - define rollback strategy
-- define “how tested”
+- define "how tested"
 
 ## Assessment
 - Docs rubric: `6-Templates/Rubric-Docs.md`

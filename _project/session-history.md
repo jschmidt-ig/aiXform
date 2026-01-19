@@ -122,13 +122,41 @@ Detailed breakdown of work done in each session.
 ---
 
 ## 2026-01-19-2_product-restructure
-**Focus:** Restructure products with proper course naming
+**Focus:** Restructure products, update course naming, fix terminology
 
 **Outputs:**
+
+*Course Structure:*
 - Renamed course from "AI SDLC" to "AI Accelerated Software Development"
-- Created three-phase delivery structure:
-  - 1-fundamentals (Weeks 1-2)
-  - 2-labs (Weeks 3-6)
-  - 3-applied (Weeks 7-10)
-- Created products/CHANGELOG.md
-- Updated CLAUDE.md and PROJECT-STATUS.md with new structure
+- Created three-phase delivery structure: 1-fundamentals, 2-labs, 3-applied
+- Created products/CHANGELOG.md for tracking changes
+- Created marketing folder structure for course
+
+*Labs Updates:*
+- Labs now 4 weeks (Weeks 3-6), not 8 weeks
+- Time commitment: 8-10 hours/week (was 6)
+- Renamed 10-Week-Syllabus.md → Labs-4-Week-Syllabus.md
+
+*Terminology Changes:*
+- Eliminated greenfield/brownfield track distinction
+- Replaced "brownfield" with "production codebase" throughout
+- Lab 02: "Brownfield Inspection" → "Codebase Analysis"
+- Renamed Lab-02-Brownfield-Inspection-DocGen.md → Lab-02-Codebase-Analysis-DocGen.md
+- Renamed Brownfield-Worksheet.md → Codebase-Analysis-Worksheet.md
+
+*Files Updated:*
+- AI-SDLC-Labs-Brochure.html
+- Labs-4-Week-Syllabus.md
+- Student-Schedule-Practitioner.md
+- Labs-Landing-Page.html
+- Lecture-Series.md
+- 1-Getting-Started/README.md
+- CLAUDE.md
+- PROJECT-STATUS.md
+
+**Key Decisions:**
+- Course name: "AI Accelerated Software Development"
+- Level name: "Foundations" (10-week program)
+- No track distinction - all learners work with production codebases
+- Labs: 4 weeks, 8-10 hrs/week
+- Applied: 4 weeks (separate phase with coaching)

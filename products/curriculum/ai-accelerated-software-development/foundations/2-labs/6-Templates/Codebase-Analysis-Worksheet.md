@@ -1,5 +1,4 @@
-ChatGPT Folder > AI SDLC Course Productization > Brownfield-Worksheet.md
-# Brownfield Codebase Analysis Worksheet (Read-only friendly)
+# Production Codebase Analysis Worksheet (Read-only friendly)
 
 ## Repo context
 - Repo name:

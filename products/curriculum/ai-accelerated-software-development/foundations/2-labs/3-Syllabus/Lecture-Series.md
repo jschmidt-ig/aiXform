@@ -40,8 +40,8 @@ Design intent:
 12. **Diagramming basics: C4-style diagrams without perfectionism**  
     Output: diagram outline + labels (no fancy tooling required)  
 
-### Week 5 — Brownfield inspection and risk
-13. **Brownfield mapping: dependencies, boundaries, “blast radius”**  
+### Week 5 — Production codebase analysis and risk
+13. **Codebase mapping: dependencies, boundaries, "blast radius"**
     Output: dependency map notes + boundary list  
 14. **Risk-ranked backlog: picking “safe PR” candidates**  
     Output: ranked backlog (top 10)  

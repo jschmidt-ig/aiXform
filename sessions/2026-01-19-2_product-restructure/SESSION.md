@@ -1,56 +1,85 @@
-# Session: Product Restructure
+# Session: Product Restructure & Terminology
 
 **Date:** January 19, 2026
-**Focus:** Restructure products with proper course naming and delivery breakdown
+**Focus:** Restructure products, update course naming, fix terminology
 
-## Goal
+## Goals
 
-Update product organization to reflect the actual course structure:
-- **Course Name:** AI Accelerated Software Development (not "AI SDLC")
-- **Level:** Foundations
-- **Three Distinct Deliveries:**
-  1. Fundamentals (online course work) - 2 weeks
-  2. Labs (hands-on exercises) - 4 weeks
-  3. Applied Coaching (guided work on their actual projects) - 4 weeks
+1. Restructure products with proper course naming
+2. Separate Labs (4 weeks) from Applied (4 weeks)
+3. Update time commitment to 8-10 hours/week
+4. Eliminate greenfield/brownfield distinction
+5. Replace "brownfield" with "production codebase"
 
-## Context
+## Changes Made
 
-Previously, "Labs" and "Applied" were merged together as an 8-week block. In reality:
-- Weeks 1-2: Fundamentals
-- Weeks 3-6: Labs
-- Weeks 7-10: Applied Coaching
+### Course Structure
+- Renamed course from "AI SDLC" to **"AI Accelerated Software Development"**
+- Created three-phase delivery structure under `foundations/`:
+  - `1-fundamentals/` (Weeks 1-2) - Online course work, 20 micro-sessions
+  - `2-labs/` (Weeks 3-6) - Hands-on lab exercises
+  - `3-applied/` (Weeks 7-10) - Guided coaching on real projects
 
-## Changes to Make
+### Labs Updates
+- Labs are now 4 weeks (Weeks 3-6), not 8 weeks
+- Time commitment updated to 8-10 hours/week (was 6 hours/week)
+- 4 core labs (removed optional Lab 05 from main sequence)
+- Renamed `10-Week-Syllabus.md` → `Labs-4-Week-Syllabus.md`
 
-1. Rename/restructure `products/curriculum/`:
-   - From: `labs-bundle/`, `fundamentals-bundle/`
-   - To: Organized under "AI Accelerated Software Development / Foundations"
+### Terminology Changes
+- Eliminated greenfield/brownfield track distinction - everyone follows same path
+- Replaced "brownfield" with "production codebase" throughout
+- Lab 02: "Brownfield Inspection & Documentation" → "Codebase Analysis & Documentation"
 
-2. Create `products/CHANGELOG.md` to track product changes
+### Files Renamed
+- `Lab-02-Brownfield-Inspection-DocGen.md` → `Lab-02-Codebase-Analysis-DocGen.md`
+- `Brownfield-Worksheet.md` → `Codebase-Analysis-Worksheet.md`
 
-3. Update documentation to reflect new naming
+### Files Updated
+- `AI-SDLC-Labs-Brochure.html` - 4 weeks, 8-10 hrs, removed tracks section
+- `Labs-4-Week-Syllabus.md` - New 4-week structure
+- `Student-Schedule-Practitioner.md` - 8-10 hrs/week breakdown
+- `Labs-Landing-Page.html` - Updated terminology
+- `Lecture-Series.md` - Updated Week 5 title
+- `1-Getting-Started/README.md` - Updated file references
+- `CLAUDE.md` - Updated course structure
+- `PROJECT-STATUS.md` - Updated paths and structure
 
-## Outcomes
+### New Files
+- `products/CHANGELOG.md` - Track product changes
+- `products/curriculum/ai-accelerated-software-development/foundations/3-applied/README.md`
+- `products/marketing/ai-accelerated-software-development/foundations/` - Course marketing folder
 
-- Renamed course from "AI SDLC" to "AI Accelerated Software Development"
-- Created `products/curriculum/ai-accelerated-software-development/foundations/` structure
-- Separated Labs and Applied into distinct 4-week phases
-- Created `products/CHANGELOG.md` to track product changes
-- Updated `CLAUDE.md` with new course structure and paths
-- Updated `PROJECT-STATUS.md` with new structure
-
-## New Directory Structure
+## Directory Structure Created
 
 ```
-products/curriculum/
-└── ai-accelerated-software-development/
-    └── foundations/
-        ├── 1-fundamentals/   (Weeks 1-2)
-        ├── 2-labs/           (Weeks 3-6)
-        └── 3-applied/        (Weeks 7-10)
+products/
+├── CHANGELOG.md
+├── curriculum/
+│   └── ai-accelerated-software-development/
+│       └── foundations/
+│           ├── 1-fundamentals/   (Weeks 1-2)
+│           ├── 2-labs/           (Weeks 3-6)
+│           └── 3-applied/        (Weeks 7-10)
+├── client-materials/ensemble/
+└── marketing/
+    ├── brochures/
+    ├── infographics/
+    └── ai-accelerated-software-development/foundations/
 ```
 
-## Extracted To
+## Decisions Made
 
-- `products/CHANGELOG.md` - Product change tracking
-- `products/curriculum/ai-accelerated-software-development/` - New structure
+- Course name: "AI Accelerated Software Development"
+- Level name: "Foundations" (10-week program)
+- No track distinction - all learners work with production codebases
+- "Brownfield" → "Production Codebase" terminology
+- Labs: 4 weeks, 8-10 hrs/week
+- Applied: 4 weeks (separate phase with coaching)
+
+## What's Next
+
+1. **Content for 3-applied/**: Build out Applied Coaching phase materials (Weeks 7-10)
+2. **Gap Analysis**: Map specs to actual content needed for delivery
+3. **Week 1 Critical Path**: Identify minimum content for launch
+4. **Environment Setup**: Sandbox repos, lab infrastructure

@@ -24,10 +24,10 @@ Everything is designed for:
 - `3-Syllabus/`
   - `10-Week-Syllabus.md` (lecture/lab/applied blocks)
   - `Lecture-Series-23min-Episodes.md` (episode-by-episode)
-  - `Student-Schedule-Practitioner.md` (6h/week cadence)
+  - `Student-Schedule-Practitioner.md` (8-10h/week cadence)
 - `4-Labs/`
   - `Lab-01-API-Foundations.md`
-  - `Lab-02-Brownfield-Inspection-DocGen.md`
+  - `Lab-02-Codebase-Analysis-DocGen.md`
   - `Lab-03-Testing-Coverage-Acceleration.md`
   - `Lab-04-Observability-Security-Compliance.md`
   - `Lab-05-Optional-UI-E2E-Automation.md`
@@ -36,7 +36,7 @@ Everything is designed for:
   - `Gemini_Prompt-Design-Optional-UI-E2E-Lab.md`
 - `6-Templates/`
   - `Rubric-PR.md`, `Rubric-Tests.md`, `Rubric-Docs.md`, `Rubric-Prompts.md`
-  - `Brownfield-Worksheet.md`
+  - `Codebase-Analysis-Worksheet.md`
   - `Lesson-Plan-Template.md`
   - `Lab-Template.md`
   - `Prompt-Pattern-Library-Template.md`
