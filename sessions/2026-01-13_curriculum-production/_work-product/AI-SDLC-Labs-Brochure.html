@@ -1,0 +1,1207 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI SDLC Labs & Applied | aiXform</title>
+        <style>
+            :root {
+                --primary: #1e3a5f;
+                --secondary: #2d6a4f;
+                --accent: #40916c;
+                --light: #d8f3dc;
+                --dark: #1a202c;
+                --gray: #718096;
+                --white: #ffffff;
+                --warning: #d97706;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Oxygen, Ubuntu, sans-serif;
+                line-height: 1.6;
+                color: var(--dark);
+                background: var(--white);
+            }
+
+            /* Hero Section */
+            .hero {
+                background: linear-gradient(
+                    135deg,
+                    var(--primary) 0%,
+                    var(--secondary) 100%
+                );
+                color: var(--white);
+                padding: 80px 20px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+
+            .hero .subtitle {
+                font-size: 1.5rem;
+                opacity: 0.9;
+                margin-bottom: 32px;
+            }
+
+            .hero-stats {
+                display: flex;
+                justify-content: center;
+                gap: 48px;
+                flex-wrap: wrap;
+                margin-top: 40px;
+            }
+
+            .stat {
+                text-align: center;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+                opacity: 0.8;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            /* Container */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            /* Section */
+            section {
+                padding: 60px 0;
+            }
+
+            section h2 {
+                font-size: 2rem;
+                color: var(--primary);
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            section .section-desc {
+                text-align: center;
+                color: var(--gray);
+                max-width: 700px;
+                margin: 0 auto 40px;
+                font-size: 1.1rem;
+            }
+
+            /* Overview */
+            .overview {
+                background: var(--light);
+            }
+
+            .overview-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 24px;
+            }
+
+            .overview-card {
+                background: var(--white);
+                padding: 24px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            }
+
+            .overview-card h3 {
+                color: var(--secondary);
+                margin-bottom: 8px;
+                font-size: 1.1rem;
+            }
+
+            .overview-card p {
+                color: var(--gray);
+                font-size: 0.95rem;
+            }
+
+            /* Prerequisites */
+            .prereq-box {
+                background: #fef3c7;
+                border: 1px solid #f59e0b;
+                padding: 24px;
+                border-radius: 8px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .prereq-box h3 {
+                color: var(--warning);
+                margin-bottom: 12px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .prereq-box p {
+                color: var(--dark);
+                font-size: 0.95rem;
+            }
+
+            /* Week Structure */
+            .week-structure {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .week-block {
+                background: var(--white);
+                border: 2px solid #e2e8f0;
+                border-radius: 12px;
+                padding: 24px;
+                text-align: center;
+            }
+
+            .week-block.lecture {
+                border-color: var(--primary);
+            }
+
+            .week-block.lab {
+                border-color: var(--secondary);
+            }
+
+            .week-block.applied {
+                border-color: var(--accent);
+            }
+
+            .week-block h4 {
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+
+            .week-block .time {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--secondary);
+            }
+
+            .week-block .time-label {
+                font-size: 0.85rem;
+                color: var(--gray);
+            }
+
+            .week-block p {
+                font-size: 0.85rem;
+                color: var(--gray);
+                margin-top: 12px;
+            }
+
+            /* Lab Cards */
+            .lab-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .lab-card {
+                background: var(--white);
+                border: 1px solid #e2e8f0;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: box-shadow 0.2s;
+            }
+
+            .lab-card:hover {
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            }
+
+            .lab-card.optional {
+                border-style: dashed;
+                opacity: 0.9;
+            }
+
+            .lab-header {
+                background: linear-gradient(135deg, var(--primary), var(--secondary));
+                color: var(--white);
+                padding: 24px 28px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .lab-header h3 {
+                font-size: 1.4rem;
+            }
+
+            .lab-header .lab-number {
+                background: rgba(255,255,255,0.2);
+                padding: 6px 14px;
+                border-radius: 20px;
+                font-size: 0.85rem;
+                font-weight: 600;
+            }
+
+            .lab-body {
+                padding: 28px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+            }
+
+            .lab-body.single-col {
+                grid-template-columns: 1fr;
+            }
+
+            .lab-description {
+                grid-column: 1 / -1;
+            }
+
+            .lab-description p {
+                color: var(--gray);
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .lab-section h4 {
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: var(--secondary);
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 12px;
+            }
+
+            .lab-section ul {
+                list-style: none;
+            }
+
+            .lab-section li {
+                font-size: 0.9rem;
+                color: var(--dark);
+                padding: 6px 0 6px 20px;
+                position: relative;
+            }
+
+            .lab-section li::before {
+                content: ">";
+                position: absolute;
+                left: 0;
+                color: var(--accent);
+                font-weight: bold;
+            }
+
+            .lab-meta {
+                grid-column: 1 / -1;
+                display: flex;
+                gap: 24px;
+                padding-top: 20px;
+                border-top: 1px solid #e2e8f0;
+                flex-wrap: wrap;
+            }
+
+            .lab-meta-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 0.9rem;
+                color: var(--gray);
+            }
+
+            .lab-meta-item strong {
+                color: var(--dark);
+            }
+
+            /* Week by Week */
+            .timeline {
+                position: relative;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .timeline::before {
+                content: '';
+                position: absolute;
+                left: 24px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: #e2e8f0;
+            }
+
+            .timeline-item {
+                display: flex;
+                gap: 24px;
+                margin-bottom: 24px;
+                position: relative;
+            }
+
+            .timeline-week {
+                width: 48px;
+                height: 48px;
+                background: var(--secondary);
+                color: var(--white);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 0.9rem;
+                flex-shrink: 0;
+                z-index: 1;
+            }
+
+            .timeline-content {
+                flex: 1;
+                background: var(--white);
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                padding: 20px;
+            }
+
+            .timeline-content h4 {
+                color: var(--primary);
+                margin-bottom: 8px;
+            }
+
+            .timeline-content p {
+                color: var(--gray);
+                font-size: 0.9rem;
+                margin-bottom: 12px;
+            }
+
+            .timeline-tags {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            .tag {
+                font-size: 0.75rem;
+                padding: 4px 10px;
+                border-radius: 12px;
+                background: var(--light);
+                color: var(--secondary);
+            }
+
+            /* Deliverables */
+            .deliverables-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+            }
+
+            .deliverable-card {
+                background: var(--white);
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                padding: 24px;
+            }
+
+            .deliverable-card h4 {
+                color: var(--primary);
+                margin-bottom: 12px;
+                font-size: 1.1rem;
+            }
+
+            .deliverable-card ul {
+                list-style: none;
+            }
+
+            .deliverable-card li {
+                font-size: 0.9rem;
+                color: var(--dark);
+                padding: 6px 0;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .deliverable-card li:last-child {
+                border-bottom: none;
+            }
+
+            /* Assessment Section */
+            .assessment {
+                background: var(--primary);
+                color: var(--white);
+            }
+
+            .assessment h2 {
+                color: var(--white);
+            }
+
+            .assessment .section-desc {
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            .assessment-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 24px;
+            }
+
+            .assessment-card {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 24px;
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .assessment-card h3 {
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+            }
+
+            .assessment-card ul {
+                list-style: none;
+            }
+
+            .assessment-card li {
+                padding: 8px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                font-size: 0.95rem;
+            }
+
+            .assessment-card li:last-child {
+                border-bottom: none;
+            }
+
+            /* Tracks */
+            .tracks-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .track-card {
+                background: var(--white);
+                border: 2px solid #e2e8f0;
+                border-radius: 12px;
+                padding: 28px;
+            }
+
+            .track-card.recommended {
+                border-color: var(--secondary);
+                position: relative;
+            }
+
+            .track-card.recommended::before {
+                content: 'Recommended';
+                position: absolute;
+                top: -12px;
+                left: 20px;
+                background: var(--secondary);
+                color: white;
+                font-size: 0.75rem;
+                padding: 4px 12px;
+                border-radius: 12px;
+            }
+
+            .track-card h3 {
+                color: var(--primary);
+                margin-bottom: 12px;
+            }
+
+            .track-card p {
+                color: var(--gray);
+                font-size: 0.9rem;
+                margin-bottom: 16px;
+            }
+
+            .track-card ul {
+                list-style: none;
+            }
+
+            .track-card li {
+                font-size: 0.85rem;
+                color: var(--dark);
+                padding: 4px 0 4px 16px;
+                position: relative;
+            }
+
+            .track-card li::before {
+                content: ">";
+                position: absolute;
+                left: 0;
+                color: var(--accent);
+            }
+
+            /* Footer */
+            footer {
+                background: var(--dark);
+                color: var(--white);
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            footer p {
+                opacity: 0.7;
+                font-size: 0.9rem;
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+                .hero h1 {
+                    font-size: 2rem;
+                }
+
+                .hero .subtitle {
+                    font-size: 1.2rem;
+                }
+
+                .hero-stats {
+                    gap: 24px;
+                }
+
+                section {
+                    padding: 40px 0;
+                }
+
+                .week-structure {
+                    grid-template-columns: 1fr;
+                }
+
+                .lab-body {
+                    grid-template-columns: 1fr;
+                }
+
+                .tracks-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .timeline::before {
+                    display: none;
+                }
+
+                .timeline-week {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 0.8rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Hero -->
+        <header class="hero">
+            <div class="container">
+                <h1>AI SDLC Labs & Applied</h1>
+                <p class="subtitle">
+                    Hands-on practice building real software with AI assistance
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Core Labs</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Weeks</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Hours/Week</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Overview -->
+        <section class="overview">
+            <div class="container">
+                <h2>Program Overview</h2>
+                <p class="section-desc">
+                    A hands-on program where you build real artifacts using AI-assisted workflows.
+                    Work in safe sandbox environments, then apply skills to real codebases.
+                </p>
+
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Enterprise-Safe</h3>
+                        <p>
+                            No external SaaS, no code upload, approved models only.
+                            Designed for enterprise security constraints from day one.
+                        </p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Real Deliverables</h3>
+                        <p>
+                            Every week produces artifacts: PRs, tests, docs, runbooks.
+                            Build a portfolio of work you can reference.
+                        </p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Two Tracks</h3>
+                        <p>
+                            Greenfield (new modules) or Brownfield (existing codebases).
+                            Choose based on your team's actual work.
+                        </p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Coach-Supported</h3>
+                        <p>
+                            Off-network coaching model. Coaches guide without touching
+                            your sensitive code. You execute inside your environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prerequisite -->
+        <section>
+            <div class="container">
+                <h2>Prerequisites</h2>
+                <div class="prereq-box">
+                    <h3>Fundamentals Required</h3>
+                    <p>
+                        This program requires completion of <strong>AI SDLC Fundamentals</strong> (2 weeks, 20 sessions).
+                        Fundamentals builds the mental model for LLMs, context engineering, agents, and security
+                        that you'll apply hands-on in these labs. The critical safety assessment in Fundamentals
+                        is a gate before starting Labs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Structure -->
+        <section style="background: #f7fafc">
+            <div class="container">
+                <h2>Weekly Structure</h2>
+                <p class="section-desc">
+                    Each week combines lecture content, hands-on lab work, and applied practice on real repos.
+                </p>
+
+                <div class="week-structure">
+                    <div class="week-block lecture">
+                        <h4>Lecture</h4>
+                        <div class="time">1</div>
+                        <div class="time-label">hour</div>
+                        <p>2-3 episodes (23 min each) covering the week's concepts</p>
+                    </div>
+                    <div class="week-block lab">
+                        <h4>Lab</h4>
+                        <div class="time">4</div>
+                        <div class="time-label">hours</div>
+                        <p>Hands-on work in sandbox or approved repos (2 blocks)</p>
+                    </div>
+                    <div class="week-block applied">
+                        <h4>Applied</h4>
+                        <div class="time">1</div>
+                        <div class="time-label">hour</div>
+                        <p>Artifact submission + reflection on real work</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tracks -->
+        <section>
+            <div class="container">
+                <h2>Choose Your Track</h2>
+                <p class="section-desc">
+                    Select based on whether your team is building new services or improving existing ones.
+                </p>
+
+                <div class="tracks-grid">
+                    <div class="track-card">
+                        <h3>Greenfield Track</h3>
+                        <p>For teams building new modules or services from scratch.</p>
+                        <ul>
+                            <li>Weeks 2-4: Build new endpoints/services in sandbox</li>
+                            <li>Focus on tests and docs alongside new code</li>
+                            <li>Weeks 6-8: CI/CD gates + observability for new modules</li>
+                            <li>Clean-slate architecture decisions</li>
+                        </ul>
+                    </div>
+                    <div class="track-card recommended">
+                        <h3>Brownfield Track</h3>
+                        <p>For teams working with existing enterprise codebases.</p>
+                        <ul>
+                            <li>Weeks 4-6: Heavier docs + analysis + safe PR selection</li>
+                            <li>Scaffolding-first PRs (tests/docs/observability)</li>
+                            <li>Weeks 6-10: Safe improvements before core logic changes</li>
+                            <li>Risk-aware, incremental approach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Labs -->
+        <section style="background: #f7fafc">
+            <div class="container">
+                <h2>The Labs</h2>
+                <p class="section-desc">
+                    Five hands-on labs that build your AI-assisted development skills progressively.
+                </p>
+
+                <div class="lab-grid">
+                    <!-- Lab 01 -->
+                    <div class="lab-card">
+                        <div class="lab-header">
+                            <h3>API Foundations</h3>
+                            <span class="lab-number">Lab 01</span>
+                        </div>
+                        <div class="lab-body">
+                            <div class="lab-description">
+                                <p>
+                                    Build a minimal API in a safe sandbox environment. This lab works even when enterprise approvals are slow, teaching the core workflow: plan mode, task decomposition, permissions boundaries, diff-first development, and PR narration. You'll build a "Pet Registry" API - intentionally simple to focus on clean workflow rather than feature richness.
+                                </p>
+                            </div>
+                            <div class="lab-section">
+                                <h4>You'll Learn</h4>
+                                <ul>
+                                    <li>Plan mode and task decomposition techniques</li>
+                                    <li>Permissions boundaries (what the tool can/can't do)</li>
+                                    <li>Diff-first development with human review loops</li>
+                                    <li>PR narration: what/why/risk/how-tested format</li>
+                                </ul>
+                            </div>
+                            <div class="lab-section">
+                                <h4>Deliverables</h4>
+                                <ul>
+                                    <li>API contract (OpenAPI YAML or typed interface)</li>
+                                    <li>Plan-mode output with acceptance criteria</li>
+                                    <li>Implementation (minimum 2 endpoints)</li>
+                                    <li>Unit tests (4+ including edge cases)</li>
+                                    <li>PR narration + permissions note</li>
+                                </ul>
+                            </div>
+                            <div class="lab-meta">
+                                <div class="lab-meta-item"><strong>Time:</strong> 4 hours</div>
+                                <div class="lab-meta-item"><strong>Week:</strong> 1</div>
+                                <div class="lab-meta-item"><strong>Languages:</strong> .NET / Java / Python</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lab 02 -->
+                    <div class="lab-card">
+                        <div class="lab-header">
+                            <h3>Brownfield Inspection & Documentation</h3>
+                            <span class="lab-number">Lab 02</span>
+                        </div>
+                        <div class="lab-body">
+                            <div class="lab-description">
+                                <p>
+                                    Enterprise teams live in brownfield. This lab teaches how to inspect a larger repo safely (read-only when needed), generate usable documentation (not fluff), and create a risk-ranked backlog of safe improvements. You'll be dropped into a "typical enterprise service" repo and produce clarity: architecture overview, key boundaries, and change-risk heatmap.
+                                </p>
+                            </div>
+                            <div class="lab-section">
+                                <h4>You'll Learn</h4>
+                                <ul>
+                                    <li>Safe repo inspection techniques (read-only first pass)</li>
+                                    <li>Dependency and boundary mapping</li>
+                                    <li>Hot spot identification: high churn + low tests + complexity</li>
+                                    <li>Creating actionable documentation for new engineers</li>
+                                </ul>
+                            </div>
+                            <div class="lab-section">
+                                <h4>Deliverables</h4>
+                                <ul>
+                                    <li>Architecture README (what it is, how it runs, risks)</li>
+                                    <li>ADR v1 (one major decision with trade-offs)</li>
+                                    <li>Dependency & boundary map notes</li>
+                                    <li>Risk-ranked backlog (top 10 safe PR candidates)</li>
+                                    <li>"Safe PR" pick with plan + acceptance criteria</li>
+                                </ul>
+                            </div>
+                            <div class="lab-meta">
+                                <div class="lab-meta-item"><strong>Time:</strong> 4 hours</div>
+                                <div class="lab-meta-item"><strong>Week:</strong> 4</div>
+                                <div class="lab-meta-item"><strong>Mode:</strong> Read-only analysis</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lab 03 -->
+                    <div class="lab-card">
+                        <div class="lab-header">
+                            <h3>Testing & Coverage Acceleration</h3>
+                            <span class="lab-number">Lab 03</span>
+                        </div>
+                        <div class="lab-body">
+                            <div class="lab-description">
+                                <p>
+                                    AI is most valuable when it improves confidence. This lab teaches baseline measurement, high-ROI test selection, coverage delta reporting, and keeping AI-generated tests maintainable. Pick a module with weak coverage and improve it without introducing flakiness. Tests must be readable, deterministic, and avoid massive unmaintainable snapshots.
+                                </p>
+                            </div>
+                            <div class="lab-section">
+                                <h4>You'll Learn</h4>
+                                <ul>
+                                    <li>Baseline coverage measurement techniques</li>
+                                    <li>High-ROI test target selection (high risk/high churn)</li>
+                                    <li>Human review loop for AI-generated tests</li>
+                                    <li>Coverage delta reporting and communication</li>
+                                </ul>
+                            </div>
+                            <div class="lab-section">
+                                <h4>Deliverables</h4>
+                                <ul>
+                                    <li>Coverage baseline (before)</li>
+                                    <li>Test plan (what to test and why)</li>
+                                    <li>New tests (8+ including edge cases)</li>
+                                    <li>Coverage delta report (after)</li>
+                                    <li>Refactoring notes (if testing required changes)</li>
+                                </ul>
+                            </div>
+                            <div class="lab-meta">
+                                <div class="lab-meta-item"><strong>Time:</strong> 4 hours</div>
+                                <div class="lab-meta-item"><strong>Week:</strong> 3</div>
+                                <div class="lab-meta-item"><strong>Focus:</strong> Unit tests preferred</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lab 04 -->
+                    <div class="lab-card">
+                        <div class="lab-header">
+                            <h3>Observability, Security & Compliance</h3>
+                            <span class="lab-number">Lab 04</span>
+                        </div>
+                        <div class="lab-body">
+                            <div class="lab-description">
+                                <p>
+                                    Enterprise AI SDLC fails when teams ignore safety and operational reality. This lab has two parts: first, instrument your service with minimum viable observability (structured logs + correlation IDs). Then run a security/compliance drill covering prompt redaction and injection defense. This is where Fundamentals safety knowledge becomes practical.
+                                </p>
+                            </div>
+                            <div class="lab-section">
+                                <h4>You'll Learn</h4>
+                                <ul>
+                                    <li>Structured logging with defined schemas</li>
+                                    <li>Correlation ID propagation end-to-end</li>
+                                    <li>Runbook creation for operational handoff</li>
+                                    <li>Prompt injection attack and defense in practice</li>
+                                </ul>
+                            </div>
+                            <div class="lab-section">
+                                <h4>Deliverables</h4>
+                                <ul>
+                                    <li>Structured logging implementation</li>
+                                    <li>Correlation ID propagation</li>
+                                    <li>Runbook (local run + troubleshooting + log fields)</li>
+                                    <li>Redaction checklist + prompt review workflow</li>
+                                    <li>Prompt-injection drill findings + mitigations</li>
+                                </ul>
+                            </div>
+                            <div class="lab-meta">
+                                <div class="lab-meta-item"><strong>Time:</strong> 4 hours</div>
+                                <div class="lab-meta-item"><strong>Weeks:</strong> 8-9</div>
+                                <div class="lab-meta-item"><strong>Parts:</strong> Observability + Security drill</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lab 05 -->
+                    <div class="lab-card optional">
+                        <div class="lab-header" style="background: linear-gradient(135deg, #64748b, #475569);">
+                            <h3>UI & E2E Automation</h3>
+                            <span class="lab-number">Lab 05 (Optional)</span>
+                        </div>
+                        <div class="lab-body">
+                            <div class="lab-description">
+                                <p>
+                                    For teams needing full-stack workflows and regression automation. Build a minimal UI for your API, then create browser-based E2E tests with Playwright or Cypress. This lab is intentionally flexible - pick your tech stack (React/Vue/Blazor) and testing framework to align with client standards.
+                                </p>
+                            </div>
+                            <div class="lab-section">
+                                <h4>You'll Learn</h4>
+                                <ul>
+                                    <li>AI-assisted UI scaffolding</li>
+                                    <li>Browser-based E2E test creation</li>
+                                    <li>CI integration for E2E smoke tests</li>
+                                    <li>E2E failure triage patterns</li>
+                                </ul>
+                            </div>
+                            <div class="lab-section">
+                                <h4>Deliverables</h4>
+                                <ul>
+                                    <li>UI (minimal, functional)</li>
+                                    <li>E2E test suite (minimum 3 tests)</li>
+                                    <li>CI job for E2E tests (if CI available)</li>
+                                    <li>E2E runbook and failure triage notes</li>
+                                </ul>
+                            </div>
+                            <div class="lab-meta">
+                                <div class="lab-meta-item"><strong>Time:</strong> 4-6 hours</div>
+                                <div class="lab-meta-item"><strong>Week:</strong> Capstone extension</div>
+                                <div class="lab-meta-item"><strong>Stack:</strong> Flexible (React/Vue/Blazor + Playwright/Cypress)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week by Week -->
+        <section>
+            <div class="container">
+                <h2>Week-by-Week Journey</h2>
+                <p class="section-desc">
+                    How the 8 weeks build on each other (after completing Fundamentals).
+                </p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-week">W3</div>
+                        <div class="timeline-content">
+                            <h4>Enterprise-Safe Workflow Kickoff</h4>
+                            <p>Plan mode, permissions, PR narration. Complete Lab 01: API Foundations.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Lab 01</span>
+                                <span class="tag">PR narration</span>
+                                <span class="tag">Plan mode</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-week">W4</div>
+                        <div class="timeline-content">
+                            <h4>CLI-Driven Delivery Loop</h4>
+                            <p>Ticket to plan to diff to review. Extend API with new features + refactor.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Feature extension</span>
+                                <span class="tag">Risk notes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-week">W5</div>
+                        <div class="timeline-content">
+                            <h4>Testing Acceleration</h4>
+                            <p>Unit tests, edge cases, coverage strategy. Complete Lab 03: Testing + Coverage.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Lab 03</span>
+                                <span class="tag">Coverage delta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-week">W6</div>
+                        <div class="timeline-content">
+                            <h4>Docs-from-Code</h4>
+                            <p>ADRs, architecture READMEs, diagrams. Complete Lab 02: Brownfield Inspection.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Lab 02</span>
+                                <span class="tag">ADR</span>
+                                <span class="tag">Architecture docs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-week">W7</div>
+                        <div class="timeline-content">
+                            <h4>Brownfield Analysis & Safe PRs</h4>
+                            <p>Dependency maps, boundaries, risk. Worksheet on real repo, ranked backlog.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Brownfield worksheet</span>
+                                <span class="tag">Safe PR strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-week">W8</div>
+                        <div class="timeline-content">
+                            <h4>Scaffold PRs & CI/CD Gates</h4>
+                            <p>Non-invasive improvements, pipeline templates, quality thresholds.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Pipeline template</span>
+                                <span class="tag">Runbook</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-week">W9</div>
+                        <div class="timeline-content">
+                            <h4>Observability Patterns</h4>
+                            <p>Logs, metrics, traces, correlation IDs. Complete Lab 04: Observability module.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Lab 04 Part A</span>
+                                <span class="tag">Structured logging</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-week">W10</div>
+                        <div class="timeline-content">
+                            <h4>Security Drill + Capstone</h4>
+                            <p>Prompt injection drill, policy creation. Capstone PRs + KPI deltas + exec readout.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Lab 04 Part B</span>
+                                <span class="tag">Capstone</span>
+                                <span class="tag">ROI report</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artifacts -->
+        <section style="background: #f7fafc">
+            <div class="container">
+                <h2>What You'll Build</h2>
+                <p class="section-desc">
+                    Concrete artifacts produced throughout the program.
+                </p>
+
+                <div class="deliverables-grid">
+                    <div class="deliverable-card">
+                        <h4>Code Artifacts</h4>
+                        <ul>
+                            <li>API implementations with tests</li>
+                            <li>Structured logging modules</li>
+                            <li>CI/CD pipeline templates</li>
+                            <li>Safe scaffold PRs</li>
+                        </ul>
+                    </div>
+                    <div class="deliverable-card">
+                        <h4>Documentation</h4>
+                        <ul>
+                            <li>Architecture READMEs</li>
+                            <li>Architecture Decision Records (ADRs)</li>
+                            <li>Operational runbooks</li>
+                            <li>Dependency & boundary maps</li>
+                        </ul>
+                    </div>
+                    <div class="deliverable-card">
+                        <h4>Process Artifacts</h4>
+                        <ul>
+                            <li>PR narrations (what/why/risk/tested)</li>
+                            <li>Plan-mode outputs with criteria</li>
+                            <li>Coverage delta reports</li>
+                            <li>Risk-ranked backlogs</li>
+                        </ul>
+                    </div>
+                    <div class="deliverable-card">
+                        <h4>Security & Compliance</h4>
+                        <ul>
+                            <li>Prompt policy documents</li>
+                            <li>Redaction checklists</li>
+                            <li>Injection drill findings</li>
+                            <li>Permissions & data handling notes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment -->
+        <section class="assessment">
+            <div class="container">
+                <h2>Assessment & Rubrics</h2>
+                <p class="section-desc">
+                    Every deliverable is evaluated against clear rubrics
+                </p>
+
+                <div class="assessment-grid">
+                    <div class="assessment-card">
+                        <h3>PR Rubric</h3>
+                        <ul>
+                            <li>Clear "what changed" summary</li>
+                            <li>Explained "why" with context</li>
+                            <li>Risk assessment included</li>
+                            <li>Testing approach documented</li>
+                            <li>Follow-ups identified</li>
+                        </ul>
+                    </div>
+
+                    <div class="assessment-card">
+                        <h3>Tests Rubric</h3>
+                        <ul>
+                            <li>Readable and well-named</li>
+                            <li>Deterministic (no flakiness)</li>
+                            <li>Edge cases covered</li>
+                            <li>Maintainable structure</li>
+                            <li>Coverage targets met</li>
+                        </ul>
+                    </div>
+
+                    <div class="assessment-card">
+                        <h3>Docs Rubric</h3>
+                        <ul>
+                            <li>Actionable for new engineers</li>
+                            <li>Accurate to current state</li>
+                            <li>Risks clearly identified</li>
+                            <li>Run/build steps verified</li>
+                            <li>Trade-offs explained</li>
+                        </ul>
+                    </div>
+
+                    <div class="assessment-card">
+                        <h3>Prompts Rubric</h3>
+                        <ul>
+                            <li>Clear constraints defined</li>
+                            <li>Output contract specified</li>
+                            <li>No sensitive data included</li>
+                            <li>Reproducible results</li>
+                            <li>Human review points identified</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capstone -->
+        <section>
+            <div class="container">
+                <h2>Capstone & ROI Readout</h2>
+                <p class="section-desc">
+                    Week 10 culminates in demonstrable impact and executive communication.
+                </p>
+
+                <div class="deliverables-grid" style="max-width: 800px; margin: 0 auto;">
+                    <div class="deliverable-card">
+                        <h4>Capstone PRs</h4>
+                        <ul>
+                            <li>Integration of all skills learned</li>
+                            <li>Real impact on actual codebase</li>
+                            <li>Full documentation and testing</li>
+                            <li>Security review completed</li>
+                        </ul>
+                    </div>
+                    <div class="deliverable-card">
+                        <h4>Executive Readout</h4>
+                        <ul>
+                            <li>Before/after KPI comparison</li>
+                            <li>PR throughput delta</li>
+                            <li>Test coverage improvements</li>
+                            <li>Documentation completeness gains</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p><strong>aiXform</strong> | AI Transformation Training</p>
+                <p style="margin-top: 8px">
+                    Building the next generation of AI-enabled software teams
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -15,7 +15,7 @@ Danny has a phD in psychology and a background in corporate training and develop
 
 Scot is Dragon's chief of staff, helping manage a lot of projects, and also is our Client manager 
 
-Ross and KC are 1099 contractors. Ross has a strong background in infrastructure and operations, and Casey has an interest in aptitude in AI. 
+Russ and Casey are 1099 contractors working on the Pulse (nClave) project for Ensemble Health Partners. Russ has a strong background in infrastructure and operations, and Casey has an interest in aptitude in AI. 
 
 
 

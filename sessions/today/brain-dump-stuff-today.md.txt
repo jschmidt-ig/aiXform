@@ -1,0 +1,9 @@
+One thing I want to change is I think for products, it's important to have a product strategy section and maybe a vision statement. The stuff that we're talking about here for these courses (AISDLC, the labs and the fundamentals) doesn't just exist in isolation. It ties in to the infograph for the maturity model, and we're not there yet, but I think it's time to add that. 
+
+I want your feedback on how to structure it, but for the company, I think it's important to have a vision section, like I'm more thinking of the website and the marketing for it. It's like this is where we see the industry going, these are changes AI represents. 
+
+To help our clients, we offer a number of things. One of them is going to be AI acceleration, and this first course is AI acceleration for software engineers. Informally, we've just been calling everything "AI-SDLC," but that would encompass many courses because that's all of software development. 
+
+And we did in the research, and we had like level one, level two, level three, or like light belt, green belt. We could figure out how to break that down more, but this first unit. 
+
+Is "AI acceleration for software development" - Foundations.

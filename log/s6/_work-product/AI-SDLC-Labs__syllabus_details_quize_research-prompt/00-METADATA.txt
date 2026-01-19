@@ -1,8 +1,0 @@
-ChatGPT Folder > AI SDLC Course Productization > 00-METADATA.txt
-Bundle: AISDLC-Labs-Lecture-Syllabus-Bundle-v0.1
-Version: 0.1
-Generated: January 13, 2026
-
-Notes:
-- Each file in this bundle begins with a metadata line (or HTML comment) matching the standard.
-- Prompts in `5-Prompts/` are designed to be pasted as-is.

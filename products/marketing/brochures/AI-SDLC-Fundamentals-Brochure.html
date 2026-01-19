@@ -1,0 +1,1083 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI SDLC Fundamentals | aiXform</title>
+        <style>
+            :root {
+                --primary: #1a365d;
+                --secondary: #2b6cb0;
+                --accent: #4299e1;
+                --light: #ebf8ff;
+                --dark: #1a202c;
+                --gray: #718096;
+                --white: #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Oxygen, Ubuntu, sans-serif;
+                line-height: 1.6;
+                color: var(--dark);
+                background: var(--white);
+            }
+
+            /* Hero Section */
+            .hero {
+                background: linear-gradient(
+                    135deg,
+                    var(--primary) 0%,
+                    var(--secondary) 100%
+                );
+                color: var(--white);
+                padding: 80px 20px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+
+            .hero .subtitle {
+                font-size: 1.5rem;
+                opacity: 0.9;
+                margin-bottom: 32px;
+            }
+
+            .hero-stats {
+                display: flex;
+                justify-content: center;
+                gap: 48px;
+                flex-wrap: wrap;
+                margin-top: 40px;
+            }
+
+            .stat {
+                text-align: center;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+                opacity: 0.8;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            /* Container */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            /* Section */
+            section {
+                padding: 60px 0;
+            }
+
+            section h2 {
+                font-size: 2rem;
+                color: var(--primary);
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            section .section-desc {
+                text-align: center;
+                color: var(--gray);
+                max-width: 700px;
+                margin: 0 auto 40px;
+                font-size: 1.1rem;
+            }
+
+            /* Overview */
+            .overview {
+                background: var(--light);
+            }
+
+            .overview-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 24px;
+            }
+
+            .overview-card {
+                background: var(--white);
+                padding: 24px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            }
+
+            .overview-card h3 {
+                color: var(--secondary);
+                margin-bottom: 8px;
+                font-size: 1.1rem;
+            }
+
+            .overview-card p {
+                color: var(--gray);
+                font-size: 0.95rem;
+            }
+
+            /* Outcomes */
+            .outcomes-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                list-style: none;
+            }
+
+            .outcomes-list li {
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                padding: 16px;
+                background: var(--light);
+                border-radius: 8px;
+                border-left: 4px solid var(--accent);
+            }
+
+            .outcomes-list .icon {
+                color: var(--accent);
+                font-size: 1.2rem;
+                flex-shrink: 0;
+            }
+
+            /* Track Section */
+            .track {
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            .track:last-child {
+                border-bottom: none;
+            }
+
+            .track-header {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 32px;
+            }
+
+            .track-number {
+                background: var(--secondary);
+                color: var(--white);
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            .track-title h3 {
+                font-size: 1.5rem;
+                color: var(--primary);
+            }
+
+            .track-title p {
+                color: var(--gray);
+                font-size: 0.95rem;
+            }
+
+            /* Course Cards - Expanded */
+            .course-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+                gap: 24px;
+            }
+
+            .course-card {
+                background: var(--white);
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                padding: 28px;
+                transition:
+                    transform 0.2s,
+                    box-shadow 0.2s;
+            }
+
+            .course-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            }
+
+            .course-number {
+                display: inline-block;
+                background: var(--light);
+                color: var(--secondary);
+                font-size: 0.8rem;
+                font-weight: 600;
+                padding: 4px 10px;
+                border-radius: 20px;
+                margin-bottom: 12px;
+            }
+
+            .course-card h4 {
+                font-size: 1.2rem;
+                color: var(--dark);
+                margin-bottom: 12px;
+            }
+
+            .course-card .description {
+                color: var(--gray);
+                font-size: 0.9rem;
+                margin-bottom: 16px;
+                line-height: 1.5;
+            }
+
+            .course-card .objectives-label {
+                font-size: 0.75rem;
+                font-weight: 600;
+                color: var(--secondary);
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 8px;
+            }
+
+            .course-card .objectives {
+                list-style: none;
+                margin-bottom: 16px;
+            }
+
+            .course-card .objectives li {
+                font-size: 0.85rem;
+                color: var(--dark);
+                padding: 4px 0 4px 16px;
+                position: relative;
+            }
+
+            .course-card .objectives li::before {
+                content: ">";
+                position: absolute;
+                left: 0;
+                color: var(--accent);
+                font-weight: bold;
+            }
+
+            .course-meta {
+                display: flex;
+                gap: 16px;
+                font-size: 0.85rem;
+                color: var(--gray);
+                padding-top: 12px;
+                border-top: 1px solid #e2e8f0;
+            }
+
+            .course-meta span {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+
+            /* Assessment Section */
+            .assessment {
+                background: var(--primary);
+                color: var(--white);
+            }
+
+            .assessment h2 {
+                color: var(--white);
+            }
+
+            .assessment .section-desc {
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            .assessment-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 24px;
+            }
+
+            .assessment-card {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 24px;
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .assessment-card h3 {
+                font-size: 1.2rem;
+                margin-bottom: 12px;
+            }
+
+            .assessment-card ul {
+                list-style: none;
+            }
+
+            .assessment-card li {
+                padding: 8px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                font-size: 0.95rem;
+            }
+
+            .assessment-card li:last-child {
+                border-bottom: none;
+            }
+
+            /* Audience */
+            .audience-box {
+                background: var(--light);
+                padding: 32px;
+                border-radius: 12px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .audience-box h3 {
+                color: var(--primary);
+                margin-bottom: 16px;
+            }
+
+            .audience-box ul {
+                list-style: none;
+            }
+
+            .audience-box li {
+                padding: 8px 0;
+                padding-left: 24px;
+                position: relative;
+            }
+
+            .audience-box li::before {
+                content: "\2713";
+                position: absolute;
+                left: 0;
+                color: var(--accent);
+                font-weight: bold;
+            }
+
+            /* Footer */
+            footer {
+                background: var(--dark);
+                color: var(--white);
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            footer p {
+                opacity: 0.7;
+                font-size: 0.9rem;
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+                .hero h1 {
+                    font-size: 2rem;
+                }
+
+                .hero .subtitle {
+                    font-size: 1.2rem;
+                }
+
+                .hero-stats {
+                    gap: 24px;
+                }
+
+                section {
+                    padding: 40px 0;
+                }
+
+                .course-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Hero -->
+        <header class="hero">
+            <div class="container">
+                <h1>AI SDLC Fundamentals</h1>
+                <p class="subtitle">
+                    Build the mental model for AI-assisted software development
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">20</div>
+                        <div class="stat-label">Sessions</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Weeks</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10-15</div>
+                        <div class="stat-label">Total Hours</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Overview -->
+        <section class="overview">
+            <div class="container">
+                <h2>Program Overview</h2>
+                <p class="section-desc">
+                    A lecture-only fundamentals program establishing the mental
+                    model for LLMs, context engineering, agentic workflows, tool
+                    calling, and security.
+                </p>
+
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Format</h3>
+                        <p>
+                            20 independent micro-courses, each 20-30 minutes.
+                            Designed for flexibility - take them at your own
+                            pace.
+                        </p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Suggested Pace</h3>
+                        <p>
+                            2 sessions per day over 10 business days. Complete
+                            the full program in just 2 weeks.
+                        </p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>No Code Required</h3>
+                        <p>
+                            Pure lecture format - no development environment
+                            needed. Labs and applied work come in later phases.
+                        </p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Assessment</h3>
+                        <p>
+                            End-of-module test with critical safety pass/fail
+                            gates. Certification upon completion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience -->
+        <section>
+            <div class="container">
+                <h2>Who This Is For</h2>
+                <div class="audience-box">
+                    <h3>Target Audience</h3>
+                    <ul>
+                        <li>
+                            Software engineers looking to understand AI-assisted
+                            development
+                        </li>
+                        <li>
+                            Platform engineers building AI tooling and
+                            infrastructure
+                        </li>
+                        <li>
+                            Technical professionals preparing for hands-on labs
+                        </li>
+                        <li>
+                            Team leads evaluating AI coding tools for their
+                            teams
+                        </li>
+                        <li>
+                            Anyone who will use CLI agents, API calls, or
+                            tool-based workflows
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outcomes -->
+        <section class="outcomes" style="background: #f7fafc">
+            <div class="container">
+                <h2>What You'll Learn</h2>
+                <p class="section-desc">
+                    By completing this program, you will be able to:
+                </p>
+
+                <ul class="outcomes-list">
+                    <li>
+                        <span class="icon">&#10003;</span>
+                        <span>Explain what an LLM does at inference time and what
+                            it cannot do (no in-session learning, no durable
+                            memory)</span>
+                    </li>
+                    <li>
+                        <span class="icon">&#10003;</span>
+                        <span>Understand training vs inference and why
+                            "crystallized intelligence" matters for how you use
+                            models</span>
+                    </li>
+                    <li>
+                        <span class="icon">&#10003;</span>
+                        <span>Master context windows and how context assembly
+                            affects quality and safety</span>
+                    </li>
+                    <li>
+                        <span class="icon">&#10003;</span>
+                        <span>Distinguish chatbot UI vs raw API usage vs agentic
+                            harnesses (IDE, CLI, cloud agent)</span>
+                    </li>
+                    <li>
+                        <span class="icon">&#10003;</span>
+                        <span>Explain agentic workflows
+                            (plan-act-observe-reflect) and where they break in
+                            practice</span>
+                    </li>
+                    <li>
+                        <span class="icon">&#10003;</span>
+                        <span>Understand tool calling, MCP, and when each
+                            approach is justified</span>
+                    </li>
+                    <li>
+                        <span class="icon">&#10003;</span>
+                        <span>Apply safe judgment on tool permissioning and least
+                            privilege principles</span>
+                    </li>
+                    <li>
+                        <span class="icon">&#10003;</span>
+                        <span>Recognize and mitigate prompt injection
+                            attacks</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Track 1: Foundation -->
+        <section class="track">
+            <div class="container">
+                <div class="track-header">
+                    <div class="track-number">1</div>
+                    <div class="track-title">
+                        <h3>Foundation & Environment</h3>
+                        <p>Orientation and enterprise constraints</p>
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <span class="course-number">Session 01</span>
+                        <h4>Course Orientation</h4>
+                        <p class="description">
+                            Establish the foundation for the entire program. Learn what "agentic coding" really means versus simply chatting with AI. Understand the 3-layer stack that underlies all AI-assisted development and set expectations for what success looks like.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>The 3-layer stack: model, harness, workflow/governance</li>
+                            <li>What distinguishes agentic coding from chat-based AI use</li>
+                            <li>Success metrics: smaller PRs, better test coverage, less thrash</li>
+                            <li>How Fundamentals prepares you for hands-on labs</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 02</span>
+                        <h4>Tooling & Enterprise Constraints</h4>
+                        <p class="description">
+                            Face the reality of enterprise AI adoption. Understand why approvals take time, what data can never enter a prompt, and how to work productively within security boundaries. Learn the "off-network coaching" model for safe knowledge transfer.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Approved models vs prohibited tools in enterprise</li>
+                            <li>Data classification and what belongs in prompts</li>
+                            <li>Security review processes and why they exist</li>
+                            <li>The off-network coaching stance for sensitive environments</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Track 2: LLM Core -->
+        <section class="track" style="background: #f7fafc">
+            <div class="container">
+                <div class="track-header">
+                    <div class="track-number">2</div>
+                    <div class="track-title">
+                        <h3>LLM Core Concepts</h3>
+                        <p>How language models actually work</p>
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <span class="course-number">Session 03</span>
+                        <h4>LLMs & Tokens</h4>
+                        <p class="description">
+                            Demystify what happens when you send a prompt. Learn that LLMs predict the next token, not the next word, and why this distinction matters for cost, limits, and failure modes. Understand hallucination and format drift at a mechanical level.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Next-token prediction as the core inference mechanism</li>
+                            <li>Why tokens differ from words (subword effects)</li>
+                            <li>Root causes of hallucination and overconfidence</li>
+                            <li>Format drift and why output contracts exist</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Demo</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 04</span>
+                        <h4>Transformer Mental Model</h4>
+                        <p class="description">
+                            Build intuition for how transformers process text without getting lost in the math. Understand embeddings, attention, and output distributions at a conceptual level. Learn why attention helps with dependencies but isn't reasoning.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Token stream to output: embeddings, attention, layers</li>
+                            <li>Why transformers handle long dependencies "somewhat"</li>
+                            <li>Attention is not reasoning: key distinction</li>
+                            <li>Where errors come from: missing vs conflicting context</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Diagrams</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 05</span>
+                        <h4>Training vs Inference</h4>
+                        <p class="description">
+                            Understand the fundamental split between training (weight updates) and inference (fixed weights). Grasp "crystallized intelligence" and why capabilities are largely frozen. Learn what fine-tuning actually changes and what it can't.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Training updates weights; inference uses fixed weights</li>
+                            <li>Crystallized intelligence: capabilities frozen at training</li>
+                            <li>Fine-tuning changes behavior style, not core limits</li>
+                            <li>Misconception busting: "it learned from my prompt" (no)</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 06</span>
+                        <h4>Context Window & Memory</h4>
+                        <p class="description">
+                            Master the mechanics of context windows. Learn about truncation, recency bias, and "lost instructions." Understand why LLMs have no durable memory and why context engineering is a real, valuable skill.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Context window limits and what happens at boundaries</li>
+                            <li>Recency bias and why early instructions disappear</li>
+                            <li>Memory is re-provided context, not internal state</li>
+                            <li>Context packing patterns: headings, order, brevity</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Demo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Track 3: Prompting -->
+        <section class="track">
+            <div class="container">
+                <div class="track-header">
+                    <div class="track-number">3</div>
+                    <div class="track-title">
+                        <h3>Prompting & Context Engineering</h3>
+                        <p>The craft of communicating with models</p>
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <span class="course-number">Session 07</span>
+                        <h4>Prompting Fundamentals</h4>
+                        <p class="description">
+                            Learn the anatomy of effective prompts. Master the components: role, constraints, examples, acceptance criteria, and output contracts. Understand prompt hygiene and how to write prompts that produce testable, consistent outputs.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Prompt anatomy: role, constraints, examples, criteria</li>
+                            <li>Output contracts: sections vs JSON schema</li>
+                            <li>Prompt hygiene: clarity, minimal ambiguity</li>
+                            <li>Before/after: transforming vague prompts into structured ones</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Examples</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 08</span>
+                        <h4>Chatbot vs Raw Model Call</h4>
+                        <p class="description">
+                            Peek behind the curtain of chatbot interfaces. Learn what gets hidden: system messages, safety wrappers, memory features. Understand the roles/messages mental model and why API-level thinking is essential for building agents.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>What chatbot UIs hide from you</li>
+                            <li>System/developer/user message roles</li>
+                            <li>Context assembly: what's really sent to the API</li>
+                            <li>Why API-level thinking matters for agents</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Diagrams</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 09</span>
+                        <h4>Prompt Contracts & Output Schemas</h4>
+                        <p class="description">
+                            Understand why contracts matter for automation, grading, reproducibility, and safety. Learn structured output patterns: sections, key-value pairs, JSON schemas. Practice validating outputs without running code.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Why contracts enable automation and safety</li>
+                            <li>Structured output patterns: sections, JSON, key-value</li>
+                            <li>Contract examples: PR descriptions, risk checklists, change plans</li>
+                            <li>Validation checklists for contract compliance</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Examples</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 10</span>
+                        <h4>Context Engineering Workshop</h4>
+                        <p class="description">
+                            Master the art of constructing the "working set" - what to include, what to omit, how to order content. Learn compression patterns, when to invert conventional ordering, and how to avoid context poisoning from untrusted content.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Working set construction: include/omit decisions</li>
+                            <li>Ordering patterns: summary-first, constraints-first, examples-last</li>
+                            <li>Context poisoning: isolating and labeling untrusted content</li>
+                            <li>Context budget: what to spend tokens on</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Workshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Track 4: Agents -->
+        <section class="track" style="background: #f7fafc">
+            <div class="container">
+                <div class="track-header">
+                    <div class="track-number">4</div>
+                    <div class="track-title">
+                        <h3>Agents & Harnesses</h3>
+                        <p>From chatbots to autonomous workflows</p>
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <span class="course-number">Session 11</span>
+                        <h4>Agents vs Workflows</h4>
+                        <p class="description">
+                            Define what an agent actually is: LLM + tools + loop + objectives. Understand the agentic loop (plan-act-observe-reflect-iterate) and identify the specific points where agents commonly fail.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Agent definition: the four required components</li>
+                            <li>The agentic loop: plan, act, observe, reflect, iterate</li>
+                            <li>Common failure points: mis-specified goals, tool misuse</li>
+                            <li>Safe loop guardrail checklist</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Diagrams</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 12</span>
+                        <h4>Harness Taxonomy</h4>
+                        <p class="description">
+                            Compare the major harness types: chatbot, IDE assistant, CLI agent, cloud agent. Understand what differs across tool surface, context assembly, permissions, and auditability. Learn why this course emphasizes CLI-first approaches.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Four harness types and their characteristics</li>
+                            <li>Tool surface comparison: what each can access</li>
+                            <li>Permission and auditability differences</li>
+                            <li>Why CLI-first matters for enterprise adoption</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Comparison</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 13</span>
+                        <h4>Agentic Coding Method</h4>
+                        <p class="description">
+                            Learn the operational workflow that makes AI coding effective: plan, diff, test, narrate. Understand how Copilot agent modes differ across environments and why workflow design matters more than any single tool.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>The plan-diff-test-narrate workflow</li>
+                            <li>PR narration templates and why they matter</li>
+                            <li>Copilot agent mode differences: browser vs IDE vs CLI</li>
+                            <li>The "do not let the agent deploy" principle</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Templates</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 14</span>
+                        <h4>Model Mixing & Selection</h4>
+                        <p class="description">
+                            Learn why mixing models across tasks is not only possible but often optimal. Understand when to use "bigger thinking" models vs "smaller fast" models. Navigate the trade-offs: cost, latency, reliability, safety.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Why model mixing works (no durable memory)</li>
+                            <li>Big-thinking vs small-fast model selection</li>
+                            <li>Trade-off framework: cost, latency, reliability, safety</li>
+                            <li>Simple decision tree for model selection</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Decision Tree</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Track 5: Tools -->
+        <section class="track">
+            <div class="container">
+                <div class="track-header">
+                    <div class="track-number">5</div>
+                    <div class="track-title">
+                        <h3>Tool Calling & Integration</h3>
+                        <p>Extending model capabilities safely</p>
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <span class="course-number">Session 15</span>
+                        <h4>Tool Calling</h4>
+                        <p class="description">
+                            Understand what tool calling actually is: structured function invocation via the harness. Learn why tool calling dramatically expands what models can do, and why that expansion introduces significant new risks.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Tool calling as structured function invocation</li>
+                            <li>How tool calls differ from "shelling out" or copy/paste</li>
+                            <li>Capability expansion: what tools unlock</li>
+                            <li>Risk expansion: why more capability means more danger</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Examples</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 16</span>
+                        <h4>MCP vs API Calls</h4>
+                        <p class="description">
+                            Compare direct API calls with the Model Context Protocol (MCP). Understand when MCP's standardized interoperability and multi-step coordination are justified vs when they add unnecessary complexity.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Direct API calls: point-to-point model invocation</li>
+                            <li>MCP: standardized tool interoperability</li>
+                            <li>When MCP is justified vs overkill</li>
+                            <li>Decision framework for integration approach</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Comparison</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Track 6: Security -->
+        <section class="track" style="background: #f7fafc">
+            <div class="container">
+                <div class="track-header">
+                    <div class="track-number">6</div>
+                    <div class="track-title">
+                        <h3>Security & Safety</h3>
+                        <p>Critical knowledge for safe deployment</p>
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <span class="course-number">Session 17</span>
+                        <h4>Securing Tool Calls</h4>
+                        <p class="description">
+                            Master the principles of least privilege for AI tools. Learn about allowlists, scopes, and approval gates. Understand auditability requirements: logs, transcripts, and answering "who did what when."
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Least privilege: allowlists, scopes, approval gates</li>
+                            <li>Permission sets: read-only, read+test, write, deploy</li>
+                            <li>Auditability: logs, transcripts, accountability</li>
+                            <li>Preventing untrusted inputs from driving tool calls</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Examples</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 18</span>
+                        <h4>Prompt Injection</h4>
+                        <p class="description">
+                            Understand the most critical security threat in AI systems. Learn what injection is, recognize common patterns (in documents, web pages, repo text), and apply mitigations: input isolation, instruction hierarchy, gating, validation.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Injection definition: untrusted text overriding instructions</li>
+                            <li>Common injection patterns and where they hide</li>
+                            <li>Mitigations: isolation, hierarchy, gating, validation</li>
+                            <li>How to respond when you detect an injection attempt</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Lecture + Examples</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 19</span>
+                        <h4>Security Scenarios Lab</h4>
+                        <p class="description">
+                            Apply your security knowledge to realistic scenarios. Analyze 2-3 cases where you must pick safe permissions, identify injection attempts, and choose appropriate mitigations. Reinforce the critical safety principles tested in the final assessment.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>Scenario analysis: permission selection</li>
+                            <li>Scenario analysis: injection identification</li>
+                            <li>Scenario analysis: mitigation selection</li>
+                            <li>Critical safety principles that are hard-fail on the test</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Interactive Lab</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <span class="course-number">Session 20</span>
+                        <h4>Integrated Capstone</h4>
+                        <p class="description">
+                            Walk through a complete end-to-end scenario that integrates everything: raw API call, harness behavior, tool calling, injection attempt, and mitigations. Final recap of key concepts and open Q&A.
+                        </p>
+                        <div class="objectives-label">You'll Learn</div>
+                        <ul class="objectives">
+                            <li>End-to-end integration: API to harness to tools</li>
+                            <li>Security in practice: injection + permissioning</li>
+                            <li>Full recap of Fundamentals program</li>
+                            <li>Preparation for Labs & Applied phases</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span>20-30 min</span>
+                            <span>Demo + Q&A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment -->
+        <section class="assessment">
+            <div class="container">
+                <h2>Certification & Assessment</h2>
+                <p class="section-desc">
+                    Complete the program with our end-of-module assessment
+                </p>
+
+                <div class="assessment-grid">
+                    <div class="assessment-card">
+                        <h3>End-of-Module Test</h3>
+                        <ul>
+                            <li>10 questions (12-15 minutes)</li>
+                            <li>6 comprehension questions</li>
+                            <li>4 scenario judgment questions</li>
+                            <li>Pass threshold: 80% overall (8/10)</li>
+                        </ul>
+                    </div>
+
+                    <div class="assessment-card">
+                        <h3>Critical Safety Gates</h3>
+                        <ul>
+                            <li>Prompt injection recognition</li>
+                            <li>Least-privilege tool permissioning</li>
+                            <li>Untrusted input handling</li>
+                            <li>Hard fail if any missed</li>
+                        </ul>
+                    </div>
+
+                    <div class="assessment-card">
+                        <h3>Upon Completion</h3>
+                        <ul>
+                            <li>Certificate of completion</li>
+                            <li>Ready for Labs & Applied phases</li>
+                            <li>Foundation for advanced courses</li>
+                            <li>Feedback questionnaire (5-7 min)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p><strong>aiXform</strong> | AI Transformation Training</p>
+                <p style="margin-top: 8px">
+                    Building the next generation of AI-enabled software teams
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

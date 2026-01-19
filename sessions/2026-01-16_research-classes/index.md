@@ -1,0 +1,57 @@
+[Vibe Coding for Beginners Made Easy: From Idea to App in Record Time - Build Websites and Apps Fast Using AI Coding Tools, No Programming Experience Needed (Generative AI & Chat GPT Mastery Series): Patel, David M.: 9798296004918: Amazon.com: Books](https://www.amazon.com/dp/B0FKT8Z5XT/ref=sspa_dk_detail_2?psc=1&pd_rd_i=B0FKT8Z5XT&pd_rd_w=g9ati&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=5VET7R7PDW9MSB3FG52A&pd_rd_wg=gq8US&pd_rd_r=f208422e-3508-4b63-be7c-caeae54c3616&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw)
+
+[AI-Assisted Coding: A Practical Guide to Boosting Software Development with ChatGPT, GitHub Copilot, Ollama, Aider, and Beyond (Rheinwerk Computing): Michael Kofler, Bernd Öggl, Sebastian Springer: 9781493226931: Amazon.com: Books](https://www.amazon.com/AI-Assisted-Coding-Practical-Development-Rheinwerk/dp/1493226932)
+
+[AI-Assisted Programming: Better Planning, Coding, Testing, and Deployment: Taulli, Tom: 9781098164560: Amazon.com: Books](https://www.amazon.com/dp/1098164563/ref=mes-dp?_encoding=UTF8&pd_rd_w=Ijy9d&content-id=amzn1.sym.476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_p=476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_r=5VET7R7PDW9MSB3FG52A&pd_rd_wg=gq8US&pd_rd_r=f208422e-3508-4b63-be7c-caeae54c3616)
+
+[Prompt Engineering for Generative AI: Future-Proof Inputs for Reliable AI Outputs: Phoenix, James, Taylor, Mike: 9781098153434: Amazon.com: Books](https://www.amazon.com/dp/109815343X/ref=mes-dp?_encoding=UTF8&pd_rd_w=ox8dW&content-id=amzn1.sym.476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_p=476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_r=V46WXBVJ2J7H06WVF6T1&pd_rd_wg=5iP9T&pd_rd_r=d0161b75-ced9-49c1-a2b2-573d7c3aa91d)
+
+[AI Engineering: Building Applications with Foundation Models: Huyen, Chip: 9781098166304: Amazon.com: Books](https://www.amazon.com/dp/1098166302/ref=mes-dp?_encoding=UTF8&pd_rd_w=ox8dW&content-id=amzn1.sym.476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_p=476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_r=V46WXBVJ2J7H06WVF6T1&pd_rd_wg=5iP9T&pd_rd_r=d0161b75-ced9-49c1-a2b2-573d7c3aa91d)
+
+[Hands-On Large Language Models: Language Understanding and Generation: Alammar, Jay, Grootendorst, Maarten: 9781098150969: Amazon.com: Books](https://www.amazon.com/dp/1098150961/ref=mes-dp?_encoding=UTF8&pd_rd_w=ox8dW&content-id=amzn1.sym.476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_p=476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_r=V46WXBVJ2J7H06WVF6T1&pd_rd_wg=5iP9T&pd_rd_r=d0161b75-ced9-49c1-a2b2-573d7c3aa91d)
+
+[AI and Machine Learning for Coders: A Programmer's Guide to Artificial Intelligence: Moroney, Laurence: 9781492078197: Amazon.com: Books](https://www.amazon.com/dp/1492078190/ref=mes-dp?_encoding=UTF8&pd_rd_w=ox8dW&content-id=amzn1.sym.476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_p=476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_r=V46WXBVJ2J7H06WVF6T1&pd_rd_wg=5iP9T&pd_rd_r=d0161b75-ced9-49c1-a2b2-573d7c3aa91d)
+
+[The Vibe-Coded SDLC: Evolution, Disruption, and What’s Next: Reimagining How We Build Software - Past, Present, and What Comes Next: Mushtaq, Faisal: 9798294983406: Amazon.com: Books](https://www.amazon.com/dp/B0FKS8CK94/ref=sspa_dk_detail_5?psc=1&pd_rd_i=B0FKS8CK94&pd_rd_w=g9ati&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=5VET7R7PDW9MSB3FG52A&pd_rd_wg=gq8US&pd_rd_r=f208422e-3508-4b63-be7c-caeae54c3616&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw)
+
+[Transforming Healthcare: The Role and Impact of Artificial Intelligence: Mushtaq, Faisal: 9798333852557: Amazon.com: Books](https://www.amazon.com/dp/B0DB3T3PTW/ref=mes-dp?_encoding=UTF8&pd_rd_w=Ihrm9&content-id=amzn1.sym.476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_p=476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_r=2VJGTVXRWMWGGYJ1TN26&pd_rd_wg=z2vAv&pd_rd_r=5464afd0-0bb9-490b-9feb-61590040d152)
+
+[Amazon.com: Software Engineering For Vibe Coders: A Practical Guide to Turning AI-Generated Code into Production-Ready SaaS eBook : Smykowski, Tom: Kindle Store](https://www.amazon.com/dp/B0G4KZ51ZS/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B0G4KZ51ZS&pd_rd_w=wGvq1&content-id=amzn1.sym.953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_p=953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_r=2VJGTVXRWMWGGYJ1TN26&pd_rd_wg=z2vAv&pd_rd_r=5464afd0-0bb9-490b-9feb-61590040d152&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy)
+
+[Amazon.com: Applied Intelligence: A Practical Guide to Using AI eBook : FLEMING, Tony: Kindle Store](https://www.amazon.com/dp/B0G1JNF26G/ref=sspa_dk_detail_2?psc=1&pd_rd_i=B0G1JNF26G&pd_rd_w=wGvq1&content-id=amzn1.sym.953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_p=953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_r=2VJGTVXRWMWGGYJ1TN26&pd_rd_wg=z2vAv&pd_rd_r=5464afd0-0bb9-490b-9feb-61590040d152&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy)
+
+[The Art of AI Product Development: Delivering business value: Lipenkova, Dr. Janna: 9781633437050: Amazon.com: Books](https://www.amazon.com/dp/1633437051/ref=sspa_dk_detail_3?psc=1&pd_rd_i=1633437051&pd_rd_w=iJfly&content-id=amzn1.sym.f2f1cf8f-cab4-44dc-82ba-0ca811fb90cc&pf_rd_p=f2f1cf8f-cab4-44dc-82ba-0ca811fb90cc&pf_rd_r=2VJGTVXRWMWGGYJ1TN26&pd_rd_wg=z2vAv&pd_rd_r=5464afd0-0bb9-490b-9feb-61590040d152&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM)
+
+[Amazon.com: THE AI ENGINE ACCELERATOR FOR BEGINNERS : Your Practical Road Map to Harness the Power of Artificial Intelligence, Craft Powerful Prompts, and Improve Task Automation with Ease eBook : Halloway, Elowen : Kindle Store](https://www.amazon.com/dp/B0FNNKQQHN/ref=sspa_dk_detail_2?psc=1&pd_rd_i=B0FNNKQQHN&pd_rd_w=aXnUZ&content-id=amzn1.sym.386c274b-4bfe-4421-9052-a1a56db557ab&pf_rd_p=386c274b-4bfe-4421-9052-a1a56db557ab&pf_rd_r=4QZ4EGKZ2ZA8KBKY080Q&pd_rd_wg=Ai49o&pd_rd_r=24de071f-4287-4251-8a3c-ac19fba04fc4&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM)
+
+[AISO: How to Optimize Your Brand's AI Visibility: Hutzel, Taylor H: 9798218902834: Amazon.com: Books](https://www.amazon.com/dp/B0GDRJ15YQ/ref=sspa_dk_detail_0?psc=1&pd_rd_i=B0GDRJ15YQ&pd_rd_w=fIhQC&content-id=amzn1.sym.953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_p=953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_r=P33E3HCR71E7P2BB6DFS&pd_rd_wg=tOZRv&pd_rd_r=36eed112-60ce-4735-8d19-2f81f8620078&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy)
+
+[Applying AI in Learning and Development: From Platforms to Performance: Cavalier, Josh: 9781960231529: Amazon.com: Books](https://www.amazon.com/dp/1960231529/ref=sspa_dk_detail_2?psc=1&pd_rd_i=1960231529&pd_rd_w=fIhQC&content-id=amzn1.sym.953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_p=953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_r=P33E3HCR71E7P2BB6DFS&pd_rd_wg=tOZRv&pd_rd_r=36eed112-60ce-4735-8d19-2f81f8620078&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy)
+
+[Action-First Learning: Instructional Design Techniques to Engage and Inspire: Kapp, Karl M.: 9781957157924: Amazon.com: Books](https://www.amazon.com/dp/1957157925/ref=mes-dp?_encoding=UTF8&pd_rd_w=waKsJ&content-id=amzn1.sym.476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_p=476b1b7d-c787-4147-8a3c-fdef209103a1&pf_rd_r=05ZSN0PJJ52NMN7DNJEP&pd_rd_wg=Y0SK4&pd_rd_r=4979306d-44e7-4e39-b35e-c2a267fbd0f0)
+
+[The Ultimate Guide to AI Agents for Business Leaders and Entrepreneurs: Your Non-technical Playbook for Innovation, Efficiency and Competitive Advantage: Silva, Narciso: 9798280317673: Amazon.com: Books](https://www.amazon.com/dp/B0F5QC8K27/ref=sspa_dk_hqp_detail_aax_0?psc=1&sp_csd=d2lkZ2V0TmFtZT1zcF9ocXBfc2hhcmVk)
+
+[AI: Unexplainable, Unpredictable, Uncontrollable (Chapman & Hall/CRC Artificial Intelligence and Robotics Series): Yampolskiy, Roman V.: 9781032576268: Amazon.com: Books](https://www.amazon.com/dp/103257626X/ref=sspa_dk_detail_5?psc=1&pd_rd_i=103257626X&pd_rd_w=aXnUZ&content-id=amzn1.sym.386c274b-4bfe-4421-9052-a1a56db557ab&pf_rd_p=386c274b-4bfe-4421-9052-a1a56db557ab&pf_rd_r=4QZ4EGKZ2ZA8KBKY080Q&pd_rd_wg=Ai49o&pd_rd_r=24de071f-4287-4251-8a3c-ac19fba04fc4&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM)
+
+[The Art of AI Product Development: Delivering business value: Lipenkova, Dr. Janna: 9781633437050: Amazon.com: Books](https://www.amazon.com/dp/1633437051/ref=sspa_dk_detail_8?psc=1&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=5VET7R7PDW9MSB3FG52A&pd_rd_wg=gq8US&pd_rd_w=g9ati&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pd_rd_r=f208422e-3508-4b63-be7c-caeae54c3616&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw)
+
+[The Enterprise Vibe Coding Playbook: How Real Teams Build Real Software With AI: Kerwin, Doug: 9798293510313: Amazon.com: Books](https://www.amazon.com/dp/B0FL2FLXYP/ref=sspa_dk_detail_9?psc=1&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=5VET7R7PDW9MSB3FG52A&pd_rd_wg=gq8US&pd_rd_w=g9ati&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pd_rd_r=f208422e-3508-4b63-be7c-caeae54c3616&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw)
+
+[Code Health Guardian: The Old-New Role of a Human Programmer in the AI Era: Shevchenko, Artie, Todorovic, Lana, Winters, Titus: 9781763771703: Amazon.com: Books](https://www.amazon.com/dp/1763771709/ref=sspa_dk_detail_6?psc=1&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=5VET7R7PDW9MSB3FG52A&pd_rd_wg=gq8US&pd_rd_w=g9ati&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pd_rd_r=f208422e-3508-4b63-be7c-caeae54c3616&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw)
+
+[Code Revealed: Leading Software Development in the age of AI Agents: Cassani, Alexio: 9798272390547: Amazon.com: Books](https://www.amazon.com/dp/B0FZ4M9532/ref=sspa_dk_detail_7?psc=1&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=5VET7R7PDW9MSB3FG52A&pd_rd_wg=gq8US&pd_rd_w=g9ati&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pd_rd_r=f208422e-3508-4b63-be7c-caeae54c3616&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw)
+
+[Learn the Latest Tech Skills; Advance Your Career | Udacity](https://www.udacity.com/catalog?school=artificial%20intelligence)
+
+[Online AI Product Manager Training Course | Udacity](https://www.udacity.com/course/ai-product-manager-nanodegree--nd088)
+
+[AI for Business Leaders: ML, Generative, and Agentic Strategy Training | Udacity](https://www.udacity.com/course/ai-for-business-leaders--nd054)
+
+[Understanding the role of AI in software development - ChatGPT Video Tutorial | LinkedIn Learning, formerly Lynda.com](https://www.linkedin.com/learning/ai-and-developer-productivity/understanding-the-role-of-ai-in-software-development?upsellOrderOrigin=default_guest_learning&trk=default_guest_learning)
+
+[AI for Software Testers: Apply AI Tools and Techniques to the Software Testing Life Cycle Online Class | LinkedIn Learning, formerly Lynda.com](https://www.linkedin.com/learning/ai-for-software-testers-apply-ai-tools-and-techniques-to-the-software-testing-life-cycle?upsellOrderOrigin=default_guest_learning&trk=default_guest_learning)
+
+[AI-Assisted Programming | Coursera](https://www.coursera.org/learn/ai-assisted-programming#modules)
+
+[Introduction to AI-assisted Coding](https://www.pluralsight.com/courses/introduction-ai-assisted-coding)
