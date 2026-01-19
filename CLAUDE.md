@@ -37,6 +37,8 @@ aiXform/
 | Labs | 3-6 | Hands-on lab exercises |
 | Applied | 7-10 | Guided coaching on learner's actual projects |
 
+> **Product Note:** Fundamentals (Weeks 1-2) is intentionally **tool-agnostic**. It teaches concepts and mental models that apply to ANY AI coding tool. Instructors may demo various tools (Claude Code, Copilot, etc.), but it's not a tutorial on any specific product. Tool-specific skills come in Labs/Applied.
+
 ## Session Convention
 
 Sessions are named: `YYYY-MM-DD_short-description`

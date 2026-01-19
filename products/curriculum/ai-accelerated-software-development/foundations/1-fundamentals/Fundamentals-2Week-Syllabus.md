@@ -11,17 +11,21 @@ A lecture-only fundamentals module that establishes the mental model for LLMs, c
 ---
 
 ## Audience
-- Software engineers, platform engineers, and technical professionals who will later do labs/applied work using CLI harnesses (Claude Code CLI as the primary agentic harness), API calls (e.g., cURL), and tool-based agent workflows.
+- Software engineers, platform engineers, and technical professionals who will later do labs/applied work using CLI harnesses, API calls, and tool-based agent workflows.
 - No code execution required during Fundamentals lectures.
 
-> **Tooling note:** The Ensemble pilot uses Claude Code CLI. Future clients restricted to GitHub Copilot may require adapted content (placeholder).
+> **Important:** Fundamentals is intentionally **tool-agnostic**. The goal is to teach concepts and mental models that apply to ANY AI coding tool (Claude Code, GitHub Copilot, Cursor, Cody, etc.). Instructors may demo various tools, but the content is not a tutorial on any specific product. Tool-specific skills are developed in Labs and Applied phases.
 
 ---
 
 ## Time commitment
-- **Lecture time:** 20 sessions × (20–30 min) = **~6.7–10 hours** (typical target: ~8–9 hours)
+- **Lecture sessions:** 20 sessions × (20–30 min) = **~8–10 hours** total
+- **Supplemental materials:** Pre/post-session reading, videos, exercises = **~8–10 hours** total
 - **End test:** ~12 minutes
 - **Evaluation questionnaire:** 5–7 minutes
+- **Weekly total:** ~8–10 hours/week
+
+See `Fundamentals-Supplemental-Materials.md` for the complete supplemental materials guide.
 
 ---
 

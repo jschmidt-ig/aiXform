@@ -116,7 +116,6 @@ aiXform/
 ## What Needs Creation (Gaps)
 
 ### Immediate Priority
-- **Fundamentals supplemental materials** - Assigned reading/videos to bring Weeks 1-2 to 8-10 hrs/week (sessions alone are ~4 hrs)
 - **Applied Coaching phase content** (Weeks 7-10) - currently just a README placeholder
 - Slide decks for 20 Fundamentals sessions
 - Recorded video content for Weeks 1-2

@@ -4,6 +4,27 @@ All notable changes to product structure and content.
 
 ---
 
+## 2026-01-19 (Fundamentals Supplemental Materials)
+
+### Added
+- `1-fundamentals/Fundamentals-Supplemental-Materials.md` - Complete tool-agnostic guide with:
+  - Pre-session and post-session materials for all 10 days
+  - Generic reading assignments (learners find current articles)
+  - Videos (3Blue1Brown transformer explanation)
+  - OWASP LLM security reading (required)
+  - Reflection exercises and practical activities
+  - Time breakdown showing ~10.5 hrs/week total
+  - Instructor notes for cohort customization
+
+### Updated
+- `1-fundamentals/Fundamentals-2Week-Syllabus.md` - Added tool-agnostic note and time commitment section
+- `CLAUDE.md` - Added product note about Fundamentals being tool-agnostic
+
+### Product Note
+> Fundamentals (Weeks 1-2) is intentionally **tool-agnostic**. It teaches concepts and mental models that apply to ANY AI coding tool. Instructors may demo various tools, but it's not a tutorial on any specific product. Tool-specific skills come in Labs/Applied.
+
+---
+
 ## 2026-01-19 (Fundamentals Time Commitment)
 
 ### Changed
