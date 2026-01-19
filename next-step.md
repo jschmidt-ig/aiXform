@@ -116,7 +116,6 @@ aiXform/
 ## What Needs Creation (Gaps)
 
 ### Immediate Priority
-- **Applied Coaching phase content** (Weeks 7-10) - currently just a README placeholder
 - Slide decks for 20 Fundamentals sessions
 - Recorded video content for Weeks 1-2
 

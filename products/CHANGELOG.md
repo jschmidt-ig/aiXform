@@ -4,6 +4,28 @@ All notable changes to product structure and content.
 
 ---
 
+## 2026-01-19 (Applied Coaching Phase Content)
+
+### Added
+Complete Applied phase content for Weeks 7-10:
+
+- `3-applied/Applied-4Week-Syllabus.md` — Week-by-week structure, objectives, coaching model
+- `3-applied/Team-AI-Playbook-Template.md` — Template for team AI rules, practices, workflows
+- `3-applied/ROI-Metrics-Template.md` — Baseline/final metrics, ROI calculation, qualitative assessment
+- `3-applied/Coaching-Session-Guide.md` — Facilitation guide with weekly agendas, discussion prompts, handling common situations
+- `3-applied/Executive-Readout-Template.md` — Slide-by-slide template for leadership presentation
+
+### Updated
+- `3-applied/README.md` — Complete overview with document index
+
+### Key Concepts
+- **Three objectives:** Apply to real projects, customize workflows, establish new ways of working
+- **Key deliverable:** Team AI Playbook (team's documented rules and practices)
+- **Coaching model:** Team sessions + 1:1s + office hours
+- **Facilitation philosophy:** Coach as facilitator, not prescriber
+
+---
+
 ## 2026-01-19 (Fundamentals Supplemental Materials)
 
 ### Added
