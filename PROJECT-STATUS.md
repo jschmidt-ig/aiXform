@@ -53,6 +53,7 @@ Full path: `products/curriculum/ai-accelerated-software-development/foundations/
 ## What Needs Creation
 
 ### Content Production
+- **Fundamentals supplemental materials** - Assigned reading/videos to bring Weeks 1-2 to 8-10 hrs/week (sessions alone are ~4 hrs)
 - Slide decks for 20 Fundamentals sessions
 - Recorded video content for Weeks 1-2
 - Detailed lab instructions with step-by-step guidance

@@ -4,6 +4,19 @@ All notable changes to product structure and content.
 
 ---
 
+## 2026-01-19 (Fundamentals Time Commitment)
+
+### Changed
+- Updated Fundamentals from 4 hrs/week to 8-10 hrs/week (consistent with Labs and Applied)
+- Added "supplemental materials" as gap item - need assigned reading/videos to fill additional hours
+
+### Files Updated
+- `PROJECT-STATUS.md`, `next-step.md` - added gap item, updated time table
+- `products/marketing/ai-accelerated-software-development/foundations/index.html`
+- `products/marketing/brochures/AI-Accelerated-Software-Development-Fundamentals-Brochure.html`
+
+---
+
 ## 2026-01-19 (Terminology Update - Micro-sessions)
 
 ### Changed

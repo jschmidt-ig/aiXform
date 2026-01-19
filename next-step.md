@@ -32,7 +32,7 @@ A 10-week program with three phases:
 
 | Phase | Weeks | Focus | Time/Week |
 |-------|-------|-------|-----------|
-| Fundamentals | 1-2 | Online course work, 20 sessions | 4 hrs |
+| Fundamentals | 1-2 | Online course work, 20 sessions + supplemental materials | 8-10 hrs |
 | Labs | 3-6 | Hands-on lab exercises (4 labs) | 8-10 hrs |
 | Applied | 7-10 | Guided coaching on real projects | 8-10 hrs |
 
@@ -116,6 +116,7 @@ aiXform/
 ## What Needs Creation (Gaps)
 
 ### Immediate Priority
+- **Fundamentals supplemental materials** - Assigned reading/videos to bring Weeks 1-2 to 8-10 hrs/week (sessions alone are ~4 hrs)
 - **Applied Coaching phase content** (Weeks 7-10) - currently just a README placeholder
 - Slide decks for 20 Fundamentals sessions
 - Recorded video content for Weeks 1-2
