@@ -12,6 +12,15 @@
 
 ---
 
+## How to Start a New GT Session (GPT 5.2 — Research + Marketing)
+
+**Tell GT:**
+> Read GT.md, COORDINATION.md, and PROJECT-STATUS.md. Then let's work on [your task].
+
+GT's domains: Deep research, marketing materials, competitive analysis
+
+---
+
 ## What This Project Is
 
 **aiXform** is a new AI transformation training company being spun out from Integral Dragon (consulting). We're building enterprise AI-assisted development courses.
@@ -40,11 +49,24 @@ A 10-week program with three phases:
 
 ---
 
+## AI Assistants
+
+| Name | Model | Role |
+|------|-------|------|
+| **Claude** | Claude Code CLI | Lead AI — coordinates project |
+| **GT** | GPT 5.2 | Helper — takes assigned tasks |
+
+**Either AI can work on anything.** See `COORDINATION.md` for work log.
+
+---
+
 ## Directory Structure
 
 ```
 aiXform/
-├── CLAUDE.md              # Read this first - project context for Claude
+├── CLAUDE.md              # Claude's instruction file
+├── GT.md                  # GT's instruction file
+├── COORDINATION.md        # How Claude and GT coordinate
 ├── README.md              # Business overview
 ├── PROJECT-STATUS.md      # Current state, key documents, gaps
 ├── next-step.md           # This file - session handoff
@@ -103,28 +125,37 @@ aiXform/
 - Business model and pricing (L1/L2/L3 tiers)
 - 10-week delivery framework
 - Course structure (Fundamentals → Labs → Applied)
-- Fundamentals syllabus (20 sessions)
+- Fundamentals syllabus (20 sessions) + supplemental materials
 - Labs syllabus (4 labs over 4 weeks)
 - Lab specifications (Lab 01-04)
+- **Applied phase content** (syllabus, playbook template, ROI metrics, coaching guide, exec readout)
 - Maturity model framework
 - Client pitch documents
 - Templates for lessons, labs, assessments
-- Marketing brochures
+- Marketing brochures (Fundamentals, Labs)
+- Foundations landing page
 
 ---
 
 ## What Needs Creation (Gaps)
 
-### Immediate Priority
+### Curriculum
 - Slide decks for 20 Fundamentals sessions
 - Recorded video content for Weeks 1-2
-
-### Also Needed
 - Detailed lab instructions with step-by-step guidance
 - Starter code and production codebase examples
 - Safe sandbox environments
 - Assessment answer keys
 - Instructor facilitation guides
+
+### Marketing
+- Applied Phase brochure (Weeks 7-10)
+- Case study template for pilot outcomes
+
+### Research
+- Competitive landscape analysis
+- Enterprise AI adoption market research
+- ROI data for training effectiveness
 
 ---
 
@@ -151,22 +182,17 @@ aiXform/
 4. No greenfield/brownfield tracks - everyone works with production codebases
 5. "Brownfield" → "Production Codebase" terminology
 6. Lab 02 renamed to "Codebase Analysis & Documentation"
-7. **Claude approved for Ensemble pilot** — Claude Code CLI is now the primary agentic harness (Copilot CLI content deferred as placeholder for future clients)
+7. **Claude approved for Ensemble pilot** — Claude Code CLI is now the primary agentic harness
+8. **GT (GPT 5.2) added** — Helper AI; Claude is lead. See `GT.md` and `COORDINATION.md`
 
 ---
 
 ## Suggested Next Tasks
 
-1. **Build out 3-applied/ content** - The Applied Coaching phase (Weeks 7-10) needs:
-   - Coaching session frameworks
-   - Progress tracking templates
-   - Project selection criteria
-   - Capstone deliverable specs
-   - Executive ROI readout template
-
-2. **Week 1 critical path** - Minimum viable content for launch
-
-3. **Content production schedule** - Prioritize what to build first
+1. **Slide decks for 20 Fundamentals sessions** — Presentation materials for Weeks 1-2
+2. **Detailed lab instructions** — Step-by-step guidance for Labs phase
+3. **Applied Phase brochure** — No brochure exists for Weeks 7-10 yet
+4. **Competitive landscape research** — Who else offers AI dev training
 
 ---
 
@@ -174,10 +200,12 @@ aiXform/
 
 | What | Where |
 |------|-------|
-| Project context | `CLAUDE.md` |
+| Claude's context | `CLAUDE.md` |
+| GT's context | `GT.md` |
+| AI coordination | `COORDINATION.md` |
 | Current status | `PROJECT-STATUS.md` |
 | Product changes | `products/CHANGELOG.md` |
 | Labs syllabus | `products/curriculum/.../2-labs/3-Syllabus/Labs-4-Week-Syllabus.md` |
 | Fundamentals syllabus | `products/curriculum/.../1-fundamentals/Fundamentals-2Week-Syllabus.md` |
+| Applied syllabus | `products/curriculum/.../3-applied/Applied-4Week-Syllabus.md` |
 | Session history | `_project/session-history.md` |
-| Today's work | `sessions/2026-01-19-2_product-restructure/SESSION.md` |

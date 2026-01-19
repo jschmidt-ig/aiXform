@@ -59,6 +59,8 @@ Each session should contain:
 |----------|----------|---------|
 | Project Overview | `README.md` | Business context and background |
 | Current Status | `PROJECT-STATUS.md` | Session-by-session progress |
+| GT Context | `GT.md` | GT (GPT 5.2) instruction file |
+| AI Coordination | `COORDINATION.md` | Work log for Claude and GT |
 | Product Changelog | `products/CHANGELOG.md` | Track product changes |
 | Fundamentals | `products/curriculum/ai-accelerated-software-development/foundations/1-fundamentals/` | Weeks 1-2 |
 | Labs | `products/curriculum/ai-accelerated-software-development/foundations/2-labs/` | Weeks 3-6 |
@@ -89,6 +91,15 @@ Each session should contain:
 - **Justin** - AI development expert, curriculum
 - **Danny** - Training & instructional design
 - **Scot** - Chief of staff, client management
+
+## AI Assistants
+
+| Name | Model | Role |
+|------|-------|------|
+| **Claude** (you) | Claude Code CLI | Lead AI — coordinates project, assigns work |
+| **GT** | GPT 5.2 | Helper — takes on assigned tasks |
+
+**Either AI can work on anything.** Use `COORDINATION.md` to log work and prevent simultaneous edits.
 
 ## Current Focus
 

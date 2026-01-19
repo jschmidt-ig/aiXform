@@ -24,10 +24,24 @@ Full path: `products/curriculum/ai-accelerated-software-development/foundations/
 
 ---
 
+## AI Assistants
+
+| Name | Model | Role |
+|------|-------|------|
+| **Claude** | Claude Code CLI | Lead AI — coordinates project |
+| **GT** | GPT 5.2 | Helper — takes assigned tasks |
+
+**Either AI can work on anything.** See `COORDINATION.md` for work log and coordination.
+
+---
+
 ## Key Documents
 
 | Document | Location |
 |----------|----------|
+| Claude's context | `CLAUDE.md` |
+| GT's context | `GT.md` |
+| AI coordination | `COORDINATION.md` |
 | Product Changelog | `products/CHANGELOG.md` |
 | Fundamentals | `products/curriculum/ai-accelerated-software-development/foundations/1-fundamentals/` |
 | Labs | `products/curriculum/ai-accelerated-software-development/foundations/2-labs/` |
@@ -44,15 +58,19 @@ Full path: `products/curriculum/ai-accelerated-software-development/foundations/
 - Business model and pricing (L1/L2/L3 tiers)
 - 10-week delivery framework
 - Full curriculum structure (syllabi, lab outlines, rubrics)
+- Fundamentals syllabus (20 sessions) + supplemental materials
+- Labs syllabus (4 labs over 4 weeks) + lab specifications
+- **Applied phase content** (syllabus, playbook template, ROI metrics, coaching guide, exec readout)
 - Maturity model framework and visuals
 - Client pitch documents
 - Templates for lessons, labs, assessments
+- Marketing brochures (Fundamentals, Labs) + Foundations landing page
 
 ---
 
 ## What Needs Creation
 
-### Content Production
+### Curriculum
 - Slide decks for 20 Fundamentals sessions
 - Recorded video content for Weeks 1-2
 - Detailed lab instructions with step-by-step guidance
@@ -60,7 +78,15 @@ Full path: `products/curriculum/ai-accelerated-software-development/foundations/
 - Safe sandbox environments
 - Assessment answer keys
 - Instructor facilitation guides
-- Applied coaching frameworks and templates
+
+### Marketing
+- Applied Phase brochure (Weeks 7-10)
+- Case study template for pilot outcomes
+
+### Research
+- Competitive landscape analysis
+- Enterprise AI adoption market research
+- ROI data for training effectiveness
 
 ---
 
