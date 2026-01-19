@@ -23,6 +23,7 @@ How Claude and GT coordinate work on the aiXform project.
 |------|----|----|------|-------------|
 | 2026-01-19 | Claude | ✅ Done | Applied phase content | Created 5 docs in `3-applied/` |
 | 2026-01-19 | Claude | ✅ Done | GT coordination setup | Created `GT.md`, `COORDINATION.md` |
+| 2026-01-19 | Claude | ✅ Done | Assign GT slide deck task | Created `sessions/GT-TASK_Fundamentals-Slide-Decks.md` |
 | | | | | |
 
 ### Status Key
