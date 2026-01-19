@@ -118,3 +118,17 @@ Detailed breakdown of work done in each session.
 - Established naming conventions (YYYY-MM-DD_description)
 - Extracted finished work to products/
 - Slimmed down PROJECT-STATUS.md, moved details to _project/session-history.md
+
+---
+
+## 2026-01-19-2_product-restructure
+**Focus:** Restructure products with proper course naming
+
+**Outputs:**
+- Renamed course from "AI SDLC" to "AI Accelerated Software Development"
+- Created three-phase delivery structure:
+  - 1-fundamentals (Weeks 1-2)
+  - 2-labs (Weeks 3-6)
+  - 3-applied (Weeks 7-10)
+- Created products/CHANGELOG.md
+- Updated CLAUDE.md and PROJECT-STATUS.md with new structure

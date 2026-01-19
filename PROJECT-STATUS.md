@@ -12,16 +12,29 @@ Transition from planning/specification to **content production**.
 
 ---
 
+## Course: AI Accelerated Software Development - Foundations
+
+| Phase | Weeks | Location |
+|-------|-------|----------|
+| Fundamentals | 1-2 | `products/curriculum/.../1-fundamentals/` |
+| Labs | 3-6 | `products/curriculum/.../2-labs/` |
+| Applied | 7-10 | `products/curriculum/.../3-applied/` |
+
+Full path: `products/curriculum/ai-accelerated-software-development/foundations/`
+
+---
+
 ## Key Documents
 
 | Document | Location |
 |----------|----------|
-| Labs Bundle | `products/curriculum/labs-bundle/` |
-| Fundamentals Bundle | `products/curriculum/fundamentals-bundle/` |
+| Product Changelog | `products/CHANGELOG.md` |
+| Fundamentals | `products/curriculum/ai-accelerated-software-development/foundations/1-fundamentals/` |
+| Labs | `products/curriculum/ai-accelerated-software-development/foundations/2-labs/` |
+| Applied | `products/curriculum/ai-accelerated-software-development/foundations/3-applied/` |
 | Client Pitch | `products/client-materials/ensemble/` |
 | Marketing Brochures | `products/marketing/brochures/` |
 | Maturity Model | `sessions/2026-01-11_maturity-model/a4_agentic-ai-sdlc-maturity-model.md` |
-| Time Blocking | `sessions/2026-01-12_operational-planning/_work-product/a5-Ensemble_AI_SDLC_10_Week_Time_Blocking.md` |
 | Session History | `_project/session-history.md` |
 
 ---
@@ -46,6 +59,7 @@ Transition from planning/specification to **content production**.
 - Safe sandbox environments
 - Assessment answer keys
 - Instructor facilitation guides
+- Applied coaching frameworks and templates
 
 ---
 
