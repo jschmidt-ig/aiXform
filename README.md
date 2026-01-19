@@ -1,57 +1,156 @@
-# -aiXform
-Root project for aiXform business.  Business planning, stategy, execution.  Outline for course work
+# aiXform
 
-## Background
+Enterprise AI transformation training — courses and consulting for software development teams.
 
-Currently, I am in the process of creating an AI transformation business(aiXform working title). Our target market is enterprise software development. Currently we have a software consulting business called 'Integral Dragon'. Integral Dragon provides general software consulting services to enterprise clients on an hourly billing model.  We would like to maintain Integral Dragon as consulting and start a new business (aiXform). aiXform would provided training, ai software, and specialized AI Transformation consulting services.  The business goal would be to move away from an hourly consultant billing model to a more scalable product model where we're getting paid for products and services we deliver that are not tied to the hours we work To grow a general consulting company involves having to scale and manage more consultants and clients, which we have less of an interest in and we think is generally limiting from a profitable standpoint. 
+**First Client:** Ensemble Health Partners — 10-week pilot starting mid-January 2026
 
-### Integral Dragon
+---
 
-Dragon is the Founder and sole owner. He's got a strong software development background. He previously was a senior vice president at United Healthcare. And has strong business relationships with other executives at a number of companies. 
+## Quick Links
 
-Justin (Me) Has a strong software development and consulting background, and is an expert in using AI for develeopment.  
+| Resource | Description |
+|----------|-------------|
+| [PROJECT-STATUS.md](PROJECT-STATUS.md) | Current state, what exists, what's needed |
+| [COORDINATION.md](COORDINATION.md) | AI work log (Claude + GT coordination) |
+| [next-step.md](next-step.md) | Session handoff and startup instructions |
+| [products/CHANGELOG.md](products/CHANGELOG.md) | Track all product changes |
 
-Danny has a phD in psychology and a background in corporate training and development 
+---
 
-Scot is Dragon's chief of staff, helping manage a lot of projects, and also is our Client manager 
+## Current Course: AI Accelerated Software Development — Foundations
 
-Russ and Casey are 1099 contractors working on the Pulse (nClave) project for Ensemble Health Partners. Russ has a strong background in infrastructure and operations, and Casey has an interest in aptitude in AI. 
+A 10-week program teaching developers to work effectively with AI coding tools.
 
+| Phase | Weeks | Format | Status |
+|-------|-------|--------|--------|
+| [Fundamentals](products/curriculum/ai-accelerated-software-development/foundations/1-fundamentals/) | 1-2 | 20 sessions (lectures + demos) | Syllabus ✅ Slides 🔄 |
+| [Labs](products/curriculum/ai-accelerated-software-development/foundations/2-labs/) | 3-6 | 4 hands-on labs | Syllabus ✅ Instructions ❌ |
+| [Applied](products/curriculum/ai-accelerated-software-development/foundations/3-applied/) | 7-10 | Team coaching | Complete ✅ |
 
+**Time commitment:** 8-10 hours/week for all phases
 
-### aiXform
+---
 
-This is the new business we would like to form. The vision is to be an AI transformation company providing training products and high-impact consulting services for business transformation. Our target market is enterprise software development. 
+## What's Done
 
-##### Current Situtaion
+### Curriculum Structure
+- [Fundamentals syllabus](products/curriculum/ai-accelerated-software-development/foundations/1-fundamentals/Fundamentals-2Week-Syllabus.md) — 20 sessions over 10 days
+- [Fundamentals supplemental materials](products/curriculum/ai-accelerated-software-development/foundations/1-fundamentals/Fundamentals-Supplemental-Materials.md) — Reading, videos, exercises
+- [Labs syllabus](products/curriculum/ai-accelerated-software-development/foundations/2-labs/3-Syllabus/Labs-4-Week-Syllabus.md) — 4 labs over 4 weeks
+- Lab specifications (Lab 01-04)
+- [Applied syllabus](products/curriculum/ai-accelerated-software-development/foundations/3-applied/Applied-4Week-Syllabus.md) — Weeks 7-10 coaching
+- [Team AI Playbook template](products/curriculum/ai-accelerated-software-development/foundations/3-applied/Team-AI-Playbook-Template.md)
+- [ROI Metrics template](products/curriculum/ai-accelerated-software-development/foundations/3-applied/ROI-Metrics-Template.md)
+- [Coaching Session Guide](products/curriculum/ai-accelerated-software-development/foundations/3-applied/Coaching-Session-Guide.md)
+- [Executive Readout template](products/curriculum/ai-accelerated-software-development/foundations/3-applied/Executive-Readout-Template.md)
 
-Currently, Integral Dragon has two enterprise clients: Ensemble Health Partners and Cigna. Both of them have a desire for training in AI tooling. We would like to provide that training and, at the same time, develop courseware and a formal training program for aiXform. The idea would be to do it for a small cohort in the beginning, and then allow it to scale out to the rest of those organizations. We have a 10-week commitment starting the middle of January to deliver this. 
+### Marketing
+- [Foundations landing page](products/marketing/ai-accelerated-software-development/foundations/index.html)
+- [Fundamentals brochure](products/marketing/brochures/AI-Accelerated-Software-Development-Fundamentals-Brochure.html)
+- [Labs brochure](products/marketing/brochures/AI-Accelerated-Software-Development-Labs-Brochure.html)
 
-## Project deliverables 
+### Client Materials
+- [Ensemble pitch materials](products/client-materials/ensemble/)
 
-Short-term:
-We need to create a training program outline and delivery schedule for the executives at Ensemble and Cigna. 
+---
 
-Strategic:
+## What's Needed
 
-We would also like to create a product model, spec sheet, and strategy for enterprise training transformation that could be delivered to other organizations, also under aiXform. I would also like to create an enterprise transformation roadmap and strategy guide for executives at organizations We would need to show how AI is transforming companies and how our training fits into that strategic vision. Part of our training approach also has to show how it can scale to the rest of their development organizations to help them use AI to improve all aspects of software development. We also need to come up with a sales and marketing strategy, such as:
+### Critical Path (for pilot launch)
+- [ ] **Slide decks for 20 Fundamentals sessions** — GT is assigned, see [task brief](sessions/GT-TASK_Fundamentals-Slide-Decks.md)
+- [ ] Recorded video content for Weeks 1-2
 
-- Providing content for groups that have gone through our training program
-- Giving talks
-- Maintaining a newsletter
+### Also Needed
+- [ ] Detailed lab instructions with step-by-step guidance
+- [ ] Starter code and production codebase examples
+- [ ] Safe sandbox environments
+- [ ] Assessment answer keys
+- [ ] Instructor facilitation guides
+- [ ] Applied Phase brochure (Weeks 7-10)
+- [ ] Competitive landscape research
+- [ ] Case study template for pilot outcomes
 
-Work done so far. 
+---
 
-S1 folder (Seesion 1- Inital market research and outline for training as product model)
-This is my AI session of doing market research to try to figure out different training delivery models, pricings, etc. that are common in the industry. It also contains a course outline and structure. 
+## Directory Structure
 
-S2 (Current Session)
-Here I use the inputs from the first session, and I will be working with AI to tighten down delivery models and what they may look like. 
+```
+aiXform/
+├── products/                    # Finished deliverables
+│   ├── curriculum/              # Course materials
+│   │   └── ai-accelerated-software-development/
+│   │       └── foundations/
+│   │           ├── 1-fundamentals/   ← Weeks 1-2
+│   │           ├── 2-labs/           ← Weeks 3-6
+│   │           └── 3-applied/        ← Weeks 7-10
+│   ├── marketing/               # Brochures, landing pages
+│   └── client-materials/        # Client-specific (Ensemble)
+│
+├── sessions/                    # Working sessions (YYYY-MM-DD_description)
+├── reference/                   # Research, background materials
+├── assets/                      # Templates, prompts, images
+└── _project/                    # Meta-docs (session history)
+```
 
-I also need to figure out how to support restrictive enterprise environments and tooling. **Update (Jan 2026):** For the Ensemble pilot, we have approval to use Claude (Claude Code CLI as the primary agentic harness). This is the preferred tooling. However, some future enterprise clients may be restricted to Windows + GitHub Copilot only—we'll need to develop Copilot CLI content for those engagements. Also have to look at supported languages. The initial idea is to have it in .NET and Python for Ensemble, and eventually add on support for TypeScript and Java. 
+---
 
-I also have to figure out a good schedule for the initial 10-week delivery and how that work will map to content that will go in our L1(Foundation), L2(professional), and L3(Transformational) training courses that we've kind of refined as our training product model. 
+## Business Model
 
-S3 (Future) 
+| Tier | Name | Price | Format |
+|------|------|-------|--------|
+| L1 | Foundations | $300-500/seat | Self-paced, recorded |
+| L2 | Practitioner | $2,000-3,000 | 10-week cohort with labs |
+| L3 | Enterprise Accelerator | $30,000-50,000 | Team coaching |
 
-Need to provide a good roadmap and course outline to Ensemble and show how this training will be measured and benefit them. 
+---
+
+## Team
+
+| Person | Role |
+|--------|------|
+| **Dragon** | Founder, executive relationships |
+| **Justin** | AI development expert, curriculum |
+| **Danny** | Training & instructional design |
+| **Scot** | Chief of staff, client management |
+
+### AI Assistants
+
+| Name | Model | Role |
+|------|-------|------|
+| **Claude** | Claude Code CLI | Lead AI — coordinates project |
+| **GT** | GPT 5.2 | Helper — takes assigned tasks |
+
+See [COORDINATION.md](COORDINATION.md) for work log.
+
+---
+
+## Tooling
+
+**Ensemble Pilot:** Claude (approved) — Claude Code CLI as primary agentic harness
+
+**Future Clients:** Some enterprises may be restricted to Windows + GitHub Copilot. Content for Copilot CLI workflows will be developed for those engagements.
+
+**Enterprise Constraints:**
+- No external SaaS uploads
+- PHI/PII redaction required
+- Approved models only
+- Primary languages: .NET, Python
+
+---
+
+## Key Decisions
+
+1. Course renamed to "AI Accelerated Software Development" (not "AI SDLC")
+2. Three phases: Fundamentals (2 wks) → Labs (4 wks) → Applied (4 wks)
+3. Fundamentals is **tool-agnostic** — teaches concepts, not specific products
+4. No greenfield/brownfield tracks — everyone works with production codebases
+5. 8-10 hours/week for all phases
+
+---
+
+## For New Team Members
+
+1. Read [CLAUDE.md](CLAUDE.md) or [GT.md](GT.md) for AI context
+2. Read [PROJECT-STATUS.md](PROJECT-STATUS.md) for current state
+3. Check [COORDINATION.md](COORDINATION.md) for active work
+4. See [next-step.md](next-step.md) for session conventions
