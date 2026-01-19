@@ -33,7 +33,7 @@ aiXform/
 
 | Phase | Weeks | Description |
 |-------|-------|-------------|
-| Fundamentals | 1-2 | Online course work, 20 micro-sessions |
+| Fundamentals | 1-2 | Online course work, 20 sessions |
 | Labs | 3-6 | Hands-on lab exercises |
 | Applied | 7-10 | Guided coaching on learner's actual projects |
 
@@ -91,9 +91,16 @@ Each session should contain:
 ## Current Focus
 
 Preparing for 10-week Ensemble pilot:
-- Weeks 1-2: Fundamentals (20 micro-sessions)
+- Weeks 1-2: Fundamentals (20 sessions)
 - Weeks 3-6: Labs (hands-on exercises)
 - Weeks 7-10: Applied (coaching on real projects)
 
 Primary languages: .NET, Python
-Enterprise constraints: Windows + GitHub Copilot, no external SaaS, PHI/PII redaction required
+
+## Tooling
+
+**Ensemble Pilot:** Claude (approved) - Claude Code CLI as primary agentic harness
+
+**Future Clients (placeholder):** Some enterprises may be restricted to Windows + GitHub Copilot. Content for Copilot CLI workflows will need to be developed for those engagements.
+
+**Enterprise Constraints:** No external SaaS uploads, PHI/PII redaction required, approved models only

@@ -52,10 +52,11 @@ Full path: `products/curriculum/ai-accelerated-software-development/foundations/
 
 ## What Needs Creation
 
-- Slide decks for 20 fundamentals micro-sessions
+### Content Production
+- Slide decks for 20 Fundamentals sessions
 - Recorded video content for Weeks 1-2
 - Detailed lab instructions with step-by-step guidance
-- Starter code and brownfield codebase examples
+- Starter code and production codebase examples
 - Safe sandbox environments
 - Assessment answer keys
 - Instructor facilitation guides
@@ -63,9 +64,14 @@ Full path: `products/curriculum/ai-accelerated-software-development/foundations/
 
 ---
 
+## Tooling
+
+**Ensemble Pilot:** Claude (approved) - Claude Code CLI as primary agentic harness
+
+**Future Clients (placeholder):** Some enterprises may be restricted to Windows + GitHub Copilot. Content for Copilot CLI workflows will need to be developed for those engagements.
+
 ## Enterprise Constraints
 
-- Windows + GitHub Copilot as primary client tooling
 - No external SaaS uploads allowed
 - PHI/PII redaction requirements
 - Only approved AI models (no free-tier APIs)

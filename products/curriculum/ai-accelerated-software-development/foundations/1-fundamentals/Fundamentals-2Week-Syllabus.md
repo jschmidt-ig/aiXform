@@ -4,15 +4,17 @@ ChatGPT Folder > s6 - Course Syllabus Blocking > Fundamentals-2Week-Syllabus.md
 
 A lecture-only fundamentals module that establishes the mental model for LLMs, context, agents/harnesses, tool calling/MCP, and security (tool permissions + prompt injection).
 
-**Format:** 20 lecture micro-sessions, each **20–30 minutes**.  
+**Format:** 20 sessions (lectures and demonstrations), each **20–30 minutes**.  
 **Cadence suggestion:** 2 sessions/day, Mon–Fri for 2 weeks (10 days).  
 **Assessment:** end-of-module **lecture-only test** (10–15 min) with **critical safety** pass/fail + a separate learner feedback questionnaire.
 
 ---
 
 ## Audience
-- Software engineers, platform engineers, and technical professionals who will later do labs/applied work using CLI harnesses (e.g., Claude Code CLI), API calls (e.g., cURL), and tool-based agent workflows.
+- Software engineers, platform engineers, and technical professionals who will later do labs/applied work using CLI harnesses (Claude Code CLI as the primary agentic harness), API calls (e.g., cURL), and tool-based agent workflows.
 - No code execution required during Fundamentals lectures.
+
+> **Tooling note:** The Ensemble pilot uses Claude Code CLI. Future clients restricted to GitHub Copilot may require adapted content (placeholder).
 
 ---
 
@@ -188,9 +190,11 @@ By the end, learners should be able to:
 
 ### Day 7
 #### Session 13 — Agentic coding method (course focus)
-- What “agentic coding” means operationally: plan → diff → test → narrate
-- How Copilot “agent mode” differs across browser/IDE vs CLI
+- What "agentic coding" means operationally: plan → diff → test → narrate
+- How agentic harnesses differ: Claude Code CLI vs IDE assistants vs browser chat
 - The point: workflow design matters more than any single tool
+
+> **Note:** This course uses Claude Code CLI as the primary harness. Concepts apply to other agentic tools (GitHub Copilot CLI, Cursor, etc.) with workflow adaptations.
 
 **Demo ideas**
 - A “PR narration” template and why it’s useful

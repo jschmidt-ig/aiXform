@@ -59,8 +59,11 @@ Everything is designed for:
 
 ## Minimum tooling assumptions
 - Git + language runtime (.NET OR Java OR Python)
-- A “safe sandbox” repo (no sensitive code)
-- Approved LLM access (in-product or gateway); if CLI/agent tools aren’t approved in Week 1, use the fallback steps in Week 1.
+- A "safe sandbox" repo (no sensitive code)
+- **Claude Code CLI** as the primary agentic harness (approved for Ensemble pilot)
+- Approved LLM access (Claude); if CLI/agent tools aren't approved in Week 1, use the fallback steps in Week 1.
+
+> **Future clients (placeholder):** Organizations restricted to Windows + GitHub Copilot will require adapted lab instructions for Copilot CLI workflows.
 
 ## Outcomes you can measure (recommendation)
 Controllable metrics (good for course ROI):

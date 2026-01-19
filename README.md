@@ -48,7 +48,7 @@ This is my AI session of doing market research to try to figure out different tr
 S2 (Current Session)
 Here I use the inputs from the first session, and I will be working with AI to tighten down delivery models and what they may look like. 
 
-I also need to figure out how to support restrictive enterprise environments and tooling. At a high level, most enterprises are locked down to Windows and GitHub Copilot which are on fewer tools. I would like to use Claude Code developing on a MacBook, which is a superior environment but less available. Also have to look at supported languages. The initial idea is to have it in.NET and Python for Ensemble, and eventually add on support for TypeScript and Java. 
+I also need to figure out how to support restrictive enterprise environments and tooling. **Update (Jan 2026):** For the Ensemble pilot, we have approval to use Claude (Claude Code CLI as the primary agentic harness). This is the preferred tooling. However, some future enterprise clients may be restricted to Windows + GitHub Copilot only—we'll need to develop Copilot CLI content for those engagements. Also have to look at supported languages. The initial idea is to have it in .NET and Python for Ensemble, and eventually add on support for TypeScript and Java. 
 
 I also have to figure out a good schedule for the initial 10-week delivery and how that work will map to content that will go in our L1(Foundation), L2(professional), and L3(Transformational) training courses that we've kind of refined as our training product model. 
 

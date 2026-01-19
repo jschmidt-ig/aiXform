@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Accelerated Software Development - Foundations | aiXform</title>
+        <style>
+            :root {
+                --primary: #1a365d;
+                --secondary: #2b6cb0;
+                --accent: #4299e1;
+                --green: #2d6a4f;
+                --green-light: #40916c;
+                --orange: #c2410c;
+                --light: #f7fafc;
+                --dark: #1a202c;
+                --gray: #718096;
+                --white: #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Oxygen, Ubuntu, sans-serif;
+                line-height: 1.6;
+                color: var(--dark);
+                background: var(--white);
+            }
+
+            /* Hero Section */
+            .hero {
+                background: linear-gradient(
+                    135deg,
+                    var(--primary) 0%,
+                    var(--secondary) 50%,
+                    var(--green) 100%
+                );
+                color: var(--white);
+                padding: 80px 20px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+                font-weight: 700;
+                margin-bottom: 16px;
+                line-height: 1.2;
+            }
+
+            .hero .subtitle {
+                font-size: 1.4rem;
+                opacity: 0.9;
+                margin-bottom: 32px;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-stats {
+                display: flex;
+                justify-content: center;
+                gap: 48px;
+                flex-wrap: wrap;
+                margin-top: 40px;
+            }
+
+            .stat {
+                text-align: center;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+                opacity: 0.8;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            /* Container */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            /* Section */
+            section {
+                padding: 60px 0;
+            }
+
+            section h2 {
+                font-size: 2rem;
+                color: var(--primary);
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            section .section-desc {
+                text-align: center;
+                color: var(--gray);
+                max-width: 700px;
+                margin: 0 auto 40px;
+                font-size: 1.1rem;
+            }
+
+            /* Value Proposition */
+            .value-prop {
+                background: var(--light);
+            }
+
+            .value-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 24px;
+            }
+
+            .value-card {
+                background: var(--white);
+                padding: 28px;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+                border-left: 4px solid var(--accent);
+            }
+
+            .value-card h3 {
+                color: var(--primary);
+                margin-bottom: 12px;
+                font-size: 1.2rem;
+            }
+
+            .value-card p {
+                color: var(--gray);
+                font-size: 0.95rem;
+            }
+
+            /* Program Phases */
+            .phases {
+                background: var(--white);
+            }
+
+            .phase-timeline {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0;
+                max-width: 1000px;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            .phase-timeline::before {
+                content: '';
+                position: absolute;
+                top: 60px;
+                left: 16.67%;
+                right: 16.67%;
+                height: 4px;
+                background: linear-gradient(90deg, var(--secondary), var(--green), var(--orange));
+                z-index: 0;
+            }
+
+            .phase-card {
+                background: var(--white);
+                border: 2px solid #e2e8f0;
+                border-radius: 16px;
+                padding: 28px;
+                text-align: center;
+                position: relative;
+                margin: 0 12px;
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+
+            .phase-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            }
+
+            .phase-card.fundamentals {
+                border-color: var(--secondary);
+            }
+
+            .phase-card.labs {
+                border-color: var(--green);
+            }
+
+            .phase-card.applied {
+                border-color: var(--orange);
+            }
+
+            .phase-number {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: var(--white);
+                margin: 0 auto 16px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .phase-card.fundamentals .phase-number {
+                background: var(--secondary);
+            }
+
+            .phase-card.labs .phase-number {
+                background: var(--green);
+            }
+
+            .phase-card.applied .phase-number {
+                background: var(--orange);
+            }
+
+            .phase-card h3 {
+                font-size: 1.3rem;
+                color: var(--dark);
+                margin-bottom: 8px;
+            }
+
+            .phase-card .weeks {
+                font-size: 0.85rem;
+                color: var(--gray);
+                margin-bottom: 16px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .phase-card .time {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 4px;
+            }
+
+            .phase-card.fundamentals .time {
+                color: var(--secondary);
+            }
+
+            .phase-card.labs .time {
+                color: var(--green);
+            }
+
+            .phase-card.applied .time {
+                color: var(--orange);
+            }
+
+            .phase-card .time-label {
+                font-size: 0.85rem;
+                color: var(--gray);
+                margin-bottom: 16px;
+            }
+
+            .phase-card p {
+                font-size: 0.9rem;
+                color: var(--gray);
+                line-height: 1.5;
+            }
+
+            .phase-card ul {
+                list-style: none;
+                text-align: left;
+                margin-top: 16px;
+            }
+
+            .phase-card li {
+                font-size: 0.85rem;
+                color: var(--dark);
+                padding: 6px 0 6px 20px;
+                position: relative;
+            }
+
+            .phase-card li::before {
+                content: ">";
+                position: absolute;
+                left: 0;
+                font-weight: bold;
+            }
+
+            .phase-card.fundamentals li::before {
+                color: var(--secondary);
+            }
+
+            .phase-card.labs li::before {
+                color: var(--green);
+            }
+
+            .phase-card.applied li::before {
+                color: var(--orange);
+            }
+
+            /* Outcomes */
+            .outcomes {
+                background: var(--light);
+            }
+
+            .outcomes-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+            }
+
+            .outcome-card {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+                padding: 20px;
+                background: var(--white);
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            }
+
+            .outcome-icon {
+                width: 48px;
+                height: 48px;
+                background: linear-gradient(135deg, var(--secondary), var(--accent));
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--white);
+                font-size: 1.4rem;
+                flex-shrink: 0;
+            }
+
+            .outcome-content h4 {
+                color: var(--primary);
+                margin-bottom: 4px;
+                font-size: 1rem;
+            }
+
+            .outcome-content p {
+                color: var(--gray);
+                font-size: 0.9rem;
+            }
+
+            /* Enterprise Section */
+            .enterprise {
+                background: var(--primary);
+                color: var(--white);
+            }
+
+            .enterprise h2 {
+                color: var(--white);
+            }
+
+            .enterprise .section-desc {
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            .enterprise-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 24px;
+            }
+
+            .enterprise-card {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 24px;
+                border-radius: 12px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .enterprise-card h3 {
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+            }
+
+            .enterprise-card ul {
+                list-style: none;
+            }
+
+            .enterprise-card li {
+                padding: 8px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                font-size: 0.95rem;
+            }
+
+            .enterprise-card li:last-child {
+                border-bottom: none;
+            }
+
+            /* Audience */
+            .audience-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 24px;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .audience-card {
+                background: var(--white);
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                padding: 28px;
+            }
+
+            .audience-card h3 {
+                color: var(--primary);
+                margin-bottom: 16px;
+                font-size: 1.1rem;
+            }
+
+            .audience-card ul {
+                list-style: none;
+            }
+
+            .audience-card li {
+                padding: 8px 0;
+                padding-left: 24px;
+                position: relative;
+                font-size: 0.95rem;
+            }
+
+            .audience-card li::before {
+                content: "\2713";
+                position: absolute;
+                left: 0;
+                color: var(--accent);
+                font-weight: bold;
+            }
+
+            /* Tooling */
+            .tooling-box {
+                background: var(--light);
+                border: 2px solid var(--accent);
+                border-radius: 12px;
+                padding: 32px;
+                max-width: 800px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .tooling-box h3 {
+                color: var(--primary);
+                margin-bottom: 12px;
+            }
+
+            .tooling-box p {
+                color: var(--gray);
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+
+            .tooling-box .tool-badge {
+                display: inline-block;
+                background: var(--secondary);
+                color: var(--white);
+                padding: 8px 20px;
+                border-radius: 20px;
+                font-weight: 600;
+                margin-top: 12px;
+            }
+
+            /* CTA Section */
+            .cta {
+                background: linear-gradient(135deg, var(--green) 0%, var(--secondary) 100%);
+                color: var(--white);
+                text-align: center;
+            }
+
+            .cta h2 {
+                color: var(--white);
+                margin-bottom: 16px;
+            }
+
+            .cta p {
+                font-size: 1.2rem;
+                opacity: 0.9;
+                max-width: 600px;
+                margin: 0 auto 32px;
+            }
+
+            .cta-stats {
+                display: flex;
+                justify-content: center;
+                gap: 48px;
+                flex-wrap: wrap;
+            }
+
+            .cta-stat {
+                text-align: center;
+            }
+
+            .cta-stat .number {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            .cta-stat .label {
+                font-size: 0.9rem;
+                opacity: 0.8;
+            }
+
+            /* Footer */
+            footer {
+                background: var(--dark);
+                color: var(--white);
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            footer p {
+                opacity: 0.7;
+                font-size: 0.9rem;
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+                .hero h1 {
+                    font-size: 2rem;
+                }
+
+                .hero .subtitle {
+                    font-size: 1.1rem;
+                }
+
+                .hero-stats {
+                    gap: 24px;
+                }
+
+                section {
+                    padding: 40px 0;
+                }
+
+                .phase-timeline {
+                    grid-template-columns: 1fr;
+                    gap: 24px;
+                }
+
+                .phase-timeline::before {
+                    display: none;
+                }
+
+                .phase-card {
+                    margin: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Hero -->
+        <header class="hero">
+            <div class="container">
+                <h1>AI Accelerated Software Development</h1>
+                <p class="subtitle">
+                    Foundations Program: Transform your team's software delivery with AI-assisted workflows
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">Weeks</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Phases</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">6-10</div>
+                        <div class="stat-label">Hours/Week</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Value Proposition -->
+        <section class="value-prop">
+            <div class="container">
+                <h2>Why This Program?</h2>
+                <p class="section-desc">
+                    AI-assisted development is the highest-ROI agent use case today. This program makes it repeatable, safe, and measurable for enterprise teams.
+                </p>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h3>Accelerate Delivery</h3>
+                        <p>
+                            Increase PR throughput and reduce cycle time. Teams using agentic workflows consistently ship faster with smaller, safer changes.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Improve Quality</h3>
+                        <p>
+                            Better test coverage, clearer documentation, and consistent PR narration. AI handles the tedious work while humans focus on judgment.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Enterprise-Safe</h3>
+                        <p>
+                            Designed for enterprise constraints from day one. No external SaaS, approved models only, clear security boundaries, PHI/PII redaction guidance.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Measurable ROI</h3>
+                        <p>
+                            Track concrete metrics: PR throughput, test coverage delta, documentation completeness. Executive readout included.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Phases -->
+        <section class="phases">
+            <div class="container">
+                <h2>Three-Phase Program</h2>
+                <p class="section-desc">
+                    A progressive journey from foundational knowledge to hands-on practice to real-world application.
+                </p>
+
+                <div class="phase-timeline">
+                    <div class="phase-card fundamentals">
+                        <div class="phase-number">1</div>
+                        <h3>Fundamentals</h3>
+                        <div class="weeks">Weeks 1-2</div>
+                        <div class="time">4</div>
+                        <div class="time-label">hours/week</div>
+                        <p>Build the mental model for AI-assisted development</p>
+                        <ul>
+                            <li>20 sessions (20-30 min each)</li>
+                            <li>LLM mechanics & context engineering</li>
+                            <li>Agentic workflows & tool calling</li>
+                            <li>Security: permissions & prompt injection</li>
+                            <li>Safety assessment gate</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-card labs">
+                        <div class="phase-number">2</div>
+                        <h3>Labs</h3>
+                        <div class="weeks">Weeks 3-6</div>
+                        <div class="time">8-10</div>
+                        <div class="time-label">hours/week</div>
+                        <p>Hands-on practice building real software</p>
+                        <ul>
+                            <li>4 progressive hands-on labs</li>
+                            <li>API foundations & PR workflows</li>
+                            <li>Codebase analysis & documentation</li>
+                            <li>Testing acceleration & coverage</li>
+                            <li>Observability & security drills</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-card applied">
+                        <div class="phase-number">3</div>
+                        <h3>Applied</h3>
+                        <div class="weeks">Weeks 7-10</div>
+                        <div class="time">8-10</div>
+                        <div class="time-label">hours/week</div>
+                        <p>Coached implementation on real projects</p>
+                        <ul>
+                            <li>Apply skills to your actual codebase</li>
+                            <li>1:1 and team coaching sessions</li>
+                            <li>Capstone deliverables with metrics</li>
+                            <li>Executive ROI readout</li>
+                            <li>Rollout recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outcomes -->
+        <section class="outcomes">
+            <div class="container">
+                <h2>What Your Team Will Achieve</h2>
+                <p class="section-desc">
+                    Concrete, measurable improvements in software delivery.
+                </p>
+
+                <div class="outcomes-grid">
+                    <div class="outcome-card">
+                        <div class="outcome-icon">&#8593;</div>
+                        <div class="outcome-content">
+                            <h4>Faster Delivery</h4>
+                            <p>Increased PR throughput and reduced cycle time from idea to production.</p>
+                        </div>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon">&#10003;</div>
+                        <div class="outcome-content">
+                            <h4>Better Test Coverage</h4>
+                            <p>Measurable coverage delta on targeted modules with maintainable tests.</p>
+                        </div>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon">&#128196;</div>
+                        <div class="outcome-content">
+                            <h4>Living Documentation</h4>
+                            <p>Architecture READMEs, ADRs, and runbooks that stay accurate.</p>
+                        </div>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon">&#128274;</div>
+                        <div class="outcome-content">
+                            <h4>Security-First Mindset</h4>
+                            <p>Team understands prompt injection, tool permissions, and safe practices.</p>
+                        </div>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon">&#128101;</div>
+                        <div class="outcome-content">
+                            <h4>Repeatable Workflow</h4>
+                            <p>Documented "how we work" playbook for consistent AI-assisted development.</p>
+                        </div>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon">&#128200;</div>
+                        <div class="outcome-content">
+                            <h4>Executive Reporting</h4>
+                            <p>Clear before/after metrics and ROI narrative for leadership.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tooling -->
+        <section>
+            <div class="container">
+                <h2>Primary Tooling</h2>
+                <div class="tooling-box">
+                    <h3>Claude Code CLI</h3>
+                    <p>
+                        This program uses Claude Code CLI as the primary agentic harness.
+                        A powerful, enterprise-ready tool for AI-assisted software development.
+                    </p>
+                    <p>
+                        Concepts taught apply to other agentic tools (GitHub Copilot CLI, Cursor, etc.) with workflow adaptations.
+                    </p>
+                    <span class="tool-badge">Claude Approved</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enterprise -->
+        <section class="enterprise">
+            <div class="container">
+                <h2>Built for Enterprise</h2>
+                <p class="section-desc">
+                    Designed around real enterprise constraints, not idealized scenarios.
+                </p>
+
+                <div class="enterprise-grid">
+                    <div class="enterprise-card">
+                        <h3>Security & Compliance</h3>
+                        <ul>
+                            <li>No external SaaS uploads</li>
+                            <li>Approved models only</li>
+                            <li>PHI/PII redaction guidance</li>
+                            <li>Clear data classification rules</li>
+                        </ul>
+                    </div>
+                    <div class="enterprise-card">
+                        <h3>Off-Network Coaching</h3>
+                        <ul>
+                            <li>Coaches never touch sensitive code</li>
+                            <li>Guidance without direct access</li>
+                            <li>Safe knowledge transfer model</li>
+                            <li>Works with air-gapped environments</li>
+                        </ul>
+                    </div>
+                    <div class="enterprise-card">
+                        <h3>Measurable Outcomes</h3>
+                        <ul>
+                            <li>Baseline metrics captured Week 1</li>
+                            <li>Mid-point check at Week 6</li>
+                            <li>Final results at Week 10</li>
+                            <li>Executive-ready reporting</li>
+                        </ul>
+                    </div>
+                    <div class="enterprise-card">
+                        <h3>Scalable Model</h3>
+                        <ul>
+                            <li>Weeks 1-2 recorded for reuse</li>
+                            <li>Train internal champions</li>
+                            <li>Tiered rollout to broader org</li>
+                            <li>Self-sustaining after pilot</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience -->
+        <section style="background: #f7fafc">
+            <div class="container">
+                <h2>Who This Is For</h2>
+
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <h3>Ideal Participants</h3>
+                        <ul>
+                            <li>Software engineers (.NET, Python, Java)</li>
+                            <li>Platform and DevOps engineers</li>
+                            <li>Technical leads evaluating AI tools</li>
+                            <li>Teams ready to adopt agentic workflows</li>
+                        </ul>
+                    </div>
+                    <div class="audience-card">
+                        <h3>Prerequisites</h3>
+                        <ul>
+                            <li>Professional software development experience</li>
+                            <li>Familiarity with Git and PR workflows</li>
+                            <li>No prior AI/ML experience required</li>
+                            <li>Curiosity and willingness to learn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Transform Your Team?</h2>
+                <p>
+                    Join the next cohort and start delivering software faster, safer, and with measurable results.
+                </p>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <div class="number">15-20</div>
+                        <div class="label">Participants/Cohort</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="number">10</div>
+                        <div class="label">Weeks</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="number">3</div>
+                        <div class="label">Phases</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p><strong>aiXform</strong> | AI Transformation Training</p>
+                <p style="margin-top: 8px">
+                    Building the next generation of AI-enabled software teams
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

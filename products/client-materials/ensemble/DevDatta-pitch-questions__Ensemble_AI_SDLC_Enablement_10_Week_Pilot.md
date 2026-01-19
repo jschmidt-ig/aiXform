@@ -96,27 +96,33 @@ We will target improvements in:
 
 A successful pilot depends on early alignment on **how developers will safely access AI tooling**.
 
+### Approved Tooling (Updated Jan 2026)
+
+**Claude has been approved for the Ensemble pilot.** The primary agentic harness will be **Claude Code CLI**.
+
+This simplifies the enablement workstream significantly—we can proceed with Claude-based workflows from Week 1.
+
 ### Environment options (to pick with DevData / Dave Dotta)
 
-**Option A — Isolated cloud lab environment (recommended for enterprise constraints)**  
-- A self-contained development environment in Ensemble’s cloud subscription.  
-- Pros: strongest isolation and governance; easiest to standardize across teams.  
+**Option A — Isolated cloud lab environment (recommended for enterprise constraints)**
+- A self-contained development environment in Ensemble's cloud subscription.
+- Pros: strongest isolation and governance; easiest to standardize across teams.
 - Cons: requires infra setup and approvals.
 
-**Option B — Dev containers on developer machines**  
-- Docker-based dev containers for a controlled local lab.  
-- Pros: fast to start; reproducible; good for workshops.  
+**Option B — Dev containers on developer machines**
+- Docker-based dev containers for a controlled local lab.
+- Pros: fast to start; reproducible; good for workshops.
 - Cons: local machine variability; security review may be needed.
 
-**Option C — Windows + WSL-based development setup**  
-- For Windows-heavy teams; WSL provides a consistent Linux-like environment.  
-- Pros: practical where Docker is constrained.  
+**Option C — Windows + WSL-based development setup**
+- For Windows-heavy teams; WSL provides a consistent Linux-like environment.
+- Pros: practical where Docker is constrained.
 - Cons: still requires clear policy + support.
 
 ### Enablement workstream outputs (Weeks 1–4)
-- Tooling access approach (approved models, access method, logging policy)
-- Usage rules (what data can/can’t be used; redaction guidance)
-- A “safe lab” repo + workflow that does **not** require production access
+- Tooling access approach (Claude Code CLI, logging policy)
+- Usage rules (what data can/can't be used; redaction guidance)
+- A "safe lab" repo + workflow that does **not** require production access
 - Escalation path for approvals (security, architecture, platform owners)
 
 ---
@@ -213,11 +219,11 @@ To keep the pilot moving smoothly, we recommend locking these by end of Week 1:
 
 | Risk | What could happen | Mitigation |
 |---|---|---|
-| Tool approvals take longer than expected | Training stalls early | Weeks 1–2 run on non-sensitive sandbox + recorded fundamentals; labs proceed in isolated environment while approvals finalize |
-| Security constraints limit real-repo usage | Hard to do hands-on | Sandbox-first approach; shift brownfield work to read-only analysis until allowed |
+| ~~Tool approvals take longer than expected~~ | ~~Training stalls early~~ | ✅ **Resolved:** Claude approved for pilot |
+| Security constraints limit real-repo usage | Hard to do hands-on | Sandbox-first approach; shift production codebase work to read-only analysis until allowed |
 | Cohort too large | Reduced coaching quality | Keep first cohort at ~15; cap at ~20 |
 | Not enough time protected | Low adoption / poor outcomes | Set expectations upfront: predictable weekly cadence; manager support |
-| “AI = autocomplete” mindset | Underuse of agentic workflows | Explicitly teach maturity progression + safe PR practices + review discipline |
+| "AI = autocomplete" mindset | Underuse of agentic workflows | Explicitly teach maturity progression + safe PR practices + review discipline |
 
 ---
 

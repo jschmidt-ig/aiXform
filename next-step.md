@@ -32,7 +32,7 @@ A 10-week program with three phases:
 
 | Phase | Weeks | Focus | Time/Week |
 |-------|-------|-------|-----------|
-| Fundamentals | 1-2 | Online course work, 20 micro-sessions | 4 hrs |
+| Fundamentals | 1-2 | Online course work, 20 sessions | 4 hrs |
 | Labs | 3-6 | Hands-on lab exercises (4 labs) | 8-10 hrs |
 | Applied | 7-10 | Guided coaching on real projects | 8-10 hrs |
 
@@ -103,7 +103,7 @@ aiXform/
 - Business model and pricing (L1/L2/L3 tiers)
 - 10-week delivery framework
 - Course structure (Fundamentals → Labs → Applied)
-- Fundamentals syllabus (20 micro-sessions)
+- Fundamentals syllabus (20 sessions)
 - Labs syllabus (4 labs over 4 weeks)
 - Lab specifications (Lab 01-04)
 - Maturity model framework
@@ -117,7 +117,7 @@ aiXform/
 
 ### Immediate Priority
 - **Applied Coaching phase content** (Weeks 7-10) - currently just a README placeholder
-- Slide decks for 20 fundamentals micro-sessions
+- Slide decks for 20 Fundamentals sessions
 - Recorded video content for Weeks 1-2
 
 ### Also Needed
@@ -129,9 +129,14 @@ aiXform/
 
 ---
 
+## Tooling
+
+**Ensemble Pilot:** Claude (approved) - Claude Code CLI as primary agentic harness
+
+**Future Clients (placeholder):** Some enterprises may be restricted to Windows + GitHub Copilot. Content for Copilot CLI workflows will need to be developed for those engagements.
+
 ## Enterprise Constraints (Important)
 
-- Windows + GitHub Copilot as primary client tooling
 - No external SaaS uploads allowed
 - PHI/PII redaction requirements
 - Only approved AI models (no free-tier APIs)
@@ -147,6 +152,7 @@ aiXform/
 4. No greenfield/brownfield tracks - everyone works with production codebases
 5. "Brownfield" → "Production Codebase" terminology
 6. Lab 02 renamed to "Codebase Analysis & Documentation"
+7. **Claude approved for Ensemble pilot** — Claude Code CLI is now the primary agentic harness (Copilot CLI content deferred as placeholder for future clients)
 
 ---
 
@@ -159,11 +165,9 @@ aiXform/
    - Capstone deliverable specs
    - Executive ROI readout template
 
-2. **Gap analysis** - Detailed mapping of what content exists vs needs creation
+2. **Week 1 critical path** - Minimum viable content for launch
 
-3. **Week 1 critical path** - Minimum viable content for launch
-
-4. **Content production schedule** - Prioritize what to build first
+3. **Content production schedule** - Prioritize what to build first
 
 ---
 

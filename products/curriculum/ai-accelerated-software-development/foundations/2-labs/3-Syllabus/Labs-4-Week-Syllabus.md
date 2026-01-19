@@ -9,7 +9,7 @@ This syllabus covers the Labs phase of the Foundations program, optimized for en
 
 | Phase | Weeks | Focus |
 |-------|-------|-------|
-| Fundamentals | 1-2 | Online course work, 20 micro-sessions |
+| Fundamentals | 1-2 | Online course work, 20 sessions |
 | **Labs** | **3-6** | **Hands-on lab exercises (this syllabus)** |
 | Applied | 7-10 | Guided coaching on real projects |
 

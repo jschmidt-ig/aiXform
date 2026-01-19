@@ -4,6 +4,75 @@ All notable changes to product structure and content.
 
 ---
 
+## 2026-01-19 (Terminology Update - Micro-sessions)
+
+### Changed
+- Replaced "micro-sessions" terminology throughout with "sessions"
+- Fundamentals now described as "20 sessions (lectures and demonstrations)"
+- Updated project docs, curriculum, and marketing materials
+
+### Files Updated
+- `CLAUDE.md`, `PROJECT-STATUS.md`, `next-step.md`
+- `products/CHANGELOG.md`
+- `products/curriculum/.../1-fundamentals/Fundamentals-2Week-Syllabus.md`
+- `products/curriculum/.../1-fundamentals/Marketing-Page_Fundamentals.html`
+- `products/curriculum/.../2-labs/3-Syllabus/Labs-4-Week-Syllabus.md`
+- `products/marketing/ai-accelerated-software-development/foundations/index.html`
+- `products/marketing/brochures/AI-Accelerated-Software-Development-Fundamentals-Brochure.html`
+
+---
+
+## 2026-01-19 (Brochures Update)
+
+### Changed
+- Updated Fundamentals brochure:
+  - Renamed "AI SDLC" → "AI Accelerated Software Development"
+  - Added "Phase 1 of 3" header
+  - Updated Session 13 to reference Claude Code CLI
+  - Fixed hours display and phase references
+- Updated Labs brochure:
+  - Added "Phase 2 of 3" header
+  - Fixed "Two Tracks" → "Production Codebases" (tracks eliminated)
+  - Fixed prerequisite to reference new Fundamentals name
+  - Fixed week numbers (Labs are weeks 3-6, not arbitrary)
+  - Changed "Capstone" section to "What's Next: Applied Phase"
+
+### Renamed Files
+- `AI-SDLC-Fundamentals-Brochure.html` → `AI-Accelerated-Software-Development-Fundamentals-Brochure.html`
+- `AI-SDLC-Labs-Brochure.html` → `AI-Accelerated-Software-Development-Labs-Brochure.html`
+
+---
+
+## 2026-01-19 (Foundations Marketing Page)
+
+### Added
+- `products/marketing/ai-accelerated-software-development/foundations/index.html` - Landing page for full 10-week Foundations program
+  - Overview of 3-phase structure (Fundamentals → Labs → Applied)
+  - Value proposition for enterprises
+  - Program outcomes and metrics
+  - Claude Code CLI as primary tooling
+  - Enterprise constraints and off-network coaching model
+
+---
+
+## 2026-01-19 (Tooling Update)
+
+### Changed
+- **Claude approved for Ensemble pilot** — Claude Code CLI is now the primary agentic harness
+- Removed "Windows + GitHub Copilot" as the primary constraint for Ensemble
+- Added placeholder notes for future clients who may be restricted to Copilot CLI
+
+### Updated Files
+- `CLAUDE.md` - Added Tooling section
+- `PROJECT-STATUS.md` - Added Tooling section, updated constraints
+- `next-step.md` - Added Tooling section, added to Recent Decisions
+- `README.md` - Updated tooling paragraph
+- `1-fundamentals/Fundamentals-2Week-Syllabus.md` - Updated audience and Session 13
+- `2-labs/1-Getting-Started/README.md` - Updated tooling assumptions
+- `client-materials/ensemble/DevDatta-pitch-questions__Ensemble_AI_SDLC_Enablement_10_Week_Pilot.md` - Added approved tooling section, resolved tool approval risk
+
+---
+
 ## 2026-01-19 (Terminology Update)
 
 ### Changed
@@ -45,7 +114,7 @@ All notable changes to product structure and content.
 ### Changed
 - Renamed course from "AI SDLC" to "AI Accelerated Software Development"
 - Restructured curriculum into three distinct delivery phases:
-  - **1-fundamentals/** (Weeks 1-2): Online course work, 20 micro-sessions
+  - **1-fundamentals/** (Weeks 1-2): Online course work, 20 sessions
   - **2-labs/** (Weeks 3-6): Hands-on lab exercises
   - **3-applied/** (Weeks 7-10): Guided coaching on learner's actual projects
 - Previously "Labs" and "Applied" were merged as 8-week block; now separated into 4 weeks each
