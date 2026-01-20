@@ -1,6 +1,6 @@
 # aiXform Project Status
 
-**Last Updated:** January 19, 2026
+**Last Updated:** January 20, 2026
 
 ---
 
@@ -80,7 +80,6 @@ Full path: `products/curriculum/ai-accelerated-software-development/foundations/
 - Instructor facilitation guides
 
 ### Marketing
-- Applied Phase brochure (Weeks 7-10)
 - Case study template for pilot outcomes
 
 ### Research

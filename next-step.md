@@ -1,6 +1,6 @@
 # Session Handoff - Resume Point
 
-**Last Session:** January 19, 2026
+**Last Session:** January 20, 2026
 **Sessions Today:** 2026-01-19_project-reorganization, 2026-01-19-2_product-restructure
 
 ---
@@ -149,7 +149,6 @@ aiXform/
 - Instructor facilitation guides
 
 ### Marketing
-- Applied Phase brochure (Weeks 7-10)
 - Case study template for pilot outcomes
 
 ### Research
@@ -191,8 +190,8 @@ aiXform/
 
 1. **Slide decks for 20 Fundamentals sessions** — Presentation materials for Weeks 1-2
 2. **Detailed lab instructions** — Step-by-step guidance for Labs phase
-3. **Applied Phase brochure** — No brochure exists for Weeks 7-10 yet
-4. **Competitive landscape research** — Who else offers AI dev training
+3. **Competitive landscape research** — Who else offers AI dev training
+4. **Case study template** — Template for documenting pilot outcomes
 
 ---
 

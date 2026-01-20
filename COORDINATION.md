@@ -24,6 +24,7 @@ How Claude and GT coordinate work on the aiXform project.
 | 2026-01-19 | Claude | ✅ Done | Applied phase content | Created 5 docs in `3-applied/` |
 | 2026-01-19 | Claude | ✅ Done | GT coordination setup | Created `GT.md`, `COORDINATION.md` |
 | 2026-01-19 | Claude | ✅ Done | Assign GT slide deck task | Created `sessions/GT-TASK_Fundamentals-Slide-Decks.md` |
+| 2026-01-20 | GT | ✅ Done | Fundamentals slide outlines | Created slide outline package + `Slide-Standard-Notes.md` in `1-fundamentals/slide-outlines/` (Sessions 1–20) |
 | | | | | |
 
 ### Status Key

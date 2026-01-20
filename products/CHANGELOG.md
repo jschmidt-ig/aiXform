@@ -4,6 +4,53 @@ All notable changes to product structure and content.
 
 ---
 
+## 2026-01-20 (Pricing & Time Commitment Reference)
+
+### Added
+- `Foundations-Pricing-and-Time-Commitment.md` — Consolidated reference document covering:
+  - Pricing by delivery tier (L1/L2/L3)
+  - Learner time commitment (8-10 hrs/week breakdown by phase)
+  - Trainer time commitment (first delivery vs steady-state)
+  - Summary tables for sales and internal planning
+
+---
+
+## 2026-01-20 (Applied Phase Brochure)
+
+### Added
+- `marketing/brochures/AI-Accelerated-Software-Development-Applied-Brochure.html` — Marketing brochure for Phase 3 (Weeks 7-10)
+  - Orange/amber color scheme (distinct from blue Fundamentals and green Labs)
+  - Covers: Team coaching model, key deliverables, week-by-week journey
+  - Focus areas guidance (good vs avoid)
+  - ROI metrics tracking breakdown
+  - Success criteria for teams and organizations
+
+### Notes
+- Completes the brochure set for all 3 phases of the Foundations program
+- Consistent structure with Fundamentals and Labs brochures
+
+---
+
+## 2026-01-20 (Fundamentals Slide Outline Package)
+
+### Added
+- `1-fundamentals/slide-outlines/Slide-Standard-Notes.md` — Consistent “house style” for slide density, required elements, and reusable motifs.
+- `1-fundamentals/slide-outlines/Sessions-01-02-Slide-Outlines.md`
+- `1-fundamentals/slide-outlines/Sessions-03-04-Slide-Outlines.md`
+- `1-fundamentals/slide-outlines/Sessions-05-06-Slide-Outlines.md`
+- `1-fundamentals/slide-outlines/Sessions-07-08-Slide-Outlines.md`
+- `1-fundamentals/slide-outlines/Sessions-09-10-Slide-Outlines.md`
+- `1-fundamentals/slide-outlines/Sessions-11-12-Slide-Outlines.md`
+- `1-fundamentals/slide-outlines/Sessions-13-14-Slide-Outlines.md`
+- `1-fundamentals/slide-outlines/Sessions-15-16-Slide-Outlines.md`
+- `1-fundamentals/slide-outlines/Sessions-17-18-Slide-Outlines.md`
+- `1-fundamentals/slide-outlines/Sessions-19-20-Slide-Outlines.md`
+
+### Notes
+- All sessions include: slide-by-slide outlines, lecture-safe demo snippets, example banks (good/bad/enterprise-safe), graphics prompts, and safety/risk callouts (including critical safety concepts around least privilege and prompt injection).
+
+---
+
 ## 2026-01-19 (Applied Coaching Phase Content)
 
 ### Added
