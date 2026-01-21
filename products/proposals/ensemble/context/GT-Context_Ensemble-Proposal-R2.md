@@ -301,41 +301,64 @@ Once the pilot proves successful, future cohorts use list pricing:
 
 ---
 
-## AI SDLC Maturity Model
+## AI Development Maturity Model
 
-This is our framework for understanding the progression from basic AI assistance to full agentic workflows.
+Our framework for understanding the progression from AI-assisted coding to organizational transformation. Four levels organized into two phases.
 
-### The 5 Levels
+### Phase 1: Acceleration (Levels 1-2)
+*What you do now — faster and better. No fundamental structural change yet.*
 
-| Level | Name | Human Role | AI Role | Unit of Work |
-|-------|------|------------|---------|--------------|
-| 1 | Autocomplete Assist | Author | Completer | Snippets, lines |
-| 2 | Supervised Agent Coding | Pair + Supervisor | Implementer (supervised) | Files, small tasks |
-| 3 | PR-Submitting Agent | Reviewer + Approver | PR author | Full stories |
-| 4 | Multi-Agent Orchestration | Lead + Integrator | Specialists (parallel) | Features |
-| 5 | Agent Org / Hierarchical Team | Manager + Governor | Decision-making org | Milestones, epics |
+**Level 1: Agentic Coding Assistance**
+- The agent does the coding; the developer watches right over its shoulder
+- Mental model: Like pair programming, but the AI is typing
+- Developer stays engaged, reviews in real-time, guides direction
+- Unit of work: Tasks, files, small features
+- **This is what the 10-week course delivers** — getting your team competent at this level
+
+**Level 2: Story Delegation**
+- Developers delegate entire stories to agents
+- Agent runs more independently; developer reviews PRs at the end
+- Developer role shifts from pair programmer to code reviewer
+- Unit of work: Full stories, tickets
+- Productivity: 2-4× improvement
+
+### Phase 2: Transformation (Levels 3-4)
+*Fundamental structural change. Requires new ways of working — technically and organizationally.*
+
+**Level 3: Multi-Agent Orchestration**
+- Developer manages multiple coding agents running simultaneously on different tasks
+- Ship milestones in a single session (not just stories)
+- Productivity: 10×+ improvement — this is why it's transformational
+- Requires new technical practices: orchestration, quality gates at scale, parallel review
+- Requires organizational adaptation: how do you manage and communicate changes happening this fast?
+
+**Level 4: Organizational Transformation**
+- AI tools extend beyond coding into project planning, documentation, customer research
+- Impacts product management, engineering management, executive decision-making
+- Changes not just how you build, but what you can build
+- New product categories become feasible due to speed and capability
+- The entire product development lifecycle is AI-augmented
 
 ### The Key Insight
-- **This pilot targets Level 2-3** — the practical "high-ROI" zone
-- Most teams are stuck at Level 1 (autocomplete)
-- Moving to supervised/delegated agentic coding unlocks significant productivity gains
-- Foundation for future progression to Levels 4-5
+- **This course targets Level 1** — agentic coding assistance with pair-programming mental model
+- Most teams haven't even reached Level 1 (still using autocomplete/Copilot suggestions)
+- Level 1 competence is the foundation for everything else
+- Once teams are solid at Level 1, they can progress to Level 2 (story delegation)
+- Levels 3-4 require Level 1-2 competence plus organizational readiness
 
-### Productivity Multipliers (Indicative ranges)
-- L1 (Autocomplete): ~1.05× – 1.3×
-- L2 (Supervised agent): ~1.2× – 2×
-- L3 (PR agent): ~1.5× – 4×
-- L4 (Multi-agent): ~2× – 8×
-- L5 (Agent org): ~3× – 15×
+### Why Two Phases Matter
 
-### What changes at each level:
+**Acceleration (Levels 1-2):**
+- Lower risk, incremental adoption
+- Existing workflows stay mostly intact
+- Prove value with measurable improvements
+- Build confidence and skills
 
-**Human role shifts:** Author → Pair + Supervisor → Reviewer → Lead + Integrator → Manager + Governor
-
-**Quality signal shifts:**
-- L1-2: Correctness ensured by human inspection
-- L3: Shifts toward PR review + tests
-- L4-5: Higher-level signals (CI gates, functional checks, eval harnesses)
+**Transformation (Levels 3-4):**
+- Higher reward, but requires organizational change
+- New workflows, new roles, new communication patterns
+- Only possible once Acceleration is solid
+- Strategic decision, not just a tools decision
 
 ---
 
