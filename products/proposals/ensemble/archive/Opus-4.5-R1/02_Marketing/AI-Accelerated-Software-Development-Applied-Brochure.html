@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Accelerated Software Development - Applied | Praxis</title>
+    <style>
+      :root {
+        --primary: #1a365d;
+        --secondary: #2b6cb0;
+        --accent: #4299e1;
+        --green: #2d6a4f;
+        --orange: #c2410c;
+        --light: #f7fafc;
+        --dark: #1a202c;
+        --gray: #718096;
+        --white: #ffffff;
+      }
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+        line-height: 1.6;
+        color: var(--dark);
+        background: var(--white);
+      }
+
+      .hero {
+        background: linear-gradient(135deg, var(--orange) 0%, var(--primary) 100%);
+        color: var(--white);
+        padding: 80px 20px;
+        text-align: center;
+      }
+      .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 16px; }
+      .hero .subtitle { font-size: 1.5rem; opacity: 0.92; margin-bottom: 32px; }
+      .hero-stats {
+        display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-top: 40px;
+      }
+      .stat { text-align: center; }
+      .stat-number { font-size: 2.5rem; font-weight: 700; }
+      .stat-label { font-size: 0.9rem; opacity: 0.85; text-transform: uppercase; letter-spacing: 1px; }
+
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+      section { padding: 60px 0; }
+      section h2 { font-size: 2rem; color: var(--primary); margin-bottom: 16px; text-align: center; }
+      section .section-desc {
+        text-align: center; color: var(--gray); max-width: 760px; margin: 0 auto 40px; font-size: 1.1rem;
+      }
+
+      .overview { background: var(--light); }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+      .card {
+        background: var(--white);
+        padding: 26px;
+        border-radius: 12px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      }
+      .card h3 { color: var(--orange); margin-bottom: 10px; font-size: 1.1rem; }
+      .card p { color: var(--gray); font-size: 0.95rem; }
+
+      .structure { background: #fff7ed; }
+      .week-structure { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+      .block {
+        background: var(--white);
+        border: 2px solid #fed7aa;
+        border-radius: 14px;
+        padding: 24px;
+        text-align: center;
+      }
+      .block h4 { font-size: 1rem; margin-bottom: 8px; }
+      .block .time { font-size: 2rem; font-weight: 700; color: var(--orange); }
+      .block .time-label { font-size: 0.85rem; color: var(--gray); }
+      .block p { font-size: 0.85rem; color: var(--gray); margin-top: 12px; }
+
+      .deliverables-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+      .deliverable-card {
+        background: var(--white);
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 24px;
+      }
+      .deliverable-card h4 { color: var(--primary); margin-bottom: 12px; font-size: 1.1rem; }
+      .deliverable-card ul { list-style: none; }
+      .deliverable-card li { font-size: 0.9rem; color: var(--dark); padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+      .deliverable-card li:last-child { border-bottom: none; }
+
+      .assessment { background: var(--primary); color: var(--white); }
+      .assessment h2 { color: var(--white); }
+      .assessment .section-desc { color: rgba(255,255,255,0.85); }
+      .assessment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+      .assessment-card {
+        background: rgba(255,255,255,0.10);
+        padding: 24px;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.20);
+      }
+      .assessment-card h3 { font-size: 1.1rem; margin-bottom: 12px; }
+      .assessment-card ul { list-style: none; }
+      .assessment-card li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.12); font-size: 0.95rem; }
+      .assessment-card li:last-child { border-bottom: none; }
+
+      footer { background: var(--dark); color: var(--white); padding: 40px 20px; text-align: center; }
+      footer p { opacity: 0.75; font-size: 0.9rem; }
+
+      @media (max-width: 768px) {
+        .hero h1 { font-size: 2rem; }
+        .hero .subtitle { font-size: 1.2rem; }
+        section { padding: 40px 0; }
+        .week-structure { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p style="font-size:0.9rem; opacity:0.85; margin-bottom:8px; text-transform:uppercase; letter-spacing:1px;">Phase 3 of 3 | Foundations Program</p>
+        <h1>AI Accelerated Software Development</h1>
+        <p class="subtitle">Applied: coached implementation on real projects with measurable ROI</p>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-number">4</div><div class="stat-label">Weeks (7-10)</div></div>
+          <div class="stat"><div class="stat-number">8-10</div><div class="stat-label">Hours/Week</div></div>
+          <div class="stat"><div class="stat-number">1-3</div><div class="stat-label">Teams</div></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="overview">
+      <div class="container">
+        <h2>Program Overview</h2>
+        <p class="section-desc">
+          Applied is where the workflow moves from safe labs into your real codebase. Teams ship production PRs with
+          coaching support, and leadership receives an executive-ready before/after readout.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Real PRs, Real Impact</h3>
+            <p>Work on your actual repo and backlog. Optimize for smaller, safer PRs with better tests and clearer narration.</p>
+          </div>
+          <div class="card">
+            <h3>Coach-Supported Delivery</h3>
+            <p>Coaching guides planning, constraints, and review discipline without requiring coaches to access sensitive code.</p>
+          </div>
+          <div class="card">
+            <h3>Metrics + Executive Readout</h3>
+            <p>Capture baseline, mid-point, and final deltas on throughput, cycle time, coverage, and review iteration.</p>
+          </div>
+          <div class="card">
+            <h3>Rollout Recommendations</h3>
+            <p>End with a rollout plan: what to scale, what to standardize, and what guardrails are non-negotiable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="structure">
+      <div class="container">
+        <h2>Weekly Structure</h2>
+        <p class="section-desc">
+          A predictable cadence: coached sessions plus hands-on delivery work that overlaps with normal team execution.
+        </p>
+
+        <div class="week-structure">
+          <div class="block">
+            <h4>Team Coaching</h4>
+            <div class="time">2</div>
+            <div class="time-label">hours/week</div>
+            <p>Planned coaching sessions per team for scoping, risk, and review discipline.</p>
+          </div>
+          <div class="block">
+            <h4>Office Hours</h4>
+            <div class="time">2</div>
+            <div class="time-label">hours/week</div>
+            <p>Drop-in support for blockers, prompt review, and workflow troubleshooting.</p>
+          </div>
+          <div class="block">
+            <h4>Project Work</h4>
+            <div class="time">4-6</div>
+            <div class="time-label">hours/week</div>
+            <p>Ship PRs on the real backlog, with measured outcomes and documented decisions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:#f7fafc">
+      <div class="container">
+        <h2>What You'll Deliver</h2>
+        <p class="section-desc">Concrete artifacts leadership can review and teams can reuse.</p>
+
+        <div class="deliverables-grid">
+          <div class="deliverable-card">
+            <h4>Capstone PR Package</h4>
+            <ul>
+              <li>1-3 high-signal PRs per team</li>
+              <li>PR narration (what/why/risk/how tested)</li>
+              <li>Test additions and/or coverage delta</li>
+              <li>Runbook updates where relevant</li>
+            </ul>
+          </div>
+          <div class="deliverable-card">
+            <h4>AI SDLC Playbook v1</h4>
+            <ul>
+              <li>How the team uses agents (workflow)</li>
+              <li>Prompt policy and redaction guidance</li>
+              <li>Permission model (least privilege)</li>
+              <li>Review and approval gates</li>
+            </ul>
+          </div>
+          <div class="deliverable-card">
+            <h4>Executive Readout</h4>
+            <ul>
+              <li>Baseline vs final KPI deltas</li>
+              <li>Key wins and failure modes</li>
+              <li>Rollout recommendation</li>
+              <li>Next 90-day plan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="assessment">
+      <div class="container">
+        <h2>Assessment & Reporting</h2>
+        <p class="section-desc">Applied is measured by delivery outcomes, not attendance.</p>
+
+        <div class="assessment-grid">
+          <div class="assessment-card">
+            <h3>Metrics We Track</h3>
+            <ul>
+              <li>Cycle time (ticket to merge)</li>
+              <li>PR throughput and PR size</li>
+              <li>Review iteration count</li>
+              <li>Test/coverage delta (targeted)</li>
+            </ul>
+          </div>
+          <div class="assessment-card">
+            <h3>Governance Checks</h3>
+            <ul>
+              <li>Prompt injection awareness</li>
+              <li>Least-privilege tool permissions</li>
+              <li>Untrusted input isolation</li>
+              <li>Human review required for merges</li>
+            </ul>
+          </div>
+          <div class="assessment-card">
+            <h3>Week 10 Readout</h3>
+            <ul>
+              <li>Before/after KPI comparison</li>
+              <li>What to scale vs what to fix</li>
+              <li>Rollout options and resourcing</li>
+              <li>Operating model recommendations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p><strong>Praxis</strong> | AI Accelerated Software Development</p>
+        <p style="margin-top:8px">Building enterprise teams that ship faster, safer, and with measurable results</p>
+      </div>
+    </footer>
+  </body>
+</html>
