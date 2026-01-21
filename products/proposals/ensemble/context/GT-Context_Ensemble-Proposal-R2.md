@@ -309,13 +309,15 @@ Our framework for understanding the progression from AI-assisted coding to organ
 *What you do now — faster and better. No fundamental structural change yet.*
 
 **Level 1: Agentic Coding Assistance**
+*Course: AI Accelerated Software Development — Foundations*
 - The agent does the coding; the developer watches right over its shoulder
 - Mental model: Like pair programming, but the AI is typing
 - Developer stays engaged, reviews in real-time, guides direction
 - Unit of work: Tasks, files, small features
-- **This is what the 10-week course delivers** — getting your team competent at this level
+- **This is the current 10-week course** — getting your team competent at this level
 
 **Level 2: Story Delegation**
+*Course: AI Accelerated Software Development — Practitioner*
 - Developers delegate entire stories to agents
 - Agent runs more independently; developer reviews PRs at the end
 - Developer role shifts from pair programmer to code reviewer
@@ -326,6 +328,7 @@ Our framework for understanding the progression from AI-assisted coding to organ
 *Fundamental structural change. Requires new ways of working — technically and organizationally.*
 
 **Level 3: Multi-Agent Orchestration**
+*Course: AI Transformational Software Delivery*
 - Developer manages multiple coding agents running simultaneously on different tasks
 - Ship milestones in a single session (not just stories)
 - Productivity: 10×+ improvement — this is why it's transformational
@@ -333,11 +336,13 @@ Our framework for understanding the progression from AI-assisted coding to organ
 - Requires organizational adaptation: how do you manage and communicate changes happening this fast?
 
 **Level 4: Organizational Transformation**
+*Not a course — organizational-led with consulting support*
 - AI tools extend beyond coding into project planning, documentation, customer research
 - Impacts product management, engineering management, executive decision-making
 - Changes not just how you build, but what you can build
 - New product categories become feasible due to speed and capability
 - The entire product development lifecycle is AI-augmented
+- We can help organizations grow into this, but it's driven by organizational leadership
 
 ### The Key Insight
 - **This course targets Level 1** — agentic coding assistance with pair-programming mental model
