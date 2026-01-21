@@ -263,10 +263,6 @@ Once the pilot proves successful, future cohorts use list pricing:
 - Provide access to tooling and safe lab environment
 - Provide KPI sources for measurement
 
-### Trainer Time (For Reference)
-- **First pilot (content creation):** ~20-30 hrs/week average
-- **Steady-state (reusable content):** ~8 hrs/week
-
 ---
 
 ## Measurable Outcomes
