@@ -227,17 +227,17 @@ Once the pilot proves successful, future cohorts use list pricing:
 |-----------|-------|
 | Fundamentals | $500/seat |
 | Labs | $2,500/seat |
-| Applied | $20,000/cohort |
+| Applied | $20,000-$40,000/cohort (varies by cohort size and support level) |
 
-**Program total formula:** `C × ($3,000 × N + $20,000)` where C = cohorts, N = seats per cohort
+**Program total formula:** `C × ($3,000 × N + $20K-$40K)` where C = cohorts, N = seats per cohort
 
 **Example pricing:**
-| Scenario | Cohorts | Seats/Cohort | Total |
-|----------|---------|--------------|-------|
-| Small pilot | 1 | 15 | $65,000 |
-| Full cohort | 1 | 20 | $80,000 |
-| Department rollout | 3 | 15 | $195,000 |
-| Large rollout | 3 | 20 | $240,000 |
+| Scenario | Cohorts | Seats/Cohort | Applied | Total |
+|----------|---------|--------------|---------|-------|
+| Small pilot | 1 | 15 | $20,000 | $65,000 |
+| Full cohort | 1 | 20 | $30,000 | $90,000 |
+| Department rollout | 3 | 15 | $25,000 | $210,000 |
+| Large rollout | 3 | 20 | $40,000 | $300,000 |
 
 **Why show this:** DevDatta should understand the value they're getting with hourly billing, and see what broader rollout would cost.
 
