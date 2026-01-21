@@ -232,12 +232,12 @@ Once the pilot proves successful, future cohorts use list pricing:
 **Program total formula:** `C × ($3,000 × N + $20K-$40K)` where C = cohorts, N = seats per cohort
 
 **Example pricing:**
-| Scenario | Cohorts | Seats/Cohort | Applied | Total |
-|----------|---------|--------------|---------|-------|
-| Small pilot | 1 | 15 | $20,000 | $65,000 |
-| Full cohort | 1 | 20 | $30,000 | $90,000 |
-| Department rollout | 3 | 15 | $25,000 | $210,000 |
-| Large rollout | 3 | 20 | $40,000 | $300,000 |
+| Scenario | Cohorts (Teams) | Seats/Team | Applied | Total |
+|----------|-----------------|------------|---------|-------|
+| Single team | 1 | 6 | $20,000 | $38,000 |
+| Single team | 1 | 7 | $20,000 | $41,000 |
+| Two teams | 2 | 6 | $25,000 | $86,000 |
+| Three teams | 3 | 7 | $30,000 | $153,000 |
 
 **Why show this:** DevDatta should understand the value they're getting with hourly billing, and see what broader rollout would cost.
 
@@ -258,7 +258,7 @@ Once the pilot proves successful, future cohorts use list pricing:
 | Applied | — | Project work | 4+ hrs coaching/office hours |
 
 ### For Organization
-- Identify 1-3 teams, ~15 participants (cap 20)
+- Identify 1-3 teams, 6-7 participants per team (team-sized cohorts)
 - Protect participant time (8-10 hrs/week)
 - Provide access to tooling and safe lab environment
 - Provide KPI sources for measurement
@@ -388,7 +388,7 @@ Show confidence — 20 sessions detailed, 4 labs specified, coaching framework d
 ## Decisions Needed (to include in proposal)
 
 By end of Week 1, Ensemble needs to decide:
-1. **Cohort selection** — 1-3 teams, participant list (~15, cap 20)
+1. **Cohort selection** — 1-3 teams, 6-7 participants per team
 2. **Environment choice** — Cloud lab (recommended) vs dev containers vs WSL
 3. **Tool access** — Claude Code CLI usage + logging policy
 4. **Data handling rules** — What can/can't enter prompts; redaction expectations
