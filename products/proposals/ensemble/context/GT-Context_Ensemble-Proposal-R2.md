@@ -11,12 +11,12 @@
 Create **three artifacts** in order:
 
 ### Artifact 1: AI Transformation Strategy Overview (1-2 page infographic/visual document)
-A high-level piece about AI transformation strategy in general and aiXform's approach. This sets the strategic context before diving into the specific course.
+A high-level piece about AI transformation strategy in general and our approach. This sets the strategic context before diving into the specific course.
 
 **Should cover:**
 - Why AI-accelerated software development matters now
 - The maturity progression (from autocomplete to agentic workflows)
-- aiXform's philosophy: practical, measurable, enterprise-safe
+- Our philosophy: practical, measurable, enterprise-safe
 - How this connects to broader AI transformation goals
 
 ### Artifact 2: 10-Week Pilot Proposal (Sales-focused)
@@ -62,9 +62,9 @@ A visual, marketing-style overview of the AI Accelerated Software Development - 
 
 ---
 
-## About aiXform
+## About Us (Integral Dragon)
 
-**Who we are:** AI transformation training company targeting enterprise software development (spin-out from Integral Dragon consulting)
+**Who we are:** AI transformation training and consulting for enterprise software development
 
 **Our approach:**
 - Practical, not theoretical
