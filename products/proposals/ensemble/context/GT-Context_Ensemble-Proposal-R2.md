@@ -207,39 +207,18 @@ Instrument service with observability, run security/compliance drill.
 
 ## Pricing Model
 
-### For This Pilot: Hourly Billing (Recommended)
+### For This Pilot: Hourly Billing
 
-Ensemble already has an approved contract vehicle for hourly billing. For the first pilot, we propose billing under that contract.
+Ensemble already has an approved contract vehicle for hourly billing. For this first pilot, we propose billing under that contract.
 
 **Benefits:**
 - Minimizes procurement friction
 - Allows customization during delivery
-- Actually cheaper than list pricing for first run
 - Simple: bill only actual time spent
 
-**Estimated instructor effort (first pilot):** 150-210 hours total
+### For Future Rollout
 
-### List Pricing (For Future Rollouts)
-
-Once the pilot proves successful, future cohorts use list pricing:
-
-| Component | Price |
-|-----------|-------|
-| Fundamentals | $500/seat |
-| Labs | $2,500/seat |
-| Applied | $20,000-$40,000/cohort (varies by cohort size and support level) |
-
-**Program total formula:** `C × ($3,000 × N + $20K-$40K)` where C = cohorts, N = seats per cohort
-
-**Example pricing:**
-| Scenario | Cohorts (Teams) | Seats/Team | Applied | Total |
-|----------|-----------------|------------|---------|-------|
-| Single team | 1 | 6 | $20,000 | $38,000 |
-| Single team | 1 | 7 | $20,000 | $41,000 |
-| Two teams | 2 | 6 | $25,000 | $86,000 |
-| Three teams | 3 | 7 | $30,000 | $153,000 |
-
-**Why show this:** DevDatta should understand the value they're getting with hourly billing, and see what broader rollout would cost.
+If Ensemble decides to roll this out to additional teams after the pilot, we'll move to a per-seat pricing model. Details to be discussed based on pilot outcomes and rollout scope.
 
 ---
 
